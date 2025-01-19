@@ -1,0 +1,48 @@
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore backups and other system files
+*.tar.gz
+*.zip
+*.bak
+*.swp
+
+# Ignore wp-config.php to avoid exposing sensitive information
+wp-config.php
+
+# Ignore uploads directory, often used for media files
+wp-content/uploads/
+
+# Ignore vendor dependencies (for composer based projects)
+vendor/
+
+# Ignore node_modules and related files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Sass cache files
+.sass-cache/
+
+# Ignore PHPStorm project files
+/.idea/
+
+# Ignore local environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore composer lock file and autoload files
+composer.lock
+composer.phar
