@@ -1,0 +1,41 @@
+.vehica-field--validation-required {
+  input {
+    border: 1px solid red !important;
+    color: red;
+    &::placeholder {
+      color: red !important;
+    }
+  }
+}
+
+.vehica-field--validation-required__tip {
+  position: relative;
+}
+
+.vehica-field--validation-required__tip__text {
+  white-space: nowrap;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  display: inline-block;
+  background: #232732;
+  padding: 7px 15px;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  color: #fff;
+  margin: 4px 12px -6px 8px;
+  border-radius: 4px;
+  z-index: 2;
+  &:after {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #232732;
+  }
+}

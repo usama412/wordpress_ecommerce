@@ -1,0 +1,40 @@
+.rtl {
+  @media (min-width: 1024px) {
+    .vehica-car-card-row {
+      .vehica-car-card-row__price-desktop,
+      .vehica-car-card-row__favorite {
+        text-align: left;
+      }
+      .vehica-car-card-row__right {
+        margin-right: auto;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 18px;
+      }
+    }
+    .vehica-car-row__content {
+      padding-right: 0;
+      padding-left: 32px;
+    }
+    .vehica-car-card-row__image {
+      padding-left: 36px;
+      padding-right: 0;
+    }
+    .vehica-car-card__info__single {
+      padding-right: 0;
+      padding-left: 25px;
+      &:first-child {
+        margin-right: 0;
+        margin-left: 13px;
+        padding-left: 13px;
+      }
+      i {
+        right: -15px;
+        left: 0;
+      }
+    }
+  }
+  .vehica-car-card-row__calculate {
+    text-align: left;
+  }
+}

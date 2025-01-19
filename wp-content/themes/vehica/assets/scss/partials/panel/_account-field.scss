@@ -1,0 +1,84 @@
+.vehica-panel-account-field {
+  margin-bottom: 22px;
+  @media (min-width: 900px) {
+    padding-right: 14px;
+  }
+
+  textarea {
+    font-size: 16px;
+    line-height: 27px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    height: 200px;
+  }
+}
+
+.vehica-panel-account-field--email {
+  input#vehica-email {
+    font-weight: 600 !important;
+    background: #f4f4f4;
+    cursor: initial;
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+}
+
+.vehica-panel-account-field__label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222732;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.vehica-panel-account-field__text-control {
+  @include vehica-field;
+}
+
+.vehica-panel-account-field__text-control--social {
+  padding-left: 60px;
+}
+
+.vehica-panel-account-field__icon {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  path {
+    fill: var(--primary);
+  }
+}
+
+.vehica-panel-account-field__twitter {
+  position: relative;
+}
+
+.vehica-panel-account-field__linkedin {
+  position: relative;
+}
+
+.vehica-panel-account-field__facebook {
+  position: relative;
+}
+
+.vehica-panel-account-field__instagram {
+  position: relative;
+}
+
+.vehica-panel-account-field--location-google {
+  input[type=text] {
+    @include vehica-field;
+    width: 100%;
+  }
+
+  #vehica-user-map {
+    height: 400px;
+  }
+}

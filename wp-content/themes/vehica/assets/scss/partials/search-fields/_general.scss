@@ -1,0 +1,105 @@
+.vehica-form-button {
+  display: inline-block;
+  float: left;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  border: 1px solid #e7edf3;
+  background-color: #fff;
+  height: 53px;
+  width: 100%;
+  padding: 18px 45px 0 27px;
+  color: #2f3b48;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:after {
+    position: absolute;
+    right: 26px;
+    top: 19px;
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+    font-size: 14px;
+  }
+}
+
+.vehica-form-button__clear {
+  display: inline-block;
+  color: var(--primary);
+  z-index: 2;
+  position: absolute;
+  right: 11px;
+  padding: 12px 14px !important;
+  top: 5px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.v-select:not(.vs-open) {
+  .vs__selected {
+    font-weight: bold;
+    color: var(--primary);
+  }
+  input {
+    border: 0 solid transparent;
+    padding: 10px 0;
+    min-height: 51px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    color: #2f3b48;
+  }
+
+  .vs__dropdown-toggle {
+    border: 1px solid #e7edf3;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    padding: 0 0 0 27px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .vs__selected-options {
+    padding: 0;
+  }
+
+  .vs__selected {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Inside vs__dropdown-menu selected option */
+.vs__dropdown-option {
+  background: #fff !important;
+  &.vs__dropdown-option--selected {
+    background: var(--primary-light) !important;
+    color: var(--primary) !important;
+    pointer-events: none;
+    min-height: 39px;
+    font-weight: bold;
+    span {
+      color: var(--primary) !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+.vs__dropdown-option--disabled {
+  opacity: 0.5;
+  &:hover {
+    color: #0f141e !important;
+  }
+}

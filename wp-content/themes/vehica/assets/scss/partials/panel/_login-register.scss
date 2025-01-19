@@ -1,0 +1,318 @@
+.vehica-login-register-tabs-wrapper {
+  background: #f2f5fb;
+}
+
+.vehica-login-register-tabs {
+  display: flex;
+  padding: 30px 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  @media (max-width: 899px) {
+    padding-bottom: 0;
+  }
+  .vehica-login-register-tabs__login,
+  .vehica-login-register-tabs__register {
+    width: 50%;
+    font-size: 17px;
+    font-weight: 600;
+    color: #222732;
+    line-height: 21px;
+    padding: 22px 5px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    border: solid 1px #e7edf3;
+  }
+  .vehica-login-register-tabs__login {
+    margin-right: 7px;
+  }
+  .vehica-active {
+    border: solid 1px #e7edf3;
+    background-color: rgba(231, 237, 243, 0.7);
+  }
+  .vehica-login-register-tabs__register {
+    margin-left: 7px;
+  }
+}
+
+.vehica-panel-login-register {
+  position: relative;
+  display: flex;
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 900;
+    margin-bottom: 9px;
+  }
+  h3 {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  .vehica-login {
+    background: #f2f5fb;
+    padding: 0px 15px 50px 15px;
+    text-align: center;
+    width: 100%;
+    .vehica-login__inner {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+
+  .vehica-register {
+    background: #f2f5fb;
+    padding: 0px 15px 50px 15px;
+    text-align: center;
+    width: 100%;
+    .vehica-register__inner {
+      max-width: 500px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+.vehica-panel-login-register__or {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  margin-left: -27px;
+  width: 54px;
+  height: 54px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  color: var(--primary);
+  border-radius: 50%;
+  font-size: 19px;
+  text-align: center;
+  line-height: 54px;
+  display: none;
+}
+
+.vehica-login,
+.vehica-register {
+  display: none;
+  &.vehica-active {
+    display: flex;
+  }
+  .vehica-button--login,
+  .vehica-button--register {
+    width: 100%;
+  }
+}
+
+.vehica-login-register-info {
+  padding: 15px 15px;
+  background-color: var(--primary-light);
+  text-align: center;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  color: var(--primary);
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  border: 1px solid var(--primary);
+  margin-top: 30px;
+  margin-bottom: -30px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--primary-light);
+    z-index: 4;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid var(--primary);
+    z-index: 3;
+  }
+  a {
+    text-decoration: underline;
+    color: #058aff;
+  }
+}
+
+.vehica-login-register-info__inner {
+  max-width: 1468px;
+  margin: 0 auto;
+}
+
+.vehica-register-login-notice {
+  margin: 0 0 20px 0 !important;
+  border: 1px solid var(--primary) !important;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 16px;
+  line-height: 23px;
+  padding: 15px !important;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 48px !important;
+}
+
+.vehica-register-submit-notice {
+  margin: 0 0 6px 0 !important;
+  border: 1px solid var(--primary) !important;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 16px;
+  line-height: 23px;
+  padding: 12px !important;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 48px !important;
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--primary);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+.vehica-register-login-notice--resend-email {
+  text-align: left;
+  a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: var(--primary);
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+/* Wide Container */
+.vehica-login-register-page {
+  @media (min-width: 1024px) {
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      display: block;
+      background: #f2f5fb;
+      z-index: -1;
+    }
+  }
+}
+
+.vehica-login-register-wide-container {
+  .vehica-login-register-tabs {
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .vehica-panel-login-register {
+    h3 {
+      @media (min-width: 1024px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .vehica-login {
+      @media (min-width: 1024px) {
+        display: flex;
+        width: 50%;
+        padding: 90px 90px 90px 30px;
+        text-align: left;
+        .vehica-login__inner {
+          width: 480px;
+          margin-left: auto;
+        }
+      }
+      @media (min-width: 1200px) {
+        padding: 90px 140px 90px 30px;
+        min-height: 600px;
+      }
+    }
+
+    .vehica-register {
+      @media (min-width: 1024px) {
+        background: #fff;
+        text-align: left;
+        display: flex;
+        width: 50%;
+        padding: 90px 30px 90px 90px;
+        .vehica-register__inner {
+          width: 480px;
+        }
+      }
+      @media (min-width: 1200px) {
+        padding: 90px 30px 90px 140px;
+      }
+    }
+  }
+
+  .vehica-panel-login-register__or {
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+
+  .vehica-login,
+  .vehica-register {
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+    .vehica-button--login,
+    .vehica-button--register {
+      @media (min-width: 1024px) {
+        width: auto;
+      }
+    }
+  }
+}
+
+.elementor-widget-vehica_login_v2_general_widget .vehica-login {
+  display: block !important;
+}
+
+.elementor-widget-vehica_register_general_widget .vehica-register {
+  display: block !important;
+}

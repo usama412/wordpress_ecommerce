@@ -1,0 +1,1 @@
+<div class="vehica-background-accent-v1"></div>

@@ -1,0 +1,31 @@
+.vehica-whats-app-button {
+  a {
+    display: block;
+    text-align: center;
+    background: #05cd51;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 14px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    i {
+      color: #fff;
+      margin-right: 14px;
+      font-size: 20px;
+      line-height: 0;
+      position: relative;
+      top: 2px;
+    }
+
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

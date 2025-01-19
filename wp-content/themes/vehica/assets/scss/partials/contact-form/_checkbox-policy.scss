@@ -1,0 +1,92 @@
+.vehica-checkbox-policy {
+  span.wpcf7-list-item {
+    display: inline-block;
+  }
+
+  .wpcf7-list-item {
+    display: block;
+    @media (min-width: 460px) {
+      top: 15px;
+      position: relative;
+    }
+    @media (min-width: 1025px) {
+      top: 20px;
+      position: relative;
+    }
+    a {
+      color: var(--primary);
+      @media (min-width: $min-hover-width) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .wpcf7-acceptance label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .wpcf7-acceptance input[type=checkbox] {
+    position: absolute;
+    visibility: hidden;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0px;
+  }
+
+  .wpcf7-acceptance input[type=checkbox] + span:before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+
+  .wpcf7-acceptance input[type=checkbox] + span:after {
+    display: block;
+    position: absolute;
+
+    content: '\f00c';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    left: 5px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 11px;
+    top: 2px;
+
+    height: 20px;
+    width: 20px;
+    top: 0px;
+    left: 0;
+    visibility: hidden;
+    text-align: center;
+    background: var(--primary);
+    border-radius: 4px;
+  }
+
+  .wpcf7-acceptance input[type=checkbox]:checked + span:before {
+    background: transparent;
+  }
+
+  .wpcf7-acceptance input[type=checkbox]:checked + span:after {
+    visibility: visible;
+  }
+
+  .wpcf7-list-item-label {
+    padding-left: 31px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    float: left;
+  }
+}

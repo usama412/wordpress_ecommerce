@@ -1,0 +1,9 @@
+.elementor-counter .elementor-counter-title {
+  color: var(--primary);
+}
+
+.vehica-col-counter-small.elementor-col-33 {
+  @media (min-width: 450px) and (max-width: 899px) {
+    width: 33% !important;
+  }
+}

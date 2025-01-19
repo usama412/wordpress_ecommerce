@@ -1,0 +1,169 @@
+.vehica-panel-account-field--location-google,
+.vehica-map {
+  border-radius: 20px;
+  overflow: hidden;
+  // Fix CSS Conflict - Terrain / Satellite Checkbox
+  img {
+    max-width: none;
+  }
+  ul[role=menu] > div[role=menuitemcheckbox] > span[role=checkbox] {
+    margin-right: 3px !important;
+    & > img {
+      top: -4px !important;
+      position: relative !important;
+    }
+  }
+}
+
+.vehica-no-google-map-api-key {
+  margin-right: auto;
+  line-height: 21px;
+  font-size: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  i {
+    color: blue;
+    margin-right: 2px;
+  }
+}
+
+.vehica-map__search-as-i-move-wrapper {
+  position: relative;
+}
+
+.vehica-map__search-as-i-move {
+  top: 15px;
+  @media (min-width: 900px) {
+    top: 30px;
+  }
+  left: 15px;
+  @media (min-width: 900px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  background: #fff;
+  padding: 0 10px;
+  position: absolute;
+  z-index: 2;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  border-radius: 4px;
+  color: #0f141e;
+  font-size: 16px;
+  .vehica-checkbox {
+    margin: 10px 0 !important;
+    &:hover {
+      color: #0f141e !important;
+    }
+  }
+}
+
+.vehica-map__search-as-i-move__loader {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  right: 0;
+  opacity: 0;
+  svg {
+    transform: scale(0.5);
+    display: inline-block;
+  }
+}
+
+.vehica-inventory-v1__is-reloading {
+  .vehica-map__search-as-i-move__loader {
+    opacity: 1;
+  }
+  .vehica-checkbox {
+    opacity: 0;
+  }
+}
+
+.elementor-widget-vehica_map_listing_general_widget .gmnoprint.gm-bundled-control {
+  right: 45px !important;
+  top: 5px !important;
+  @media (min-width: 900px) {
+    right: 60px !important;
+    top: 20px !important;
+  }
+}
+
+.vehica-map__no-api-key {
+  text-align: center;
+  padding: 143px 30px;
+  height: 100%;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url(assets/img/map-placeholder.jpg);
+    background-size: cover;
+  }
+  h3 {
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 1.48;
+    color: #222732;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 10;
+  }
+  p {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.vehica-map__no-api-key__inner {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.vehica-map__no-api-key__icon {
+  background: var(--primary-light);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto 50px;
+  position: relative;
+  i {
+    font-size: 38px;
+    line-height: 100px;
+    color: var(--primary);
+    z-index: 4;
+    position: relative;
+  }
+  &:before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    content: '';
+    background: #fff;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  &:after {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    content: '';
+    background: var(--primary-light);
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}

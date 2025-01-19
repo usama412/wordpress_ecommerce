@@ -1,0 +1,13 @@
+.vehica-hero-v5 {
+  @media (min-width: 900px) {
+    .vehica-search-classic-v2 {
+      margin: 0;
+    }
+    .vehica-search-classic-v2__top {
+      justify-content: left;
+    }
+    .vehica-search__field--radius {
+      max-width: 240px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.woocommerce-form-coupon {
+  font-size: 16px;
+  line-height: 20px !important;
+  font-weight: 600;
+  border-radius: 20px !important;
+  background-color: #f2f5fb !important;
+  padding: 30px 15px 30px 15px !important;
+  border: 1px solid #f2f5fb !important;
+  margin: 15px 0 15px 0 !important;
+  @media (min-width: 900px) {
+    padding: 30px 50px 30px 50px !important;
+    min-height: 155px;
+  }
+  p {
+    margin-bottom: 20px;
+    &.form-row-first {
+      width: 50% !important;
+      padding: 0 6px 0 0 !important;
+      margin: 0 !important;
+    }
+    &.form-row-last {
+      width: 50% !important;
+      padding: 0 0 0 6px !important;
+      margin: 0 !important;
+    }
+  }
+  input[type=text] {
+    @include vehica-field;
+  }
+  button.button {
+    @extend .vehica-button;
+    background-color: var(--primary);
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--primary);
+    }
+  }
+}

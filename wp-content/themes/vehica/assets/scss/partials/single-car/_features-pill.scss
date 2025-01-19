@@ -1,0 +1,52 @@
+.vehica-car-features-pills {
+  @include clearfix;
+}
+
+.vehica-car-features-pills__single {
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid #e7edf3;
+  background: #fff;
+  color: #222732;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 15px 20px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  float: left;
+  i {
+    display: inline-block;
+    float: left;
+    color: var(--primary);
+    margin-right: 10px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  span {
+    display: inline-block;
+    float: left;
+  }
+  @media (max-width: 649px) {
+    width: 100%;
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    i {
+      position: absolute;
+      left: 20px;
+      top: 14px;
+    }
+    span {
+      padding-left: 45px;
+    }
+  }
+  @media (min-width: 650px) and (max-width: 899px) {
+    text-align: center;
+    .vehica-car-features-pills__single {
+      float: initial;
+      min-width: 48%;
+    }
+  }
+}
+

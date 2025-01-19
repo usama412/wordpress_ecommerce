@@ -1,0 +1,22 @@
+.rtl {
+  .v-select:not(.vs-open) .vs__dropdown-toggle {
+    padding-left: 0;
+    padding-right: 27px;
+    flex-direction: row-reverse;
+  }
+  .v-select:not(.vs-open) input {
+    text-align: right;
+  }
+  .vs__actions:after {
+    right: initial;
+    left: 26px;
+  }
+  .vs__actions .vs__clear {
+    left: 5px;
+    right: initial;
+  }
+  .v-select:not(.vs-open) .vs__selected {
+    right: 0;
+    left: auto;
+  }
+}

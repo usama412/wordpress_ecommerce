@@ -1,0 +1,90 @@
+.vehica-listing-infowindow {
+  display: block;
+  background: #fff;
+  border-radius: 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 25px !important;
+  transition: all 0.2s ease;
+  min-width: 275px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  top: 15px;
+}
+
+.infoBox > img[src="https://www.google.com/intl/en_us/mapfiles/close.gif"] {
+  display: none;
+}
+
+.vehica-listing-infowindow__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  z-index: 3;
+  text-align: center;
+  background: #fff;
+  &:after {
+    display: block;
+    content: '\f00d';
+    font-family: "Font Awesome 5 Free";
+    font-size: 14px;
+    font-weight: 900;
+    width: 24px;
+    line-height: 24px;
+    color: #000;
+  }
+}
+
+.vehica-listing-infowindow__image {
+  position: relative;
+  height: 152px;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.vehica-listing-infowindow__image--placeholder {
+  background: #eff0f1;
+  .vehica-car-card__image__icon {
+    &:after {
+      font-size: 32px;
+    }
+  }
+}
+
+.vehica-listing-infowindow__name {
+  padding: 12px 20px;
+  @include text-truncate;
+  font-weight: 700;
+  color: #222732;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.vehica-listing-infowindow__label {
+  position: absolute;
+  z-index: 2;
+  background: var(--primary);
+  width: auto;
+  padding: 3px 0px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  transform: rotate(-41deg);
+  margin-left: 0;
+  left: -64px;
+  top: 16px;
+  min-width: 200px;
+  max-width: 200px;
+  @media (min-width: 1023px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}

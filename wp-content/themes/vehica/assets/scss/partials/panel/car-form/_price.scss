@@ -1,0 +1,14 @@
+.vehica-car-form__price-fields {
+  display: flex;
+  flex-wrap: wrap;
+  .vehica-car-form__field--price {
+    padding-left: 45px;
+    .vehica-car-form__field-units {
+      right: unset;
+      left: 22px;
+    }
+  }
+  @media (min-width: 900px) {
+    max-width: 600px;
+  }
+}

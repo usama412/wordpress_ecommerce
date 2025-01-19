@@ -1,0 +1,16 @@
+.rtl {
+  .vehica-checkbox input + label {
+    padding: 2px 31px 0 0;
+  }
+  .vehica-checkbox input + label:before {
+    right: 0;
+    left: auto;
+  }
+  .vehica-checkbox input:checked + label:after {
+    right: 5px;
+    left: auto;
+  }
+  .vehica-checkbox__count {
+    float: left;
+  }
+}

@@ -1,0 +1,21 @@
+/* Button */
+.elementor-button {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  border: 0 solid var(--primary);
+  box-shadow: none;
+  cursor: pointer;
+  padding: 16px 25px 16px 25px;
+  overflow: hidden;
+  vertical-align: top;
+  border-radius: 10px;
+  background-color: var(--primary);
+  i {
+    margin-right: 7px;
+  }
+}

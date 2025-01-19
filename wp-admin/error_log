@@ -1,0 +1,3 @@
+[23-Sep-2024 22:29:39 UTC] PHP Warning:  Undefined variable $prefixValue in /home/chromacars/public_html/hallsautosales.chromacars.com/wp-content/plugins/wp-importer-custom-fields-basic-pro/controllers/SendPassword.php on line 90
+[23-Sep-2024 22:29:41 UTC] PHP Warning:  Undefined variable $prefixValue in /home/chromacars/public_html/hallsautosales.chromacars.com/wp-content/plugins/wp-importer-custom-fields-basic-pro/controllers/SendPassword.php on line 90
+[24-Sep-2024 14:40:00 UTC] PHP Warning:  Undefined array key "reason" in /home/chromacars/public_html/hallsautosales.chromacars.com/wp-content/plugins/duplica/vendor/pluggable/marketing/src/Deactivator.php on line 185

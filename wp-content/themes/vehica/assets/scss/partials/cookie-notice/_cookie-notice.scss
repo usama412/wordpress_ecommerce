@@ -1,0 +1,17 @@
+#cookie-notice {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: inherit;
+  .cn-text-container {
+    margin-bottom: 0;
+  }
+  .cn-button.bootstrap {
+    @extend .vehica-button;
+    padding: 0 10px !important;
+    line-height: 28px;
+    font-weight: 700 !important;
+    border-radius: 5px !important;
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+  }
+}

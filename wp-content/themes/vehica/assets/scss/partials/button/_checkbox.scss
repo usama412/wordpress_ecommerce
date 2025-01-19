@@ -1,0 +1,111 @@
+/* Checkbox */
+.vehica-checkbox {
+  margin: 16px 0;
+  color: #6d6d6d;
+  @include clearfix;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: var(--primary) !important;
+      label {
+        color: var(--primary) !important;
+      }
+    }
+  }
+  label {
+    transition: all 0.2s ease;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    & + label {
+      font-size: 14px;
+      line-height: 16px;
+      display: block;
+      position: relative;
+      cursor: pointer;
+      min-height: 20px;
+      padding: 2px 0 0 31px;
+    }
+    & + label:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+    &:checked + label:after {
+      content: '\f00c';
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      left: 5px;
+      font-weight: 900;
+      color: #fff;
+      font-size: 11px;
+      top: 2px;
+    }
+    &:checked + label {
+      color: #2f3b48;
+    }
+  }
+}
+
+.vehica-checkbox--featured-big {
+  &:hover,
+  &:active,
+  &:focus {
+    label {
+      color: #222732 !important;
+    }
+  }
+  label {
+    display: inline-block !important;
+    color: #222732 !important;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #222732 !important;
+    }
+  }
+  input + label {
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #222732;
+  }
+  input + label {
+    padding: 2px 0 0 33px;
+  }
+  a {
+    color: var(--primary);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.vehica-checkbox input:checked + label:before {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.vehica-checkbox--hide-phone {
+  margin-bottom: 40px;
+}
+
+.vehica-checkbox--features-submit-listing {
+  margin: 12px 0;
+}

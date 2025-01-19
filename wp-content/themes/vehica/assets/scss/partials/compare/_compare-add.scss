@@ -1,0 +1,48 @@
+.vehica-compare-add {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1E232C;
+  .vehica-checkbox {
+    margin: 0;
+    padding: 10px 20px;
+  }
+  &:hover {
+    color: var(--primary);
+  }
+
+  .vehica-compare-add__checkbox {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #9FA0A0;
+    border-radius: 3px;
+    margin-right: 4px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+
+    &--checked {
+      background: var(--primary);
+      border: transparent;
+    }
+  }
+}
+
+.vehica-compare__arrows {
+  display: flex;
+  min-width: 88px;
+  align-items: center;
+  justify-content: space-between;
+  .vehica-carousel__arrow {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,107 @@
+.vehica-panel-menu-mobile {
+  background-color: #f2f5fb;
+  display: block;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.vehica-panel-menu-mobile__inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.vehica-panel-menu-mobile__avatar {
+  width: 144px;
+  height: 144px;
+  margin: 0 auto 37px auto;
+  text-align: center;
+  position: relative;
+  &:before {
+    border-radius: 50%;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(assets/img/user-placeholder.png);
+    background-size: cover;
+    z-index: 0;
+  }
+}
+
+.vehica-panel-menu-mobile__avatar__image {
+  display: block;
+  width: 144px;
+  height: 144px;
+  border: 9px solid #fff;
+  border-radius: 50%;
+  background: center center/cover;
+  background-color: #fff;
+  position: relative;
+}
+
+.vehica-panel-menu-mobile__avatar__image {
+  display: block;
+
+}
+
+.vehica-panel-menu-mobile__avatar__icon {
+  display: block;
+  i {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 27px;
+    transition: all 0.3s ease;
+  }
+}
+
+.vehica-panel-menu-mobile__navbar {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.vehica-panel-menu-mobile__navbar__inner {
+  display: flex;
+  padding: 0;
+  cursor: grab;
+  justify-content: flex-start;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.vehica-panel-menu-mobile__button {
+  white-space: nowrap;
+  border-radius: 10px;
+  border: solid 1px #e7edf3;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0 30px;
+  height: 64px;
+  line-height: 64px;
+  margin-right: 14px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: #222732;
+  &.vehica-panel-menu-mobile__button--active {
+    border-color: var(--primary);
+    background-color: var(--primary-light);
+    color: var(--primary);
+  }
+}

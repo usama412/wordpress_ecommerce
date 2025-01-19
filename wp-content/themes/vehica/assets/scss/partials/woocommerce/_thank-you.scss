@@ -1,0 +1,45 @@
+.vehica-thank-you {
+  text-align: center;
+  .vehica-car-form__section-title {
+    text-align: center;
+  }
+  .vehica-car-form {
+    padding-top: 0 !important;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .woocommerce-order-details,
+  .woocommerce-customer-details {
+    display: none;
+  }
+  .vehica-car-form__section {
+    margin-top: 0;
+    @media (min-width: 900px) {
+      padding: 50px 80px !important;
+    }
+  }
+}
+
+.vehica-thank-you__purchased {
+  margin-bottom: 30px;
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.vehica-thank-you__icon {
+  .fas {
+    min-width: 80px;
+    min-height: 80px;
+    background: var(--primary);
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+  }
+}
+
+.vehica-button--back-to-panel {
+  margin-top: 30px;
+}

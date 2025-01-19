@@ -1,0 +1,15 @@
+/* Background accent */
+.vehica-background-accent-v1 {
+  position: absolute;
+  width: 144px;
+  height: 117px;
+  display: block;
+  background: url(assets/img/dots.png);
+  background-size: cover;
+  z-index: 0;
+  top: 482px;
+  left: 2px;
+  @media (max-width: 1760px) {
+    display: none;
+  }
+}

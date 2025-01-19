@@ -1,0 +1,16 @@
+.vehica-car-form__location {
+  img {
+    max-width: none !important;
+  }
+}
+
+.vehica-car-form__location__address-field {
+  position: relative;
+  input[type=text] {
+    @include vehica-field;
+  }
+}
+
+.vehica-car-form__location__map {
+  height: 400px;
+}

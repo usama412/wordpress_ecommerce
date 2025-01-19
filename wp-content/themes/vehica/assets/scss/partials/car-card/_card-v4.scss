@@ -1,0 +1,41 @@
+.vehica-car-card-v4 {
+  .vehica-car-card__inner {
+    background-color: #ffffff !important;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    border: solid 1px #e7edf3;
+    transition: all 0.2s ease;
+    height: 100%;
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        border-color: var(--primary);
+      }
+    }
+  }
+
+  .vehica-car-card {
+    margin-bottom: 22px;
+  }
+
+  .vehica-car-card__name {
+    color: #222732;
+  }
+
+  .vehica-car-card__separator {
+    background: rgba(52, 59, 74, 0.1);
+  }
+
+  .vehica-car-card__price {
+    color: var(--primary);
+  }
+
+  .vehica-car-card__info__single {
+    &:first-child {
+      color: #fff;
+      background: #222732;
+    }
+  }
+
+  .vehica-car-card__content {
+    background: #ffffff !important;
+  }
+}

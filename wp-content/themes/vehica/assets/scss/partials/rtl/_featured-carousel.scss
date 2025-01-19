@@ -1,0 +1,15 @@
+.rtl {
+  .vehica-carousel-v1 .vehica-carousel-v1__slide {
+    margin-left: 22px !important;
+    margin-right: 0 !important;
+  }
+  @media (min-width: 768px) {
+    .vehica-tabs-top-v2__heading {
+      text-align: right;
+    }
+    .vehica-tabs-top-v2 .vehica-tab:nth-last-child(2) {
+      margin-right: 6px;
+      margin-left: 0;
+    }
+  }
+}

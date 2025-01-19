@@ -1,0 +1,69 @@
+.vehica-date-field__inputs-wrapper {
+  position: relative;
+  input[type=text] {
+    cursor: pointer;
+    @include vehica-field;
+    width: 100%;
+    font-weight: 700 !important;
+    &::placeholder {
+      font-weight: 600 !important;
+    }
+  }
+  @media (max-width: 599px) {
+    flex-wrap: wrap;
+  }
+}
+
+.vehica-car-form__grid-element--row,
+.vehica-car-form__grid-element--2of3 {
+  .vehica-date-field__inputs-wrapper {
+    xdisplay: flex;
+    margin: 0 -6px;
+    .vehica-date-field__inputs-wrapper__left {
+      margin-right: 6px;
+      min-width: 50%;
+      max-width: 50%;
+    }
+    .vehica-date-field__inputs-wrapper__left {
+      margin-left: 6px;
+      min-width: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+.vehica-date-field__inputs-wrapper {
+  display: flex;
+  margin: 0 -6px;
+}
+
+.vehica-date-field__inputs-wrapper__field {
+  position: relative;
+  margin: 0 6px;
+  width: 100%;
+  @media (max-width: 599px) {
+    &:nth-child(2) {
+      margin-top: 13px;
+    }
+  }
+}
+
+.vehica-date-field__clear {
+  position: absolute;
+  right: 27px;
+  cursor: pointer;
+  top: 19px;
+  color: var(--primary);
+}
+
+.picker__day--disabled, .picker__day--disabled:hover, .picker--focused .picker__day--disabled {
+  border-radius: 0 !important;
+}
+
+.picker__input.picker__input--active {
+  border-color: var(--primary) !important;
+}
+
+.vehica-has-error .picker__input {
+  border-color: red !important;
+}

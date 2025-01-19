@@ -1,0 +1,36 @@
+.vehica-marker-label {
+  padding: 6px 10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e7edf3;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #222732;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24) !important;
+  position: relative;
+  z-index: 99999;
+  transition: transofrm 0.2s ease;
+  transform: translateX(-50%);
+
+  &--active {
+    background: #0f141e;
+    border: 1px solid #0f141e;
+    color: #fff;
+    z-index: 99999999999 !important;
+  }
+
+  &--clicked {
+    color: #ffffff;
+    background: #0f141e;
+    border: 1px solid #0f141e;
+    z-index: 99999999999 !important;
+  }
+
+  &:hover {
+    background: #0f141e;
+    border: 1px solid #0f141e;
+    color: #fff;
+    z-index: 99999999999 !important;
+  }
+}

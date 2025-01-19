@@ -1,0 +1,280 @@
+.v-select {
+  &.vs--open {
+    z-index: 10000;
+  }
+}
+
+.vs__open-indicator {
+  display: none;
+}
+
+.vs__actions {
+  padding: 4px 40px 0 3px !important;
+
+  .vs__clear {
+    fill: var(--primary);
+    position: absolute;
+    background: #fff;
+    padding: 8px 13px;
+    z-index: 2;
+    top: 3px;
+    right: 5px;
+    @media (max-width: 1023px) {
+      top: 5px;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    right: 26px;
+    top: 16px;
+    content: '\f107';
+    //noinspection CssNoGenericFontName
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+    font-size: 14px;
+  }
+}
+
+.vs__dropdown-menu {
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  border: 1px solid #e7e9ee;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 2;
+  padding-bottom: 22px !important;
+  padding-top: 35px !important;
+  margin-top: -13px !important;
+  max-height: 370px !important;
+  @media (min-width: 768px) {
+    min-width: 100px !important;
+  }
+}
+
+.vs--single.vs--open {
+  .vs__selected-options {
+    border-radius: 10px;
+  }
+
+  .vs__dropdown-toggle {
+    border: 1px solid var(--primary) !important;
+  }
+
+  .vs__selected {
+    opacity: 1 !important;
+    color: var(--primary) !important;
+  }
+}
+
+.vs__dropdown-option {
+  min-height: 39px !important;
+  line-height: 39px !important;
+  font-size: 15px !important;
+  padding: 0 27px !important;
+  color: #0f141e !important;
+  cursor: pointer !important;
+}
+
+.vehica-option {
+  float: left;
+  width: 100%;
+  padding-right: 30px;
+
+  span.vehica-option__count {
+    position: absolute;
+    right: 22px;
+    color: #0f141e;
+    opacity: 0.5;
+    font-size: 15px;
+  }
+}
+
+.vs__dropdown-option:not(.vs__dropdown-option--disabled) {
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      font-weight: bold !important;
+      color: var(--primary) !important;
+
+      span {
+        color: var(--primary) !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  .vehica-option-selected {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--primary);
+  }
+}
+
+.v-select {
+  .vehica-option {
+    padding-left: 0;
+  }
+}
+
+.vs__dropdown-menu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  position: relative;
+  background-color: #f1f1f1;
+}
+
+.vs__dropdown-menu::-webkit-scrollbar {
+  width: 4px;
+  position: absolute;
+  background-color: #DBDBDB;
+}
+
+.vs__dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #DBDBDB;
+  border-radius: 4px !important;
+}
+
+@media (max-width: 1023px) {
+  .vs--open .vs__dropdown-toggle {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.vs--disabled {
+  font-weight: 600 !important;
+
+  &.v-select:not(.vs-open) .vs__dropdown-toggle {
+    background: #f4f4f4 !important;
+  }
+
+  cursor: not-allowed !important;
+
+  * {
+    cursor: not-allowed !important;
+  }
+
+  box-shadow: none;
+
+  .vs__clear,
+  .vs__dropdown-toggle,
+  .vs__open-indicator,
+  .vs__search,
+  .vs__selected {
+    background-color: transparent !important;
+  }
+}
+
+.vehica-taxonomy-select:not(.vehica-active-taxonomy) .vs--searchable,
+.vehica-car-form__field-select-single {
+  .vs__dropdown-option.vs__dropdown-option--highlight {
+    color: var(--primary) !important;
+    font-weight: bold !important;
+  }
+}
+
+.vehica-active-taxonomy {
+  .v-select:not(.vs--single) {
+    &:not(.vs-open) {
+      color: var(--primary);
+      .vs__dropdown-toggle {
+        min-height: 53px;
+      }
+      .vs__selected-options {
+        min-height: 51px;
+        position: absolute;
+        width: 200px;
+        display: block;
+        @include text-truncate;
+        & > input {
+          position: absolute;
+          display: none;
+        }
+        .vs__selected {
+          position: static;
+          max-height: 51px;
+          background: transparent;
+          border: none;
+          line-height: 51px;
+          display: inline;
+          &:not(:nth-last-child(2)):after {
+            content: ',';
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 2 Line Option - Fix START */
+.vs__selected-options {
+  max-height: 51px !important;
+}
+
+.vs__dropdown-menu > .vs__dropdown-option {
+  line-height: 19px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  white-space: initial !important;
+  & > span {
+    float: left;
+  }
+  @include clearfix;
+}
+
+/* Search Only */
+.vehica-active-taxonomy .vs__selected {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: flex;
+  float: left;
+  width: calc(100% - 10px) !important;
+  .vehica-option-selected {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: break-word !important;
+  }
+}
+
+/* Add Listing Only */
+.vehica-car-form__grid-element .vs__dropdown-menu .vehica-option {
+  padding-right: 0 !important;
+}
+
+.vehica-car-form__field-select-single--active {
+  .v-select:not(.vs-open) .vs__selected {
+    right: 0;
+  }
+  .vs__selected {
+    .vehica-option {
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      white-space: nowrap !important;
+      position: relative !important;
+      padding-right: 3px !important;
+      .vehica-option__count {
+        right: 0 !important;
+        top: 0 !important;
+      }
+    }
+  }
+}
+
+/* 2 Line Option - Fix END */
+@media (max-width: 767px) {
+  .vs__dropdown-option {
+    font-size: 16px !important;
+  }
+  .v-select input {
+    font-size: 16px !important;
+  }
+}
+
+.vehica-loading-options-spinner {
+  font-size: 14px;
+  margin-right: 3px;
+  color: var(--primary);
+}

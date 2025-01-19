@@ -1,0 +1,18 @@
+.vehica-our-team-bg {
+  position: relative;
+  overflow: hidden !important;
+  &:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background: #f2f5fb;
+    z-index: -1;
+    top: 0;
+    @media (min-width: 900px) {
+      top: 177px;
+    }
+  }
+}

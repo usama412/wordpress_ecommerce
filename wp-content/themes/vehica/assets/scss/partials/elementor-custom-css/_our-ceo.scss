@@ -1,0 +1,60 @@
+/* About us - our CEO say Elementor - Fix */
+.vehica-our-ceo {
+  .elementor-element-c390037 {
+    @media (min-width: 900px) and (max-width: 1199px) {
+      order: 10 !important;
+    }
+  }
+
+  @media (max-width: 899px) {
+    .elementor-element-7da9ec4 > .elementor-container {
+      max-width: none !important;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    .elementor-element-c52a488 {
+      max-width: 350px !important;
+      margin: 0 auto !important;
+    }
+  }
+}
+
+.vehica-our-ceo-v2 {
+  @media (max-width:899px) {
+    .elementor-image {
+      max-width: 220px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    .vehica-our-ceo-v2__col-1 {
+      min-width: 50% !important;
+      max-width: 50% !important;
+      width: 50% !important;
+      .elementor-image {
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    .vehica-our-ceo-v2__col-2 {
+      min-width: 50% !important;
+      max-width: 50% !important;
+      width: 50% !important;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .vehica-our-ceo-v2__col-1 {
+      min-width: 685px !important;
+    }
+    .vehica-our-ceo-v2__col-2 {
+      width: auto !important;
+    }
+    .vehica-our-ceo-v2__title {
+      font-size: 28px!important;
+      line-height: 36px!important;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.vehica-comments {
+  .comment-respond {
+    position: relative;
+    background: #eff3fa;
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 20px 12px;
+    @media (min-width: 768px) {
+      padding: 45px 37px;
+    }
+  }
+  .comment-respond:first-child {
+    margin-bottom: 0;
+  }
+  .comment-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+/* Respond modify clear border-top of the next comment*/
+.comment-respond {
+  &:after {
+    content: '';
+    background: #fff;
+    display: block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 2;
+    margin-right: 0;
+  }
+}

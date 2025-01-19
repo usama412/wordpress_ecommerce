@@ -1,0 +1,8 @@
+img.lazyload:not([src]) {
+  visibility: hidden;
+}
+
+img.lazyload[src=""],
+img.lazyloaded[src=""] {
+  display: none;
+}

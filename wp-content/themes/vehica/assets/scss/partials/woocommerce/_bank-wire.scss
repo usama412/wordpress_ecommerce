@@ -1,0 +1,58 @@
+.vehica-thank-you {
+  p {
+    font-size: 20px;
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .wc-bacs-bank-details-heading {
+    color: #222732 !important;
+    font-size: 30px !important;
+    font-weight: 900 !important;
+    line-height: 38px !important;
+  }
+  .wc-bacs-bank-details-account-name {
+    text-align: left !important;
+    font-size: 21px !important;
+    line-height: 30px !important;
+    font-weight: 600 !important;
+  }
+  ul.order_details {
+    margin: 30px 0 !important;
+    padding: 0 !important;
+    &:last-of-type {
+      margin-bottom: 20px!important;
+    }
+    li {
+      float: left !important;
+      width: 100% !important;
+      margin: 0 !important;
+      background: #fff;
+      padding: 30px 40px 0px;
+      border: none !important;
+      text-align: left !important;
+      text-transform: none !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      color: #222732;
+      &:first-child {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: 10px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-bottom: 30px;
+      }
+      strong {
+        display: block !important;
+        font-size: 24px !important;
+        font-weight: 900 !important;
+        line-height: 1.25 !important;
+        padding: 3px 0 0 0 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.vehica-user-email-v2 {
+  min-height: 10px;
+  span {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+  }
+  i {
+    display: inline-block;
+    float: left;
+    color: var(--primary);
+    margin-right: 16px;
+    top: 7px;
+    position: relative;
+  }
+}

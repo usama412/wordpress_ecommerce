@@ -1,0 +1,23 @@
+.vehica-user-phone {
+  display: block;
+  @include clearfix;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 26px;
+  color: #222732;
+  i {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: var(--primary);
+    margin-right: 10px;
+    line-height: 20px;
+    float: left;
+  }
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}

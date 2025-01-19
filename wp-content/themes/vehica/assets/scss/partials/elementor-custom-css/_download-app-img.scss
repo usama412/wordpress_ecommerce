@@ -1,0 +1,65 @@
+.vehica-elementor-custom-column-v1 {
+  & > .elementor-column-wrap,
+  & > .elementor-widget-wrap {
+    background: var(--primary) !important;
+    border-radius: 10px;
+    @media (min-width: 450px) and (max-width: 899px) {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+}
+
+.vehica-elementor-custom-column-v2 {
+  & > .elementor-column-wrap {
+    @media (min-width: 450px) and (max-width: 899px) {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+}
+
+.vehica-download-app-img {
+  position: relative;
+  min-height: 20px;
+  img {
+    position: absolute;
+    width: auto !important;
+    max-width: none !important;
+    @media (max-width: 899px) {
+      height: 340px;
+      top: -176px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding-left: 10px;
+    }
+    @media (min-width: 900px) and (max-width: 1199px) {
+      min-height: 570px;
+      height: 570px;
+      right: 0;
+      bottom: 0;
+      top: -79px;
+    }
+    @media (min-width: 1200px) {
+      min-height: 440px;
+      height: 440px;
+      text-align: right;
+      bottom: 0;
+      right: -50px;
+      top: -57px;
+    }
+    @media (min-width: 1080px) {
+      right: -10px;
+    }
+  }
+}
+
+.vehica-heading-mod-v1 {
+  .elementor-heading-title {
+    @media (min-width: 1200px) and (max-width: 1460px) {
+      font-size: 42px !important;
+      line-height: 50px !important;
+    }
+  }
+}

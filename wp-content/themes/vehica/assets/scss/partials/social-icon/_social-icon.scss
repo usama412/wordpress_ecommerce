@@ -1,0 +1,85 @@
+.vehica-user-field__social_buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: -8px;
+}
+
+.vehica-social-icon {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41px;
+    height: 41px;
+    background: #3b4250;
+    color: #fff;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 5px;
+    text-align: center !important;
+    transition: all 0.2s ease;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 1000px;
+    line-height: 1000px;
+    margin-top: -500px;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease;
+  }
+}
+
+.vehica-info__field--social-icons {
+  text-align: right;
+}
+
+.elementor-widget-vehica_social_user_widget {
+  @include clearfix;
+}
+
+.vehica-social-icons-wrapper--profile {
+  margin-right: -4px;
+  margin-left: -4px;
+
+  .vehica-social-icon {
+    a {
+      width: 32px;
+      height: 32px;
+      font-size: 15px;
+      background: #fff;
+      color: var(--primary);
+      margin-left: 4px;
+      margin-right: 4px;
+
+      svg {
+        path {
+          fill: var(--primary);
+        }
+      }
+
+      @media (min-width: $min-hover-width) {
+        &:hover {
+          background: var(--primary-light);
+        }
+      }
+    }
+  }
+}

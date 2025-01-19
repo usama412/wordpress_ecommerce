@@ -1,0 +1,151 @@
+.vehica-search-classic-v2 {
+  max-width: 500px;
+  input {
+    font-weight: 700;
+  }
+  @media (min-width: 900px) {
+    max-width: 800px;
+  }
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  .v-select:not(.vs-open) input {
+    font-weight: 700;
+  }
+}
+
+.vehica-search-classic-v2__inner {
+  position: relative;
+}
+
+.vehica-search-classic-v2__search-button-wrapper {
+  @media (min-width: 900px) {
+    margin-left: 4px;
+  }
+  .vehica-button {
+    width: 57px;
+    height: 53px;
+    padding-left: 0;
+    padding-right: 0;
+    .vehica-button__text {
+      display: none;
+    }
+    i {
+      margin: 0;
+    }
+  }
+  @media (max-width: 899px) {
+    width: 100%;
+    .vehica-button {
+      width: 100%;
+      i {
+        margin-left: 7px;
+      }
+      .vehica-button__text {
+        display: inline;
+        i {
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+}
+
+.vehica-search-classic-v2__top {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: -10px;
+  .vehica-radio {
+    position: relative;
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #fff;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+    }
+    label {
+      font-size: 17px;
+      z-index: 2;
+      font-weight: 600;
+      line-height: 21px;
+      padding: 10px;
+      margin: 0 18px 18px;
+      transition: all 0.3s ease-in-out;
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .vehica-radio--active {
+    &:after {
+      opacity: 1;
+      bottom: 0;
+    }
+    label {
+      color: var(--primary);
+    }
+  }
+  .vehica-radio {
+    color: #fff;
+  }
+}
+
+.vehica-search-classic-v2__fields--wrapper {
+  position: relative;
+}
+
+.vehica-search-classic-v2__fields {
+  z-index: 2;
+  @media (min-width: 900px) {
+    display: flex;
+  }
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px 22px 17px 22px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  position: relative;
+  .vehica-search__field {
+    width: 100%;
+    margin-bottom: 10px;
+    @media (min-width: 900px) {
+      margin: 0 4px;
+    }
+  }
+}
+
+.vehica-taxonomy-select.vehica-active-taxonomy .vehica-form-button {
+  @include text-truncate;
+}
+
+.vehica-search-classic-v2__inner--hide-shadow {
+  .vehica-search-classic-v2-mask-bottom {
+    display: none;
+  }
+}
+
+.vehica-search-classic-v2-mask-bottom {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  opacity: 0.59;
+}

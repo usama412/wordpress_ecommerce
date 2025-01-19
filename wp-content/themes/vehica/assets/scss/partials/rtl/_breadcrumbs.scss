@@ -1,0 +1,18 @@
+.rtl {
+  .vehica-breadcrumbs__last {
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    margin-left: 15px;
+  }
+  .vehica-breadcrumbs__separator {
+    left: 2px;
+    right: auto;
+  }
+  @media (max-width: 899px) {
+    .vehica-breadcrumbs__single:first-child {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+}

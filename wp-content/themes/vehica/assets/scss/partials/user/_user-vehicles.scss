@@ -1,0 +1,25 @@
+.vehica-user-vehicles {
+  margin: 0 4px 52px;
+  .vehica-car-card {
+    padding: 0 11px 18px 11px;
+    width: 100%;
+    float: left;
+    @media (min-width: 601px) {
+      width: 50%;
+    }
+    @media (min-width: 901px) {
+      width: 33.333%;
+    }
+    @media (min-width: 1200px) {
+      width: 25%;
+    }
+  }
+}
+
+.vehica-user-vehicles__title {
+  font-size: 37px;
+  line-height: 47px;
+  font-weight: 900;
+  margin: 50px 30px;
+  text-align: center;
+}

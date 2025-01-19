@@ -1,0 +1,158 @@
+.vehica-panel-account {
+  margin-top: 32px;
+  border-radius: 20px;
+  background-color: #f2f5fb;
+  overflow: hidden;
+  input,
+  .v-select:not(.vs-open) .vs__selected {
+    color: #222732;
+    font-weight: 700;
+  }
+}
+
+.vehica-panel-account__inner {
+  padding: 45px 15px 50px;
+  @media (min-width: 768px) {
+    padding: 45px 85px 75px 85px;
+  }
+}
+
+.vehica-panel-account__title {
+  color: #222732;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  margin-bottom: 34px;
+}
+
+.vehica-panel-account__delete {
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-top: 40px;
+  display: inline-block;
+  @media (max-width: 899px) {
+    text-align: center;
+  }
+}
+
+.vehica-panel-account__image-wrapper {
+  background-color: rgba(226, 230, 238, 0.5);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (min-width: 900px) {
+    min-width: 357px;
+    padding-top: 47px;
+  }
+}
+
+.vehica-panel-account__selected-image {
+  position: relative;
+  z-index: 100;
+  height: 182px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.vehica-panel-account__image-label {
+  margin-top: 27px;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #99a1b2;
+  cursor: pointer;
+  display: block;
+
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+.vehica-panel-account__image {
+  margin-top: 32px;
+  display: inline-block;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(153, 161, 178, 0.16);
+  width: 187px;
+  height: 182px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(assets/img/user-placeholder.png);
+    background-size: cover;
+    z-index: 0;
+  }
+  @media(min-width: 900px) {
+    margin-top: 0;
+  }
+}
+
+.vehica-panel-account__image--selected {
+  cursor: auto;
+}
+
+.vehica-panel-account__details-wrapper {
+  @media (min-width: 900px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.vehica-panel-account__details {
+  max-width: 1100px;
+}
+
+.vehica-panel-account__button-save {
+  margin-top: 32px;
+  @media (max-width: 899px) {
+    margin-top: 10px;
+    width: 100%;
+    .vehica-button {
+      width: 100%;
+    }
+  }
+}
+
+.vehica-panel-account__social {
+  max-width: 881px;
+}
+
+.vehica-panel-account__change-password {
+  max-width: 881px;
+}
+
+.vehica-panel-account__change-password__space {
+  width: 100%;
+}
+
+.vehica-panel-account__button {
+  display: inline-block;
+  border: 0;
+  border-radius: 10px;
+  padding: 0 72px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  height: 53px;
+  line-height: 53px;
+}
+

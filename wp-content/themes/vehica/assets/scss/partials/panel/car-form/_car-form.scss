@@ -1,0 +1,33 @@
+.vehica-car-form {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  .v-select:not(.vs-open) .vs__selected,
+  input {
+    font-weight: 600 !important;
+  }
+}
+
+.vehica-car-form__inner {
+  padding: 0 15px;
+  @media (min-width: 900px) {
+    padding: 0 30px;
+  }
+}
+
+.vehica-has-error {
+  .vehica-car-form__field, .v-select:not(.vs-open) .vs__dropdown-toggle {
+    border-color: red;
+  }
+  &.vehica-car-form__section {
+    border-color: red;
+  }
+  .wp-editor-container {
+    border-color: red!important;
+  }
+}
+
+.vehica-car-form-field__description {
+  padding: 0 !important;
+}

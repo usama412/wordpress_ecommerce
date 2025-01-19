@@ -1,0 +1,18 @@
+.vehica-comments {
+  .form-submit {
+    margin-bottom: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    @media (min-width: 768px) {
+      margin-top: 15px;
+      width: 33.33% !important;
+      display: inline-block;
+      .vehica-button {
+        width: 100%;
+      }
+    }
+  }
+}

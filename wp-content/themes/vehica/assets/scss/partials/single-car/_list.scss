@@ -1,0 +1,28 @@
+.vehica-car-list {
+  margin: 0 -20px;
+  word-wrap: break-word;
+}
+
+.vehica-car-list__element {
+  padding: 0 20px;
+  position: relative;
+}
+
+.vehica-car-list__element__inner {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  float: left;
+  color: #222732;
+}
+
+.vehica-car-list__element__dot {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: var(--primary);
+  font-size: 24px;
+  line-height: 17px;
+  float: left;
+}

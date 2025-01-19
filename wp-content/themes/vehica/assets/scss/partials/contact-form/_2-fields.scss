@@ -1,0 +1,31 @@
+.vehica-2-fields {
+  @include clearfix;
+  @media (min-width: 460px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.vehica-2-fields__left {
+  float: left;
+  width: 100%;
+  @media (min-width: 460px) {
+    padding-right: 8px;
+  }
+
+  @media (min-width: 460px) {
+    width: 60%;
+  }
+}
+
+.vehica-2-fields__right {
+  float: left;
+  width: 100%;
+  @media (min-width: 460px) {
+    padding-left: 8px;
+  }
+  @media (min-width: 460px) {
+    width: 40%;
+    text-align: right;
+  }
+}

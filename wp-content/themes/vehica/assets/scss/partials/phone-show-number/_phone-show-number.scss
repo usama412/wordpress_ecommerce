@@ -1,0 +1,27 @@
+.vehica-phone-show-number {
+  a, button {
+    display: block;
+    text-align: center;
+    border: 1px solid var(--primary);
+    width: 100%;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #0f141e;
+    padding: 14px 15px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    i {
+      color: var(--primary);
+      margin-right: 14px;
+    }
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        background: var(--primary-light);
+        color: var(--primary);
+      }
+    }
+  }
+}

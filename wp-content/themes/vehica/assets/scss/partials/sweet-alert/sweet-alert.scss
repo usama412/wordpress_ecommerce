@@ -1,0 +1,105 @@
+.swal2-shown {
+  padding-right: 0 !important;
+}
+
+.swal2-popup {
+  border-radius: 10px !important;
+}
+
+.swal2-title {
+  font-size: 18px !important;
+  line-height: 24px !important;
+  font-family: inherit !important;
+  color: #222732 !important;
+  font-weight: 600 !important;
+}
+
+.swal2-actions .swal2-confirm:not([disabled]) {
+  font-size: 17px !important;
+  line-height: 21px !important;
+  font-weight: 600 !important;
+  text-align: center;
+  color: #fff !important;
+  border: 0 solid transparent !important;
+  cursor: pointer !important;
+  padding: 16px 25px 16px 25px !important;
+  vertical-align: top !important;
+  border-radius: 10px !important;
+  background-color: var(--primary) !important;
+  transition: all 0.2s ease-in-out !important;
+  outline: 0px solid transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  @media (min-width: $min-hover-width) {
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: var(--primary) !important;
+    }
+  }
+  @include transition-mix();
+  align-items: center;
+  text-decoration: none;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      &:before {
+        transform: scale(1, 1);
+        transform-origin: left top;
+      }
+    }
+  }
+  i {
+    margin-right: 7px;
+  }
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.swal2-actions .swal2-cancel {
+  font-size: 17px !important;
+  line-height: 21px !important;
+  font-weight: 600 !important;
+  text-align: center;
+  color: #222732 !important;
+  border: 0 solid transparent !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  padding: 16px 25px 16px 25px !important;
+  vertical-align: top !important;
+  border-radius: 10px !important;
+  background-color: #eff3fa !important;
+  transition: all 0.2s ease-in-out !important;
+  outline: 0px solid transparent !important;
+  background-image: none !important;
+  &:hover {
+    opacity: 0.85;
+  }
+  @media (min-width: $min-hover-width) {
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: #eff3fa !important;
+    }
+  }
+  @include transition-mix();
+  align-items: center;
+  transform: translateZ(0);
+  text-decoration: none;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      &:before {
+        transform: scale(1, 1);
+        transform-origin: left top;
+      }
+    }
+  }
+  i {
+    margin-right: 7px;
+  }
+}
+
+.swal2-icon.swal2-warning {
+  border-color: #21242b !important;
+  color: #21242b !important;
+}

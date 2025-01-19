@@ -1,0 +1,17 @@
+.vehica-text-field {
+  position: relative;
+  .vehica-form-button__clear {
+    top: 3px;
+  }
+  input {
+    @include vehica-field;
+  }
+  &.vehica-text-field-active {
+    input {
+      border-color: var(--primary);
+      color: var(--primary);
+      font-weight: bold;
+    }
+  }
+}
+

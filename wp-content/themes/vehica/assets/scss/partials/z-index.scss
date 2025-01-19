@@ -1,0 +1,45 @@
+.vehica-mobile-menu__wrapper {
+  z-index: 100000;
+}
+
+.vehica-top-bar {
+  z-index: 10;
+}
+
+.vehica-menu__desktop {
+  z-index: 9600;
+}
+
+.vehica-inventory-v1__sort__select {
+  z-index: 100;
+}
+
+.vehica-search-classic-v2 .vs1__combobox {
+  position: relative;
+  z-index: 100000;
+}
+
+.vehica-car-form__section .vs--open,
+.vehica-results__field .vs--open {
+  z-index: 100000;
+}
+
+.vs__dropdown-toggle {
+  z-index: 9000;
+}
+
+.vehica-mobile-menu__wrapper .vehica-mobile-menu__open .vehica-mobile-menu__currency-switcher {
+  z-index: 99999999999999;
+}
+
+.vehica-currency-switcher__list {
+  z-index: 999999999999999;
+}
+
+.pswp {
+  z-index: 9999999999999999 !important;
+}
+
+.swal2-container {
+  z-index: 9999999999999999 !important;
+}

@@ -1,0 +1,55 @@
+.vehica-panel-pagination {
+  margin-top: 55px;
+  justify-content: center;
+  display: none;
+  @media (min-width: 900px) {
+    display: flex;
+  }
+  .vehica-panel-pagination__element {
+    display: block;
+    font-size: 22px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #2f3b48;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    &.vehica-panel-pagination__element--arrow {
+      box-shadow: 0 3px 40px 0 #dbe0e8;
+      background: #fff;
+      border-radius: 50%;
+      font-size: 15px;
+      z-index: 3;
+    }
+    &.vehica-panel-pagination__element--active {
+      color: var(--primary);
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary-light);
+        border-radius: 50%;
+        z-index: 2;
+      }
+      span {
+        position: relative;
+        z-index: 3;
+      }
+    }
+  }
+}

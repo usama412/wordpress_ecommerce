@@ -1,0 +1,103 @@
+.vehica-search-classic-v1,
+.vehica-search-classic-v2 {
+  .vehica-form-button {
+    font-weight: bold !important;
+  }
+  .vehica-taxonomy-select .vehica-form-button {
+    min-width: 100%;
+    max-width: 10px;
+  }
+}
+
+.vehica-search-classic-v1 {
+  .vehica-form-button {
+    font-weight: bold;
+  }
+  input {
+    font-weight: bold;
+  }
+  .vehica-search__field {
+    min-height: 53px;
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  vehica-taxonomy-search-field div > .vehica-search-classic-v1 div.vehica-form-button[v-if="false"] {
+    margin-bottom: 12px;
+  }
+}
+
+.vehica-search-classic-v2 {
+  @media (max-width: 899px) {
+    .vehica-form-button {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.vehica-show--my-location {
+  i {
+    @media (max-width: 899px) {
+      position: absolute;
+      top: 6px;
+      left: 12px;
+      z-index: 20;
+      padding: 14px 10px;
+      color: var(--primary);
+      cursor: pointer;
+    }
+    @media (min-width: 900px) {
+      position: absolute;
+      top: 12px;
+      left: 15px;
+      z-index: 20;
+      color: var(--primary);
+      cursor: pointer;
+      padding: 6px;
+    }
+  }
+  .vehica-show--my-location__label {
+    opacity: 0;
+    white-space: nowrap;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    position: absolute;
+    left: -8px;
+    bottom: -19px;
+    display: inline-block;
+    background: #232732;
+    padding: 7px 15px;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    color: #fff;
+    margin: 4px 12px -6px 8px;
+    border-radius: 4px;
+    z-index: 9998;
+    transition: all 0.2s ease;
+    &:after {
+      content: '';
+      position: absolute;
+      top: -9px;
+      left: 20px;
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid #232732;
+    }
+  }
+  @media (min-width: 1024px) {
+    i:hover + .vehica-show--my-location__label {
+      opacity: 1;
+    }
+  }
+}
+
+.vehica-field-filled input[type=text] {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.vehica-display-show-my-location input[type=text] {
+  padding-left: 50px;
+}

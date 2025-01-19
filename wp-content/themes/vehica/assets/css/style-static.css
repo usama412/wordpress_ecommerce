@@ -1,0 +1,378 @@
+:root {
+    --primary: #ff4605;
+    --primary-light: #fff0eb;
+}
+
+body {
+    font-family: "Muli", Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+    }
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: "Muli", Arial, Helvetica, sans-serif;
+}
+
+a:hover, a:active, a:focus {
+    color: var(--primary);
+}
+
+@media only screen and (min-width: 1200px) {
+    .vehica-hide-desktop {
+        display: none;
+    }
+
+    .vehica-grid__element--desktop-1of1 {
+        width: 100%;
+    }
+
+    .vehica-grid__element--desktop-1of2 {
+        width: 50%;
+    }
+
+    .vehica-grid__element--desktop-1of3 {
+        width: 33.3333%;
+    }
+
+    .vehica-grid__element--desktop-1of4 {
+        width: 25%;
+    }
+
+    .vehica-grid__element--desktop-1of5 {
+        width: 20%;
+    }
+
+    .vehica-grid__element--desktop-1of6 {
+        width: 16.6666%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .vehica-hide-tablet {
+        display: none;
+    }
+
+    .vehica-grid__element--tablet-1of1 {
+        width: 100%;
+    }
+
+    .vehica-grid__element--tablet-1of2 {
+        width: 50%;
+    }
+
+    .vehica-grid__element--tablet-1of3 {
+        width: 33.3333%;
+    }
+
+    .vehica-grid__element--tablet-1of4 {
+        width: 25%;
+    }
+
+    .vehica-grid__element--tablet-1of5 {
+        width: 20%;
+    }
+
+    .vehica-grid__element--tablet-1of6 {
+        width: 16.6666%;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .vehica-hide-mobile {
+        display: none;
+    }
+
+    .vehica-grid__element--mobile-1of1 {
+        width: 100%;
+    }
+
+    .vehica-grid__element--mobile-1of2 {
+        width: 50%;
+    }
+
+    .vehica-grid__element--mobile-1of3 {
+        width: 33.3333%;
+    }
+
+    .vehica-grid__element--mobile-1of4 {
+        width: 25%;
+    }
+
+    .vehica-grid__element--mobile-1of5 {
+        width: 20%;
+    }
+
+    .vehica-grid__element--mobile-1of6 {
+        width: 16.6666%;
+    }
+}
+
+@media (min-width: 768px) {
+    .vehica-wrapper {
+        padding-bottom: 200px;
+    }
+}
+
+.vehica-footer {
+    padding: 50px 0;
+    background: #222732;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .vehica-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.vehica-footer .vehica-footer__inner {
+    max-width: 1140px;
+    padding: 0 15px;
+    text-align: center;
+    color: #A6A9AE;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .vehica-footer .vehica-footer__inner {
+        padding: 0 30px;
+    }
+}
+
+.vehica-blog {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.vehica-blog:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+@media (min-width: 1024px) {
+    .vehica-blog {
+        padding: 0 30px;
+        max-width: 1468px;
+    }
+}
+
+.vehica-blog.vehica-blog--no-sidebar .vehica-blog__content {
+    width: 100%;
+}
+
+.vehica-blog-page {
+    max-width: 1058px;
+    margin: 0 auto;
+}
+
+.vehica-blog__content {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .vehica-blog__content {
+        float: left;
+        width: 72%;
+        padding-right: 22px;
+    }
+}
+
+.vehica-blog__sidebar {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .vehica-blog__sidebar {
+        float: left;
+        width: 28%;
+        padding-left: 23px;
+    }
+}
+
+.vehica-blog-title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+    .vehica-blog-title {
+        margin-bottom: 50px;
+    }
+}
+
+.vehica-logo a {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.vehica-menu__wrapper {
+    position: static;
+    margin-bottom: 50px;
+    background: #0f141e;
+    height: 100px;
+}
+
+.vehica-mobile-menu__wrapper {
+    background: #0f141e;
+    position: static;
+    margin-bottom: 30px;
+    height: 71px;
+}
+
+.vehica-mobile-menu__wrapper .vehica-logo {
+    position: absolute;
+    left: 70px;
+}
+
+.vehica-mobile-menu__wrapper .vehica-mobile-menu__logo {
+    text-align: left;
+    width: 100%;
+}
+
+.vehica-mobile-menu__wrapper .vehica-mobile-menu__open .vehica-mobile-menu__open__top {
+    justify-content: flex-end;
+}
+
+.menu > ul > div > .vehica-menu__link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.vehica-blog-card {
+    width: 100%;
+}
+
+.vehica-blog__inner {
+    margin: 0 auto;
+}
+
+.vehica-blog__inner:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+@media (min-width: 1024px) {
+    .vehica-blog__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .vehica-post-single__meta {
+        margin-bottom: 20px;
+    }
+}
+
+.vehica-post-single__meta:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.vehica-post-single__meta .vehica-post-single__meta__single {
+    margin-bottom: 10px;
+    display: inline-block;
+    float: left;
+    margin-right: 35px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #95989d;
+}
+
+.vehica-post-single__meta .vehica-post-single__meta__single a {
+    color: #95989d;
+}
+
+.vehica-post-single__meta .vehica-post-single__meta__single a:hover {
+    color: var(--primary);
+}
+
+.vehica-post-single__category i {
+    color: var(--primary);
+    margin-right: 4px;
+}
+
+.vehica-post-field__text {
+    margin-bottom: 50px;
+}
+
+.vehica-post-field__text:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.vehica-post-single__tags {
+    margin: 30px 0;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+@media (min-width: 768px) {
+    .vehica-post-single__tags {
+        margin: 50px 0;
+    }
+}
+
+.vehica-post-single__tags i {
+    color: var(--primary);
+    margin-right: 12px;
+}
+
+.vehica-post-single__tags .vehica-post-field__tags__single {
+    float: initial;
+    line-height: 1.75;
+    color: #95989d;
+}
+
+.vehica-post-single__tags .vehica-post-field__tags__single:hover {
+    color: var(--primary);
+}
+
+.vehica-post-single__image {
+    margin: 0 0 40px 0;
+}
+
+.vehica-post-single__image img {
+    border-radius: 10px;
+}
+
+.vehica-no-results-search {
+    max-width: 500px;
+}
+
+.vehica-no-results-search h3 {
+    line-height: 27px;
+    font-weight: 800;
+    white-space: initial;
+    color: #222732;
+    margin-bottom: 10px;
+}
+
+.vehica-pagination-mobile--blog {
+    margin-top: 14px;
+}
+
+@media (max-width: 1024px) {
+    .vehica-pagination--blog {
+        margin-top: 14px;
+    }
+}

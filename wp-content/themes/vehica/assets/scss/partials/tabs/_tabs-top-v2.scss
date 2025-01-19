@@ -1,0 +1,69 @@
+.vehica-tabs-top-v2 {
+  @media (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  .vehica-tab {
+    margin: 0 6px;
+    padding: 0 29px;
+    @media (min-width: 768px) {
+      &:nth-last-child(2) {
+        margin-right: 0;
+      }
+    }
+
+    &:first-child {
+      margin-left: 15px;
+    }
+  }
+}
+
+.vehica-tabs-top-v2__heading {
+  font-size: 38px;
+  line-height: 48px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  text-align: center;
+  @media (min-width: 900px) {
+    font-size: 60px;
+    line-height: 76px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: 1024px) {
+    font-size: 50px;
+    line-height: 63px;
+  }
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.vehica-tabs-top-v2__tabs {
+  display: flex;
+  margin-bottom: 36px;
+  overflow-y: scroll;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    overflow: hidden;
+    justify-content: flex-end;
+  }
+
+  .vehica-tab {
+    margin: 0 6px;
+    padding: 0 29px;
+  }
+}

@@ -1,0 +1,55 @@
+.vehica-inventory-v1__loader {
+  display: none;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 100001;
+  svg {
+    margin-top: 45px;
+    width: 50px;
+    height: 34px;
+    xanimation: mcrotate 0.5s infinite linear;
+    fill: var(--primary);
+  }
+}
+
+.vehica-compare__loader {
+  height: 300px;
+  position: relative;
+}
+
+.vehica-compare__loader-inner {
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 100001;
+  svg {
+    margin-top: 45px;
+    width: 50px;
+    height: 34px;
+    xanimation: mcrotate 0.5s infinite linear;
+    fill: var(--primary);
+  }
+}
+
+@keyframes mcrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.vehica-inventory-v1__is-reloading {
+  @media (min-width: 1024px) {
+    .vehica-inventory-v1__loader {
+      display: block;
+    }
+    .vehica-inventory-v1__2-cols__left,
+    .vehica-inventory-v1__results {
+      opacity: 0;
+    }
+  }
+}

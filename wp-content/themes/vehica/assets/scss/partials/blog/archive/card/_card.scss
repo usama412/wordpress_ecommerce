@@ -1,0 +1,223 @@
+.vehica-blog-card {
+  margin: 0 0 25px 0;
+  overflow: hidden;
+}
+
+.vehica-blog-card__date {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #95989d;
+  margin-bottom: 15px;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+  i {
+    color: var(--primary);
+    margin-right: 4px;
+  }
+}
+
+.vehica-blog-card__title {
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 700;
+  white-space: initial;
+  color: #222732;
+  display: block;
+  text-align: center;
+  word-break: break-word;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: var(--primary);
+    }
+  }
+  @media (min-width: 768px) {
+    text-align: left;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.vehica-blog-card__inner {
+  background: #FFFFFF;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  border: 1px solid #e7edf3;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  position: relative;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      border-color: var(--primary);
+    }
+  }
+}
+
+.vehica-blog-card__excerpt {
+  margin: 0 0 16px 0;
+  color: #222732;
+  opacity: 0.48;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.64;
+  text-align: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 768px) {
+    text-align: left;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.vehica-blog-card__image {
+  position: relative;
+  display: block;
+  background: #f2f5fb;
+  overflow: hidden;
+  padding-top: 55.5224%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-fit: cover;
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+    transition: opacity 0.8s, transform 0.8s, filter 400ms;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  @media (min-width: $min-hover-width) {
+    &:hover img {
+      opacity: .9;
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+}
+
+.vehica-blog-card__content {
+  padding: 25px 15px 25px 15px;
+  text-align: center;
+  h3 {
+    margin-bottom: 10px;
+  }
+  @media (min-width: 768px) {
+    padding: 30px;
+    text-align: left;
+  }
+}
+
+.vehica-blog-card__content__top {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+.vehica-blog-card__image-placeholder {
+  background: #eff0f1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &:after {
+    content: "\f03e";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.5;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    margin: -25px auto 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+.vehica-blog-card__title--truncate {
+  @include text-truncate;
+}
+
+.vehica-blog-card__button-wrapper {
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+  a {
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #222732;
+    padding: 10px 0;
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}
+
+.vehica-blog-card__author {
+  @include clearfix;
+  margin-bottom: 20px;
+  margin-right: 18px;
+  text-align: center;
+  display: inline-block;
+  i {
+    color: var(--primary);
+  }
+}
+
+.vehica-blog-card__author__image {
+  display: inline-block;
+  margin-right: 7px;
+  float: left;
+  position: relative;
+  top: -2px;
+  img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    float: left;
+  }
+}
+
+.vehica-blog-card__author__name {
+  float: left;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #95989d;
+  i {
+    margin-right: 4px;
+  }
+}

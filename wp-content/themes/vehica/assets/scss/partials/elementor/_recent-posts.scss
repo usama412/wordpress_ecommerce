@@ -1,0 +1,47 @@
+.elementor-widget-wp-widget-recent-posts {
+  h5 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 800;
+    color: #222732;
+    margin-bottom: 25px;
+  }
+  ul {
+    padding-left: 0;
+    list-style: none;
+    li {
+      padding-left: 26px;
+      padding-right: 6px;
+      margin-bottom: 29px;
+      position: relative;
+      transition: all 0.2s ease;
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f061";
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        font-size: 16px;
+        color: var(--primary);
+      }
+      a {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #95989d;
+      }
+      @media (min-width: $min-hover-width) {
+        &:hover {
+          padding-left: 32px;
+          padding-right: 0;
+          a {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}

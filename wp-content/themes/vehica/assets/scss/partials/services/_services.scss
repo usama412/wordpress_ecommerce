@@ -1,0 +1,65 @@
+.vehica-services {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1468px;
+  justify-content: center;
+  margin: 0 -6px;
+  @media (min-width:900px) {
+    margin: 0 -15px;
+  }
+  .vehica-services__service-wrapper {
+    padding: 0 6px;
+    width: 100%;
+    //max-width: 414px;
+    @media (min-width:900px) {
+      padding: 0 15px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .vehica-services__service-wrapper {
+      width: 33.3333%;
+    }
+  }
+}
+
+.vehica-services__service {
+  background: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  text-align: center;
+  display: block;
+  padding-bottom: 52px;
+  margin-bottom: 22px;
+  &:hover {
+    box-shadow: 0 3px 41px 0 rgba(0, 0, 0, 0.16);
+    .vehica-services__button {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+  }
+}
+
+.vehica-services__image {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  margin-bottom: 39px;
+  @media (min-width: 1200px) {
+    height: 252px;
+  }
+}
+
+.vehica-services__name {
+  display: block;
+  color: #222732;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  text-align: center;
+  @media (min-width: 900px) {
+    font-size: 24px;
+  }
+}

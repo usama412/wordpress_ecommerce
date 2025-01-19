@@ -1,0 +1,6 @@
+.vehica-sticky-element {
+  width: 100%;
+  .elementor-widget:not(:last-child) {
+    margin-bottom: 0 !important;
+  }
+}

@@ -1,0 +1,15 @@
+/* Comment notes - e.g. "Your email address will not be published. Required fields are marked" */
+.comment-notes {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+  color: #2f3b48;
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+}

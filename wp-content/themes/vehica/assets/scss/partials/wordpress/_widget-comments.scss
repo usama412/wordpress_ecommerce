@@ -1,0 +1,53 @@
+.widget_recent_comments ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget_recent_comments > ul,
+#xrecentcomments {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #e7edf3;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  padding: 22px;
+}
+
+.recentcomments {
+  margin: 16px 0;
+  padding: 0 0 16px 30px;
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f075";
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    left: 0;
+    pointer-events: none;
+    font-size: 16px;
+    color: var(--primary);
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+  border-bottom: 1px solid #f2f5fb;
+  &:last-of-type {
+    border: none;
+  }
+  a {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: 700;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,32 @@
+.vehica-carousel__arrow {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 3px 40px 0 #dbe0e8;
+  border: 0 solid transparent;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 2;
+  text-align: center;
+  &:after {
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #2f3b48;
+    z-index: 1;
+    transition: all 0.2s ease;
+  }
+}
+
+.vehica-carousel__arrow--left {
+  &:after {
+    content: '\f053';
+  }
+}
+
+.vehica-carousel__arrow--right {
+  &:after {
+    content: '\f054';
+  }
+}

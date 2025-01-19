@@ -1,0 +1,38 @@
+.vehica-car-features-v2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vehica-car-features-v2__feature {
+  padding: 0 30px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  width: 16.6%;
+  &:after {
+    content: '';
+    background: #d8d8d8;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.vehica-car-features-v2__feature__label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.vehica-car-features-v2__feature__value {
+  width: 100%;
+  text-align: center;
+}

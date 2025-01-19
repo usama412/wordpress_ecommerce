@@ -1,0 +1,15 @@
+.rtl {
+  .vehica-form-button {
+    text-align: right;
+    padding-left: 45px;
+    padding-right: 27px;
+    &:after {
+      right: auto;
+      left: 26px;
+    }
+  }
+  .vehica-form-button__clear {
+    left: 11px;
+    right: initial;
+  }
+}

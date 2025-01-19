@@ -1,0 +1,19 @@
+.vehica-blog-card-featured {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background: var(--primary);
+  width: auto;
+  padding: 3px 50px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  transform: rotate(-41deg);
+  margin-left: -10px;
+  top: 14px;
+  left: -38px;
+}
+
+.sticky .vehica-blog-card-featured {
+  display: block;
+}

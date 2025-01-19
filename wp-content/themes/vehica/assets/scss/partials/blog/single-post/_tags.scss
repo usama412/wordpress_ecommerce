@@ -1,0 +1,44 @@
+.vehica-post-field__tags {
+  align-items: center;
+  min-height: 10px;
+  @include clearfix;
+}
+
+.vehica-post-field__tags__single {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(34, 39, 50, 0.48);
+  background-color: transparent !important;
+  float: left;
+  font-weight: 500;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: #000;
+    }
+  }
+  &:after {
+    content: ',';
+    padding-right: 5px;
+    color: rgba(34, 39, 50, 0.48) !important;
+  }
+  &:last-of-type:after {
+    content: '';
+  }
+}
+
+.vehica-post-field__tags__title {
+  margin-right: 10px;
+  float: left;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(34, 39, 50, 0.48);
+}
+
+.vehica-post-field__tags__icon {
+  color: var(--primary);
+  margin-right: 12px;
+  float: left;
+  line-height: 18px;
+}

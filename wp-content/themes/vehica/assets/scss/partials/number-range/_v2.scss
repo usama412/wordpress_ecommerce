@@ -1,0 +1,31 @@
+.vehica-number-range-v2 {
+  @include clearfix;
+}
+
+.vehica-number-range-v2__1of2 {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  input[type=text] {
+    @include vehica-field;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 13px 13px 13px 27px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+    padding: 0 0 10px 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.vehica-number-range-v2__1of2--left {
+  padding-right: 6px;
+}
+
+.vehica-number-range-v2__1of2--right {
+  padding-left: 6px;
+}

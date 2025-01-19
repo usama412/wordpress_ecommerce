@@ -1,0 +1,90 @@
+.vehica-social-login {
+  text-align: left;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.vehica-social-login__label {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.vehica-social-login__button {
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24) !important;
+  border: solid 1px #e7edf3;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 51px;
+  padding: 0 27px 0 55px;
+  img,
+  i {
+    font-size: 23px;
+    width: 23px;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+  }
+}
+
+.vehica-social-login__button--facebook {
+  i {
+    color: #3b5998;
+  }
+  &:hover {
+    color: #2f3b48;
+    border-color: #2f3b48;
+  }
+}
+
+.vehica-social-login__button--google {
+  margin-right: 10px;
+  color: #2f3b48;
+  &:hover {
+    border-color: #2f3b48;
+  }
+}
+
+.vehica-social-login-or {
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.vehica-login-register-wide-container {
+  .vehica-social-login {
+    @media (min-width: 1024px) {
+      display: flex;
+      margin-bottom: 40px;
+    }
+  }
+  .vehica-login,
+  .vehica-register {
+    @media (max-width: 1199px) {
+      padding-top: 40px !important;
+    }
+  }
+  .vehica-social-login__label {
+    @media (max-width: 1023px) {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 10px;
+      span {
+        display: none;
+      }
+    }
+  }
+  .vehica-social-login__button {
+    @media(max-width: 1023px) {
+      width: 100%;
+      margin-top: 10px;
+      padding: 0;
+    }
+  }
+}

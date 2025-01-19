@@ -1,0 +1,68 @@
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+  font-size: 16px;
+  line-height: 20px !important;
+  font-weight: 600;
+  color: #222732;
+  border-radius: 20px;
+  border: none;
+  border-top-color: #1e85be;
+  background: #f2f5fb;
+  margin: 15px 0 15px 0;
+  padding: 20px 50px 20px 50px !important;
+  &:before {
+    top: 20px;
+  }
+  li {
+    line-height: inherit !important;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px !important;
+    font-weight: 600;
+    color: #222732;
+    margin-bottom: 12px;
+  }
+  .showcoupon {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+}
+
+.woocommerce-info {
+  &:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f05a";
+    font-size: 18px;
+    top: 21px;
+    left: 20px;
+  }
+}
+
+.woocommerce-error {
+  color: #b81c23;
+  color: #b81c23;
+  &:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    font-size: 18px;
+    top: 21px;
+    left: 20px;
+  }
+}
+
+.vehica-car-form__inner {
+  .woocommerce-error,
+  .woocommerce-info,
+  .woocommerce-message {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+  .woocommerce-error {
+    background: #fff5f6;
+  }
+}

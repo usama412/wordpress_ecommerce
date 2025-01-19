@@ -1,0 +1,136 @@
+/* Contact Form */
+.vehica-contact-page-form {
+  @media (min-width: 500px) and (max-width: 899px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+}
+
+.vehica-contact-form {
+  @include clearfix;
+  p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  label {
+    width: 100%;
+    float: left;
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: block;
+  }
+  select,
+  textarea,
+  input[type=date],
+  input[type=email],
+  input[type=number],
+  input[type=password],
+  input[type=search],
+  input[type=tel],
+  input[type=text] {
+    min-height: 53px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 27px;
+    font-size: 14px;
+    @media(max-width: 767px) {
+      font-size: 16px;
+    }
+    line-height: 16px;
+    margin: 0;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    border: 1px solid #e7edf3;
+    @media (max-width: 600px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: linear-gradient(45deg, transparent 50%, #222732 50%), linear-gradient(135deg, #222732 50%, transparent 50%);
+    background-position: calc(100% - 32px) 24px, calc(100% - 27px) 24px, calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+  }
+
+  textarea {
+    resize: vertical;
+    padding-top: 16px !important;
+    min-height: 96px;
+    @media (min-width: 1023px) {
+      min-height: 128px;
+    }
+    display: block;
+    &::-webkit-scrollbar-track {
+      overflow: hidden;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  input[type=submit] {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border: 0px solid transparent;
+  }
+  .ajax-loader {
+    display: none !important;
+  }
+  .wpcf7-validation-errors,
+  .wpcf7-acceptance-missing {
+    display: none !important;
+    background: #c62828;
+    color: #fff;
+    padding: 8px;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    margin: 12px 0 0;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+  }
+  .wpcf7-mail-sent-ok {
+    top: 0;
+    position: absolute;
+    lefT: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #419e72;
+    border: 0px solid transparent;
+    padding: 12px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 124px;
+    display: block;
+  }
+  .wpcf7-form-control-wrap {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .wpcf7-list-item {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .vehica-button {
+    @media (max-width: 459px) {
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+  @media (max-width: 459px) {
+    .vehica-accept {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.vehica-compare-add--solo {
+  justify-content: flex-start;
+  .vehica-checkbox input:checked + label {
+    color: #2f3b48 !important;
+  }
+  .vehica-checkbox {
+    padding: 0;
+  }
+  .vehica-checkbox input + label:before {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+  }
+  .vehica-checkbox input + label {
+    padding: 2px 0 0 27px;
+    color: #a7a8a8;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .vehica-checkbox:hover label {
+    color: #2f3b48 !important;
+  }
+  .vehica-checkbox input + label:before {
+    border: 2px solid #a7a8a8;
+  }
+}
+
+.vehica-car-card--is-compare .vehica-compare-add--solo {
+  .vehica-car-card--is-compare .vehica-checkbox input:checked + label:before {
+    background: #fff !important;
+  }
+  .vehica-checkbox input:checked + label:before {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+  }
+  .vehica-checkbox input:checked + label {
+    color: var(--primary) !important;
+  }
+  .vehica-checkbox input:checked + label:after {
+    color: #fff !important;
+  }
+  .vehica-checkbox input:checked + label:after {
+    left: 5px;
+    font-size: 9px;
+    top: 4px;
+  }
+}

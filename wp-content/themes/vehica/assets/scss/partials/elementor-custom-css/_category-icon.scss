@@ -1,0 +1,54 @@
+.vehica-category-icons {
+  & > .elementor-column-wrap > .elementor-widget-wrap {
+    @media (min-width: 400px) and (max-width: 599px) {
+      max-width: 360px !important;
+      margin: 0 auto !important;
+    }
+  }
+}
+
+.vehica-category-icon {
+  min-width: 112px;
+  .elementor-icon-box-title {
+    margin-bottom: 20px;
+  }
+  .elementor-icon-box-title a {
+    display: block;
+    padding-top: 17px;
+    position: relative;
+  }
+  .elementor-icon-box-icon {
+    margin-bottom: -8px;
+  }
+  .elementor-icon {
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0);
+  }
+  .elementor-icon-box-wrapper {
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease;
+    svg {
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      svg {
+        opacity: 1;
+      }
+    }
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        .elementor-icon {
+          color: #ff6a36;
+          border-color: var(--primary);
+        }
+      }
+    }
+  }
+  @media (max-width: 359px) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}

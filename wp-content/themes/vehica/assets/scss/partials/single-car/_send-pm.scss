@@ -1,0 +1,33 @@
+.vehica-send-pm {
+  textarea {
+    @include vehica-field;
+    resize: vertical;
+    display: block;
+    height: 250px;
+    margin-bottom: 15px;
+    display: block;
+    padding: 22px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: #222732 !important;
+    &::-webkit-scrollbar-track {
+      overflow: hidden;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.vehica-send-pm__vehica-button-wrapper {
+  text-align: right;
+}
+
+body.author {
+  .vehica-send-pm {
+    textarea {
+      height: 132px;
+    }
+  }
+}

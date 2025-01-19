@@ -1,0 +1,38 @@
+@media (max-height: 900px) and (min-width: 1200px) {
+  .vehica-hero-v3-spacer-v1 {
+    .elementor-spacer-inner {
+      height: 100px !important;
+    }
+  }
+  .vehica-hero-v3-spacer-v2 {
+    .elementor-spacer-inner {
+      height: 30px !important;
+    }
+  }
+  .vehica-hero-v3-spacer-v3 {
+    .elementor-spacer-inner {
+      height: 30px !important;
+    }
+  }
+  .vehica-hero-v3-spacer-v4 {
+    .elementor-spacer-inner {
+      height: 110px !important;
+    }
+  }
+  .vehica-hero-v3-subtitle {
+    h2 {
+      font-size: 16px !important;
+      line-height: 25px !important;
+    }
+  }
+  .vehica-hero-v3-image img {
+    max-width: 500px;
+    top: 110px !important;
+    position: relative;
+  }
+
+  .vehica-hero-v3 .vehica-search-classic-v1__divider {
+    margin-top: 0!important;
+    background: transparent!important;
+  }
+}

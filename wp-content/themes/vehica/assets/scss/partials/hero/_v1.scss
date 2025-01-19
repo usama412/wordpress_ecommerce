@@ -1,0 +1,22 @@
+.vehica-hero-v1-spacer-v1 {
+  .elementor-spacer-inner {
+    @media (max-height: 730px) and (min-width:900px) {
+      height: 140px !important;
+    }
+  }
+}
+
+.vehica-hero-v1-title {
+  @media (max-width: 359px) {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+.vehica-hero-v1-spacer-v3 {
+  @media (max-height: 730px) and (min-width:900px) {
+    .elementor-spacer-inner {
+      max-height: 200px !important;
+    }
+  }
+}

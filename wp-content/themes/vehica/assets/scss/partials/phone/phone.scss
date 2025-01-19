@@ -1,0 +1,50 @@
+.vehica-phone-v1 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  a {
+    color: var(--primary);
+  }
+  span {
+    color: #000;
+  }
+}
+
+.vehica-phone-v2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  a {
+    color: var(--primary);
+  }
+  span {
+    color: #fff;
+  }
+}
+
+.vehica-phone-v3 {
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+  i {
+    color: var(--primary);
+    position: relative;
+    margin-right: 9px;
+    top: 2px;
+  }
+}
+
+.vehica-phone-v4 {
+  font-size: 43px;
+  line-height: 47px;
+  font-weight: 900;
+  a {
+    color: var(--primary);
+  }
+  @media (max-width: 900px) {
+    font-weight: 900;
+    color: #222732;
+    font-size: 30px;
+    line-height: 38px;
+  }
+}

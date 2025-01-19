@@ -1,0 +1,25 @@
+.elementor-widget-vehica_related_car_carousel_single_car_widget {
+  @media (min-width: 768px) {
+    .vehica-carousel-v1 .vehica-carousel-v1__arrows {
+      bottom: 0 !important;
+    }
+  }
+  @media(max-width: 1200px) {
+    .vehica-carousel-v1 {
+      margin: 30px 0 30px 0 !important;
+    }
+  }
+  @media(max-width: 767px) {
+    .vehica-carousel-v1-button {
+      display: none !important;
+    }
+  }
+  .vehica-carousel-v1-button {
+    padding: 0;
+  }
+  @media (min-width: 769px) {
+    .vehica-carousel-v1 .vehica-carousel-v1__arrows .vehica-carousel__arrow--right {
+      margin-left: 8px;
+    }
+  }
+}

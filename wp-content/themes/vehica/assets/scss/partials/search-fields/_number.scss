@@ -1,0 +1,17 @@
+.vehica-form-button__clear--number-range {
+  position: absolute;
+  right: 13px;
+  padding: 8px 14px 8px 6px !important;
+  top: 7px;
+  text-align: center;
+}
+
+.vehica-active-number,
+.vehica-price-select-from-to-active {
+  .vehica-form-button__clear--number-range {
+    z-index: 100000;
+  }
+  .vs__clear {
+    display: block !important;
+  }
+}

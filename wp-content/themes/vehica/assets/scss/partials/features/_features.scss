@@ -1,0 +1,66 @@
+.vehica-features {
+  display: flex;
+  flex-wrap: wrap;
+
+  .vehica-features__feature {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    @media (max-width: 899px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .vehica-features__feature {
+      width: 50%;
+    }
+  }
+
+  .vehica-features__icon {
+    width: 73px;
+    height: 73px;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    @media (max-width: 899px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .vehica-features__content {
+    padding-top: 20px;
+    @media (min-width: 900px) {
+      padding-top: 0;
+      padding-left: 33px;
+      padding-right: 105px;
+    }
+  }
+
+  .vehica-features__label {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.48;
+    color: #222732;
+    @media (max-width: 899px) {
+      text-align:center;
+    }
+  }
+
+  .vehica-features__text {
+    font-size: 17px;
+    line-height: 1.82;
+    color: #222732;
+    margin-top: 24px;
+    @media (max-width: 899px) {
+      text-align:center;
+    }
+  }
+}

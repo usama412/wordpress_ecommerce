@@ -1,0 +1,308 @@
+.vehica-car-card {
+  border-radius: 10px;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.vehica-car-card__compare {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FFFFFF;
+  display: flex;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  z-index: 10;
+  transform: translateX(0);
+}
+
+.vehica-car-card__compare-enter-active {
+  animation: cardCompareAnimationActive 0.3s forwards;
+}
+
+.vehica-car-card__compare-leave-active {
+  animation: cardCompareAnimationDisabled 0.3s forwards;
+}
+
+@keyframes cardCompareAnimationActive {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cardCompareAnimationDisabled {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.vehica-inventory-v1__is-reloading {
+  .vehica-inventory-v1__results {
+    opacity: 0;
+  }
+}
+
+.vehica-car-card__inner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #222732;
+  border-radius: 10px;
+  visibility: visible;
+  height: 100%;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      .vehica-car-card__image img {
+        transform: scale3d(1.1, 1.1, 1);
+      }
+    }
+  }
+}
+
+.vehica-car-card__content {
+  padding: 0 22px 19px 22px;
+}
+
+.vehica-car-card__image-bg {
+  background: #eff0f1;
+  position: relative;
+}
+
+.vehica-car-card__image__icon:after {
+  content: "\f03e";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  opacity: 0.5;
+  line-height: 50px;
+  position: absolute;
+  top: 50%;
+  margin: -25px auto 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.vehica-car-card__info {
+  overflow: hidden;
+  max-height: 28px;
+}
+
+.vehica-car-card__info__features {
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #99a1b2;
+}
+
+.vehica-car-card__price {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 24px;
+  margin-left: auto;
+  color: #fff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.vehica-car-card__image__favorite {
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 15px;
+  position: absolute;
+  bottom: 8px;
+  left: 13px;
+  z-index: 20;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  opacity: 1;
+  transition: all 0.5s ease;
+  background: transparent;
+  i {
+    font-size: 15px;
+    line-height: 30px;
+    color: #a7a7a7;
+    transition: all 0.5s ease;
+  }
+
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      background: #f2f5fb;
+
+      i {
+        color: #0f141e;
+      }
+    }
+  }
+}
+
+.vehica-car-card__image__favorite--is-favorite {
+  i {
+    color: #fff;
+  }
+}
+
+.vehica-car-card__image {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  xpadding-top: 55.5224%;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: all 0.8s ease;
+  }
+}
+
+.vehica-car-card__image-info {
+  background: rgba(0, 0, 0, 0) linear-gradient(0deg, rgba(0, 0, 0, .6) 8%, rgba(0, 0, 0, 0) 94%) repeat scroll 0 0;
+  position: absolute;
+  text-align: right;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 25px;
+  width: 100%;
+  color: #a7a7a7;
+
+  i {
+    color: #a7a7a7;
+  }
+
+  .fa-video {
+    padding-left: 10px;
+  }
+
+  .fa-images {
+    padding-left: 5px;
+  }
+}
+
+.vehica-car-card__name {
+  display: block;
+  text-align: left;
+  font-size: 17px;
+  line-height: 21px;
+  margin-top: 11px;
+  margin-bottom: 10px;
+  @include text-truncate;
+  color: #fff;
+
+  @media (min-width: $min-hover-width) {
+    &:active,
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.vehica-car-card__separator {
+  margin: 0 0 18px 0;
+  background: #343b4a;
+  height: 1px;
+}
+
+.vehica-car-card__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.vehica-car-card__info__single {
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #99a1b2;
+  margin-right: 20px;
+  line-height: 28px;
+
+  &:first-child {
+    padding: 0 11px;
+    color: #fff;
+    background: var(--primary);
+  }
+}
+
+.vehica-car-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vehica-car-card-link {
+  display: block;
+  @include clearfix;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.vehica-car-card--is-compare {
+  .vehica-car-card__compare {
+    background: var(--primary) !important;
+  }
+
+  .vehica-checkbox input:checked + label {
+    color: #fff !important;
+  }
+
+  .vehica-checkbox input:checked + label:before {
+    background: #fff !important;
+    border-color: #fff !important;
+  }
+
+  .vehica-checkbox input:checked + label:after {
+    color: var(--primary);
+  }
+}
+
+.vehica-car-card__info-multiple-lines {
+  .vehica-car-card__info {
+    max-height: none !important;
+  }
+
+  .vehica-car-card__info {
+    margin-top: -6px;
+  }
+
+  .vehica-car-card__info__single {
+    margin-top: 6px;
+    display: inline-block;
+  }
+}

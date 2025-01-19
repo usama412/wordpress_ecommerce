@@ -1,0 +1,49 @@
+.vehica-currency-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.vehica-currency-switcher__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  i {
+    margin-left: 5px;
+    color: #99a1b2;
+  }
+  &.vehica-currency-switcher__inner--open i {
+    color: var(--primary);
+  }
+}
+
+.vehica-currency-switcher__list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  padding: 6px 13px;
+  border-radius: 10px;
+  z-index: 99999;
+}
+
+.vehica-currency-switcher__element {
+  margin-bottom: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f141e;
+  cursor: pointer;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: var(--primary);
+    }
+  }
+  &.vehica-currency-switcher__element--active {
+    color: var(--primary);
+  }
+}

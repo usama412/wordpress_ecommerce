@@ -1,0 +1,102 @@
+.vehica-simple-menu {
+  margin: 0 auto;
+  padding: 0;
+  @include clearfix();
+  .menu-item {
+    margin: 16px 32px 16px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style-type: none;
+    a {
+      color: #000000;
+    }
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.vehica-simple-menu--vertical .vehica-simple-menu {
+  .menu-item:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+.vehica-simple-menu--horizontal .vehica-simple-menu {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+
+.vehica-simple-menu-2-columns {
+  .vehica-simple-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    > li {
+      width: 100%;
+      @media (min-width: 900px) {
+        width: 50%;
+      }
+      font-size: 17px;
+      line-height: 27px;
+      padding-bottom: 20px;
+      font-weight: 600;
+      float: left;
+      margin: 0;
+      padding-right: 15px;
+      padding-left: 20px;
+      position: relative;
+      top: -5px;
+      a {
+        display: inline-block;
+        color: #a6a9ae;
+        transition: 0.2s all ease;
+        @media (min-width: $min-hover-width) {
+          &:hover {
+            margin-left: 3px;
+            color: var(--primary) !important;
+          }
+        }
+      }
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        content: '\f111';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 7px;
+        color: var(--primary);
+      }
+    }
+  }
+  @media (max-width: 899px) {
+    .vehica-simple-menu {
+      display: flex;
+      flex-direction: column;
+      li {
+        padding-left: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #282d3a;
+        a {
+          width: 100%;
+          display: block;
+        }
+        &:last-child {
+          border-bottom: 1px solid #282d3a;
+        }
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          left: auto;
+          right: 15px;
+          top: 12px;
+          content: '\f054';
+          font-size: 12px;
+          color: #cecfd1;
+        }
+      }
+    }
+  }
+}

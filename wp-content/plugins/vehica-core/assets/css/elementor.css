@@ -1,0 +1,243 @@
+.elementor-control[class*="typography"][class*="-vehica_"] .elementor-control-popover-toggle-reset-label {
+    display: none !important;
+}
+
+.elementor-control-hide_title {
+    display: none;
+}
+
+#elementor-panel-content-wrapper .eicon-vehica {
+    position: relative;
+    width: 100%;
+}
+
+#elementor-panel-content-wrapper .eicon-vehica:before {
+    content: '\00a0';
+}
+
+#elementor-panel-content-wrapper .eicon-vehica:after {
+    content: '';
+    z-index: 3;
+    background-image: url(../img/icon-v.png);
+    height: 24px;
+    text-align: center;
+    background-size: cover;
+    width: 24px;
+    background-position: center;
+    display: block;
+    display: inline-block;
+}
+
+.vehica-add-modal {
+    background: #fff;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vehica-add-modal__brand {
+    padding: 24px 30px 18px 30px;
+    font-size: 21px;
+    color: #000;
+    font-weight: 700;
+}
+
+.vehica-add-modal__head {
+    padding: 0px 30px 12px 30px;
+    display: flex;
+}
+
+.vehica-add-modal__head > div {
+    text-align: center;
+    min-width: 120px;
+    background: #e3e3e3;
+    color: #000;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 12px;
+    text-transform: uppercase;
+}
+
+.vehica-add-modal__head > .vehica-add-modal__tab-active {
+    background: #ff4605;
+    color: #fff;
+}
+
+.vehica-add-modal__exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 21px;
+    padding: 23px 29px 23px 29px;
+    color: #000;
+    cursor: pointer;
+}
+
+.vehica-add-modal__search {
+    width: 252px;
+    position: absolute;
+    top: 61px;
+    right: 30px;
+}
+
+.vehica-add-modal__information {
+    font-size: 36px;
+    margin: 32px 0;
+}
+
+/*.vehica-add-modal__search:after {*/
+/*font-family: "Font Awesome 5 Free";*/
+/*font-weight: 900;*/
+/*content: "\f002";*/
+/*position: absolute;*/
+/*top: 7px;*/
+/*right: 6px;*/
+/*}*/
+
+.vehica-add-modal__content {
+    position: relative;
+    height: 750px;
+    max-height: 75vh;
+    overflow: auto;
+    padding-top: 25px;
+    padding: 0 30px 30px;
+    min-height: 50px;
+    font-size: 12px;
+    line-height: 1.5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.vehica-add-modal__elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+}
+
+.vehica-add-modal__element {
+    padding: 6px;
+    position: relative;
+    height: 100%;
+    width: 33.33333333%;
+}
+
+.vehica-add-modal__element__inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.vehica-add-modal__element__image {
+    position: relative;
+    padding-bottom: 50%;
+    overflow: hidden;
+}
+
+.vehica-add-modal__element__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.vehica-add-modal__element__title {
+    display: flex;
+    align-content: center;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 12px 12px;
+    background: #f4f4f4;
+    height: 50px;
+}
+
+.vehica-add-modal__element__add {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.1s ease;
+}
+
+.vehica-add-modal__element__inner:hover .vehica-add-modal__element__add {
+    opacity: 1;
+}
+
+.vehica-add-modal__element__add__inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    top: 50%;
+    text-align: center;
+    margin: -25px auto 0 auto;
+    font-size: 21px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.elementor-control-vehica_cars_related_by_taxonomies .elementor-control-content .elementor-control-field,
+.elementor-control-vehica_cars_related_by_taxonomies .elementor-control-content .elementor-control-title,
+.elementor-control-vehica_cars_related_by_taxonomies .elementor-control-content .elementor-control-input-wrapper,
+.elementor-control-type-vehica_select_remote .elementor-control-content .elementor-control-field,
+.elementor-control-type-vehica_select_remote .elementor-control-content .elementor-control-title,
+.elementor-control-type-vehica_select_remote .elementor-control-content .elementor-control-input-wrapper,
+.elementor-control-vehica_users_role .elementor-control-content .elementor-control-field,
+.elementor-control-vehica_users_role .elementor-control-content .elementor-control-title,
+.elementor-control-vehica_users_role .elementor-control-content .elementor-control-input-wrapper,
+.elementor-control-vehica_car_taxonomies .elementor-control-content .elementor-control-field,
+.elementor-control-vehica_car_taxonomies .elementor-control-content .elementor-control-title,
+.elementor-control-vehica_car_taxonomies .elementor-control-content .elementor-control-input-wrapper {
+    display: block !important;
+}
+
+.elementor-control-vehica_cars_related_by_taxonomies .elementor-control-content label.elementor-control-title,
+.elementor-control-type-vehica_select_remote .elementor-control-content label.elementor-control-title,
+.elementor-control-vehica_users_role .elementor-control-content label.elementor-control-title,
+.elementor-control-vehica_car_taxonomies .elementor-control-content label.elementor-control-title {
+    margin-bottom: 6px !important;
+}
+
+.elementor-control-vehica_cars_related_by_taxonomies .select2-container .select2-search--inline .select2-search__field,
+.elementor-control-vehica_cars_related_by_taxonomies .select2-container--default .select2-selection--multiple .select2-selection__choice,
+.elementor-control-type-vehica_select_remote .select2-container .select2-search--inline .select2-search__field,
+.elementor-control-type-vehica_select_remote .select2-container--default .select2-selection--multiple .select2-selection__choice,
+.elementor-control-vehica_users_role .select2-container .select2-search--inline .select2-search__field,
+.elementor-control-vehica_users_role .select2-container--default .select2-selection--multiple .select2-selection__choice,
+.elementor-control-vehica_car_taxonomies .select2-container .select2-search--inline .select2-search__field,
+.elementor-control-vehica_car_taxonomies .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 8px !important;
+}
+
+.e-route-panel-page-settings-settings .elementor-control-template,
+.e-route-panel-page-settings-settings .elementor-control-template_default_description {
+    display: none !important;
+}
+
+.elementor-device-desktop #elementor-preview-responsive-wrapper {
+    min-width: 1200px !important;
+}
+
+/* Code below should remove Elementor PRO Ad only*/
+#elementor-notice-bar {
+    display: none !important;
+}

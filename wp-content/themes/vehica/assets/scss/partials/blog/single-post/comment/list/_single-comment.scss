@@ -1,0 +1,160 @@
+.vehica-comment {
+  border-top: 1px solid rgba(210, 210, 210, 0.5);
+  position: relative;
+  float: left;
+  width: 100%;
+  @include clearfix;
+  .vehica-comment__content {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    position: relative;
+    @include clearfix;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (min-width: 768px) {
+      padding-left: 116px;
+    }
+    .vehica-comment__avatar {
+      margin-bottom: 12px;
+      & > img {
+        border-radius: 50%;
+        width: 85px;
+        height: 85px;
+      }
+      @media (min-width: 768px) {
+        margin-bottom: 24px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+      }
+    }
+    .vehica-comment__user-name {
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: bold;
+      margin-bottom: 24px;
+      color: #222732;
+      @media (max-width: 767px) {
+        position: absolute;
+        top: 70px;
+        left: 100px;
+      }
+    }
+    .vehica-comment__text {
+      font-size: 16px;
+      line-height: 27px;
+      color: #6f6f6f;
+      word-break: break-word;
+      width: 100%;
+      @include clearfix;
+      p {
+        margin-top: 0;
+        margin-bottom: 25px;
+      }
+    }
+    .vehica-comment__footer {
+      display: flex;
+      vertical-align: middle;
+      .vehica-comment__date {
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 600;
+        color: rgba(34, 39, 50, 0.5);
+        margin: 0 35px 0 0;
+        a {
+          background: rgba(0, 0, 0, 0.05);
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          color: #6d6d6d;
+          @media (min-width: $min-hover-width) {
+            &:hover {
+              color: #000;
+              border-color: #000;
+              background: rgba(0, 0, 0, 0.1);
+            }
+          }
+          padding: 4px;
+          font-size: 12px;
+          border-radius: 4px;
+          margin-left: 5px;
+          @media (min-width: $min-hover-width) {
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+        i {
+          color: var(--primary);
+          position: relative;
+          margin-right: 6px;
+        }
+      }
+      .vehica-comment__reply {
+        a {
+          font-size: 14px;
+          line-height: 28px;
+          font-weight: 600;
+          display: inline-block;
+          float: left;
+          color: var(--primary);
+          margin: 0;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.vehica-comment__moderate {
+  padding: 15px 20px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.vehica-comment {
+  position: relative;
+  &.depth-2 {
+    .vehica-comment__content {
+      margin-left: 29px;
+      width: calc(100% - 29px);
+      @media (min-width: 1400px) {
+        margin-left: 58px;
+        width: calc(100% - 58px);
+      }
+    }
+  }
+  &.depth-3 {
+    .vehica-comment__content {
+      margin-left: 58px;
+      width: calc(100% - 58px);
+      @media (min-width: 1400px) {
+        margin-left: 116px;
+        width: calc(100% - 116px);
+      }
+    }
+  }
+  &.depth-4 {
+    .vehica-comment__content {
+      margin-left: 87px;
+      width: calc(100% - 87px);
+      @media (min-width: 1400px) {
+        margin-left: 174px;
+        width: calc(100% - 174px);
+      }
+    }
+  }
+  &.depth-5 {
+    .vehica-comment__content {
+      margin-left: 116px;
+      width: calc(100% - 116px);
+      @media (min-width: 1400px) {
+        margin-left: 232px;
+        width: calc(100% - 232px);
+      }
+    }
+  }
+}

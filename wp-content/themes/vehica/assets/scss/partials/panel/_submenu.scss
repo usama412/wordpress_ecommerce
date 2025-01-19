@@ -1,0 +1,32 @@
+.vehica-panel-submenu {
+  margin-top: 45px;
+  display: flex;
+}
+
+.vehica-panel-submenu__item {
+  display: block;
+  color: #222732;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  padding-bottom: 13px;
+  border-bottom: 1px solid transparent;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    color: var(--primary);
+  }
+  margin-right: 25px;
+  @media (min-width: 900px) {
+    margin-right: 65px;
+  }
+}
+
+.vehica-panel-submenu__item--active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  &:hover {
+    border-bottom-color: var(--primary);
+  }
+}

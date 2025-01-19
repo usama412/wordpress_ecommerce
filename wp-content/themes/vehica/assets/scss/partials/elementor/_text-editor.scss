@@ -1,0 +1,28 @@
+.elementor-widget-text-editor {
+  font-size: 16px;
+  line-height: 27px;
+  color: #6f6f6f;
+  ul {
+    padding-left: 29px;
+    list-style: none;
+    li {
+      margin-bottom: 10px;
+      &::before {
+        content: "\2022";
+        color: var(--primary);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        font-size: 25px;
+        position: relative;
+        left: -3px;
+        top: 1px;
+        line-height: 1em;
+        margin-left: -1em;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

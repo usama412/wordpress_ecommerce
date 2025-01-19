@@ -1,0 +1,137 @@
+.widget-area,
+.widget {
+  width: 100%;
+  margin-bottom: 45px;
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  select {
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: initial;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .mejs-container {
+    margin-bottom: 0;
+  }
+  .sub-menu {
+    margin-top: 12px;
+  }
+  @include clearfix;
+}
+
+.widget:last-of-type {
+  margin-bottom: 0;
+}
+
+.widget_pages,
+.widget_meta,
+.widget_recent_entries,
+.widget_nav_menu,
+.widget_categories,
+.widget_archive {
+  .vehica-widget-title {
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    .vehica-widget-title__text {
+      margin-bottom: 0;
+    }
+  }
+  > ul > li:first-child {
+    padding-top: 0;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    list-style-type: none;
+    li {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: 16px;
+      line-height: 24px;
+      border-bottom: 1px solid #e7edf3;
+      text-align: right;
+      color: var(--primary);
+      @include clearfix;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border: none;
+      }
+      a {
+        position: relative;
+        padding: 0 40px 0 0;
+        margin-right: -30px;
+        overflow: hidden;
+        float: left;
+        text-align: left;
+        &:hover {
+          color: var(--primary);
+        }
+      }
+      .post-date {
+        color: #98A4B1;
+        float: left;
+        width: 100%;
+        margin-top: -6px;
+        margin-bottom: 16px;
+        font-size: 12px;
+      }
+      &:last-child {
+        border: none;
+        .post-date {
+          margin-bottom: 0;
+        }
+      }
+      ul {
+        border-top: 1px solid #e7edf3;
+        margin-top: 12px;
+        padding-left: 15px;
+      }
+    }
+  }
+  .menu,
+  & > ul {
+    display: block;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    border: 1px solid #e7edf3;
+    background-color: var(--white);
+    & > li:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+.widget_nav_menu ul li:last-child a {
+  border-bottom: 0;
+}
+
+.widget_tag_cloud .tagcloud {
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+
+.widget_categories,
+.widget_archive {
+  select {
+    @include vehica-field;
+    padding-right: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    background: url(assets/img/chevron-down.png) no-repeat right transparent;
+    background-size: 16px 16px;
+    -webkit-appearance: none;
+    background-position: right 20px bottom 15px;
+    padding-left: 22px;
+  }
+}

@@ -1,0 +1,185 @@
+.vehica-user-popup {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  animation: mcpopupcheckbox .3s ease-in-out;
+  z-index: 10000000002;
+  &:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.39;
+    background: #0f141e;
+    z-index: 10000000003;
+  }
+  .vehica-user-popup__position {
+    max-width: 360px;
+  }
+  .vehica-social-login {
+    flex-direction: column;
+    display: block;
+  }
+  .vehica-social-login__label {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    span {
+      display: none;
+    }
+  }
+  .vehica-social-login__button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .vehica-social-login__label {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+    span {
+      display: none;
+    }
+  }
+  .vehica-social-login__button {
+    width: 100%;
+    padding: 0;
+  }
+  .vehica-login-register-tabs {
+    margin-bottom: 20px;
+    .vehica-login-register-tabs__register,
+    .vehica-login-register-tabs__login {
+      background: transparent !important;
+      border: none !important;
+      width: auto !important;
+      cursor: pointer !important;
+      padding: 5px 0 !important;
+      min-height: 0 !important;
+      &.vehica-active {
+        color: var(--primary) !important;
+        font-size: 17px !important;
+        line-height: 21px !important;
+        border-bottom: 1px solid var(--primary) !important;
+        border-radius: 0 !important;
+      }
+    }
+  }
+  .vehica-panel {
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 15px 25px 30px 25px !important;
+    h2 {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+  .vehica-login-register-tabs-wrapper {
+    background: #fff !important;
+    .vehica-login-register-tabs {
+      padding: 0 !important;
+    }
+  }
+  .vehica-register,
+  .vehica-login {
+    background: #fff !important;
+    padding: 0 !important;
+  }
+  .vehica-login-register-tabs-wrapper + .vehica-panel-login-register {
+    h2, h3 {
+      display: none !important;
+    }
+    .vehica-social-login {
+      margin-bottom: 0;
+    }
+    .vehica-social-login__label {
+      display: none !important;
+    }
+    .vehica-social-login-or {
+      margin: 10px 0;
+    }
+  }
+  .vehica-register__select-user-role {
+    display: block !important;
+    .vehica-register__user-role {
+      &:last-of-type {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
+
+@keyframes mcuserpopup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.vehica-user-popup__inner {
+  z-index: 10000000004;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh !important;
+  min-height: 400px !important;
+  overflow-y: auto !important;
+  right: -20px !important;
+  padding-right: 20px !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (min-height: 400px) {
+    padding-top: 60px;
+  }
+  @media (min-height: 500px) {
+    padding-top: 100px;
+  }
+  @media (min-height: 600px) {
+    padding-top: 150px;
+  }
+  @media (min-height: 700px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 899px) {
+  .vehica-user-popup {
+    .vehica-panel,
+    .vehica-user-popup__position {
+      border-radius: 0 !important;
+    }
+    .vehica-user-popup__inner {
+      padding: 0 !important;
+      min-height: 100vh !important;
+      right: 0 !important;
+      background: #fff;
+    }
+  }
+}
+
+.vehica-user-popup__position {
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 657px;
+}
+
+.vehica-user-popup__close {
+  position: relative;
+  .vehica-popup-checkbox__close {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    transform: scale(0.5);
+    z-index: 999;
+  }
+}

@@ -1,0 +1,151 @@
+%-login-register-share {
+  input[type="text"], input[type="password"] {
+    border-radius: 10px;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    border: solid 1px #e7edf3;
+    height: 53px;
+    line-height: 53px;
+    padding: 0 27px;
+    font-size: 15px;
+    color: #2f3b48;
+    width: 100%;
+
+    &::placeholder {
+      font-size: 15px;
+      color: #2f3b48;
+    }
+  }
+
+  .vehica-field {
+    margin-bottom: 12px;
+  }
+}
+
+.vehica-login {
+  @extend %-login-register-share;
+  .vehica-fields {
+    margin-bottom: 15px;
+  }
+
+  .vehica-login__below-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .vehica-login__forgotten-password {
+    a {
+      font-size: 15px;
+      color: #2f3b48;
+      text-decoration: underline;
+      @media (min-width: $min-hover-width) {
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .vehica-login__remember {
+    color: #2f3b48;
+    display: flex;
+    align-items: center;
+    .vehica-checkbox {
+      font-size: 15px;
+      font-weight: 600;
+      color: #2f3b48;
+      margin: 0;
+    }
+    label {
+      font-size: 15px;
+      color: #2f3b48 !important;
+    }
+    input {
+      margin-right: 9px;
+      border: solid 1px #e7e9ee;
+      background: #fff;
+    }
+  }
+}
+
+.vehica-register {
+  @extend %-login-register-share;
+
+  .vehica-fields {
+    margin-bottom: 15px;
+  }
+
+  .vehica-register__select-user-role {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .vehica-register__user-role {
+    @media (min-width: 900px) {
+      margin-left: 20px;
+    }
+    @media (min-width: 1100px) {
+      margin-left: 70px;
+    }
+    display: flex;
+    align-items: center;
+    color: #2f3b48;
+    input {
+      margin-right: 20px;
+      border: solid 1px #d5d8e0;
+      background: #fff;
+    }
+    .vehica-radio input + label {
+      color: #2f3b48 !important;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    &:first-child {
+      margin-left: 0;
+      @media (max-width: 899px) {
+        padding: 11px 0;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .vehica-register__terms {
+    display: flex;
+    align-items: center;
+    color: #2f3b48;
+    margin-top: 30px;
+    .vehica-checkbox {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0 0 30px 0;
+      label {
+        font-size: 15px;
+        color: #2f3b48;
+      }
+      a {
+        text-decoration: underline;
+        color: var(--primary);
+      }
+      &:hover {
+        label {
+          color: #2f3b48 !important;
+        }
+      }
+    }
+    input {
+      margin-right: 9px;
+      border: solid 1px #e7e9ee;
+      background: #fff;
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .vehica-panel-login-register {
+    background: #f2f5fb;
+    min-height: 392px !important;
+  }
+}

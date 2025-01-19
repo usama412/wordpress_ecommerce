@@ -1,0 +1,63 @@
+.widget_rss {
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    border: solid 1px #e7edf3;
+    background-color: var(--white);
+    margin-bottom: 16px;
+    li {
+      margin-bottom: 35px;
+      @include clearfix;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  h3 {
+    a {
+      color: var(--primary);
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 26px;
+      margin-bottom: 25px;
+    }
+    .rss-widget-icon {
+      display: none;
+    }
+  }
+  .rsswidget {
+    display: block;
+  }
+  ul {
+    .rsswidget {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+  }
+  .rss-date {
+    font-size: 13px;
+    line-height: 16px;
+    color: #222732;
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+  }
+  .rssSummary {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  cite {
+    color: var(--primary);
+    float: left;
+    width: 100%;
+    font-size: 14px;
+  }
+}

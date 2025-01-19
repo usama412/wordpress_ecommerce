@@ -1,0 +1,99 @@
+.rtl {
+  @media (min-width: 1200px) {
+    .vehica-button--menu-submit {
+      margin-right: 30px;
+      margin-left: 0;
+    }
+    .vehica-menu-desktop-login-register-link__user-icon {
+      margin-left: 20px;
+      margin-right: 0;
+    }
+    .vehica-menu__wrapper .vehica-menu > .menu-item-has-children > .vehica-menu__link:after {
+      margin-right: 15px;
+      margin-left: 0;
+    }
+    .vehica-menu__wrapper .vehica-logo {
+      margin-right: 0;
+      margin-left: 40px;
+    }
+    .vehica-menu__wrapper .vehica-menu .vehica-submenu {
+      right: -20px;
+      left: initial;
+    }
+    .vehica-menu__wrapper .vehica-menu > .menu-item > .vehica-submenu:before {
+      right: 31px;
+      left: initial;
+    }
+    .vehica-menu__wrapper .vehica-menu > .menu-item > .vehica-submenu:after {
+      right: 30px;
+      left: initial;
+    }
+    .vehica-desktop-user-menu {
+      left: initial;
+      right: 0;
+    }
+    .vehica-desktop-user-menu:before {
+      left: initial;
+      right: 32px;
+    }
+    .vehica-desktop-user-menu:after {
+      left: initial;
+      right: 33px;
+    }
+    .vehica-desktop-user-menu__menu-links a i {
+      margin-left: 9px;
+      margin-right: 0;
+    }
+    .vehica-desktop-user-menu__menu-links__count {
+      left: 15px;
+      right: initial;
+    }
+    .vehica-header--no-submit-button {
+      .vehica-desktop-user-menu {
+        left: 0;
+        right: auto;
+      }
+      .vehica-desktop-user-menu:before {
+        left: 32px;
+        right: initial;
+      }
+      .vehica-desktop-user-menu:after {
+        left: 33px;
+        right: initial;
+      }
+    }
+    .vehica-button--menu-submit i {
+      margin-left: 7px;
+      margin-right: 0;
+    }
+    .vehica-menu-hover {
+      xright: 0;
+    }
+  }
+  @media (max-width: 1199px) {
+    .vehica-mobile-menu__wrapper .vehica-mobile-menu__open {
+      transform: translateX(100%);
+      &.vehica-active {
+        transform: translateX(0);
+      }
+    }
+    .vehica-mobile-menu__wrapper .vehica-mobile-menu__open .menu-item-has-children:after {
+      left: 26px;
+      right: initial;
+    }
+    .vehica-mobile-menu__info a i {
+      margin-left: 4px !important;
+      margin-right: 0px !important;
+    }
+    .vehica-mobile-menu__open__top__submit-button i {
+      margin-left: 7px;
+      margin-right: 0;
+    }
+    .vehica-mobile-menu__login {
+      text-align: left;
+    }
+    svg.vehica-menu-icon {
+      transform: rotateY(180deg);
+    }
+  }
+}

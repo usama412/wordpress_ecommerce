@@ -1,0 +1,17 @@
+.vehica-car-form__button {
+  padding-left: 6px;
+  padding-right: 6px;
+  .vehica-button {
+    margin-top: 0;
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    margin-top: 5px;
+  }
+  @media (min-width: 900px) {
+    text-align: right;
+    position: absolute;
+    right: 45px;
+    bottom: 53px;
+  }
+}

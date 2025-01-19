@@ -1,0 +1,53 @@
+.vehica-register-v2 {
+  background-color: #fff;
+  max-width: 478px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 42px 34px;
+  display: block;
+
+  .vehica-fields {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  button.vehica-button {
+    width: 100%;
+  }
+
+  .vehica-register__social-text {
+    text-align: center;
+    margin: 16px 0;
+  }
+}
+
+.vehica-account-socials {
+  display: flex;
+
+  .vehica-account-socials__icon {
+    width: 33.3333%;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 6px;
+    color: rgb(107, 114, 128);
+    padding: 8px 0;
+    text-align: center;
+    margin: 0 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    i {
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: rgb(249, 250, 251);
+    }
+  }
+}
+

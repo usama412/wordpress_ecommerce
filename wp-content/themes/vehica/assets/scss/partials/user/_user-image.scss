@@ -1,0 +1,49 @@
+.vehica-user-image__wrapper {
+  display: inline-block;
+}
+
+.vehica-user-image {
+  position: relative;
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.vehica-user-image-placeholder {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: #d8d9dc;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  &:before {
+    display: inline-block;
+    content: '\f007';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    line-height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: -12px auto 0;
+    text-align: center;
+    top: 50%;
+    height: 18px;
+    width: 50px;
+    color: #ebebed;
+  }
+}
+
+.vehica-user-image__align {
+  margin-bottom: -8px;
+}

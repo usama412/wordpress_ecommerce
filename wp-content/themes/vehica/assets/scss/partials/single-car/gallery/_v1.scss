@@ -1,0 +1,252 @@
+.vehica-car-gallery {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  .vehica-gallery-thumbs {
+    user-select: none;
+    overflow: hidden;
+
+    img {
+      cursor: pointer;
+      transition: opacity 0.1s ease;
+    }
+
+    .vehica-swiper-slide {
+      opacity: 0.5 !important;
+      transition: all 0.1s ease;
+      @media (min-width: $min-hover-width) {
+        &:hover {
+          opacity: 1 !important;
+        }
+      }
+    }
+
+    .vehica-slide-active {
+      opacity: 1 !important;
+    }
+  }
+
+  .vehica-gallery-main__wrapper {
+    height: 240px !important;
+    @media (min-width: 600px) and (max-height: 767px) {
+      height: 300px !important;
+    }
+    @media (min-width: 768px) and (max-height: 1079px) {
+      height: 400px !important;
+    }
+    @media (min-width: 1200px) {
+      height: 532px !important;
+      padding-top: 0 !important;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+
+.vehica-car-gallery {
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+
+  .vehica-carousel__arrow {
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 9999;
+    transition: all 0.2s ease;
+  }
+
+  @media (min-width: $min-hover-width) {
+    &:hover .vehica-carousel__arrow {
+      transform: translate(0px, 0);
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .vehica-carousel__arrow {
+    color: #000;
+    box-shadow: none;
+    display: none;
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        &:before {
+          background: var(--primary-light);
+        }
+        &:after {
+          color: var(--primary);
+        }
+      }
+    }
+    @media (min-width: 600px) {
+      display: block;
+    }
+  }
+}
+
+.vehica-car-gallery .vehica-gallery-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 400ms;
+  }
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  &.vehica-swiper-container-initialized {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.vehica-gallery-main__wrapper {
+  position: relative;
+}
+
+.vehica-gallery-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.vehica-car-gallery .vehica-grid {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.vehica-gallery-thumbs__wrapper {
+  margin-top: 24px;
+  position: relative;
+  overflow: hidden;
+  display: none;
+  @media (min-width: 1080px) {
+    display: block;
+  }
+}
+
+.vehica-gallery-thumbs__holder {
+  position: relative;
+  padding-top: 84.5238%;
+}
+
+.vehica-gallery-thumbs {
+  .vehica-gallery-thumbs__single {
+    position: relative;
+    padding-top: 84.5238%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .vehica-swiper-slide {
+    margin-right: 17px;
+    opacity: 0.5;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid transparent;
+  }
+
+  .vehica-slide-active {
+    border: 2px solid var(--primary);
+    opacity: 1;
+  }
+}
+
+.vehica-car-gallery__count {
+  z-index: 99;
+  position: absolute;
+  bottom: 18px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 800;
+  color: #fff;
+
+  i {
+    opacity: 0.5;
+    margin-right: 5px;
+  }
+
+  @media (min-width: 768px) {
+    right: 39px;
+  }
+}
+
+.vehica-car-gallery__arrows {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -27px;
+  z-index: 2;
+
+  .vehica-carousel__arrow {
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      border-radius: 50%;
+      background: #fff;
+      z-index: 0;
+      transition: all 0.2s ease;
+    }
+  }
+
+  .vehica-carousel__arrow--left {
+    position: absolute;
+    left: 20px;
+    transform: translate(-80px, 0);
+
+    &:after {
+      color: #000;
+    }
+  }
+
+  .vehica-carousel__arrow--right {
+    position: absolute;
+    right: 20px;
+    transform: translate(80px, 0);
+
+    &:after {
+      color: #000;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1079px) {
+    display: block;
+    .vehica-carousel__arrow--left,
+    .vehica-carousel__arrow--right {
+      background: #fff;
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    .vehica-carousel__arrow--left {
+      left: 39px;
+    }
+    .vehica-carousel__arrow--right {
+      right: 39px;
+    }
+    .vehica-carousel__arrow:hover:after {
+      color: #000;
+    }
+    .vehica-carousel__arrow:hover {
+      background: #fff;
+    }
+  }
+}

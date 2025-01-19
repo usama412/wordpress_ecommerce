@@ -1,0 +1,16 @@
+.woocommerce {
+  border-top-color: #1e85be;
+  max-width: 1120px;
+  margin: 0 auto 0;
+  display: block;
+  border-radius: 20px;
+  border: none;
+  padding: 30px 15px 0;
+  @media (min-width: 900px) {
+    padding: 50px 30px 0;
+  }
+  .vehica-car-form__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.vehica-short-info {
+  width: 100%;
+  display: block;
+  @include clearfix();
+}
+
+.vehica-short-info__inner {
+  display: block;
+  @media (max-width: 899px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  @include clearfix();
+}

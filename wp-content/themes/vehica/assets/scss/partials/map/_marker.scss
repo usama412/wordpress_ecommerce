@@ -1,0 +1,36 @@
+.vehica-marker {
+  position: relative;
+  top: 10px;
+}
+
+.vehica-marker__big-circle {
+  background-color: var(--primary);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  opacity: 0.14;
+  position: absolute;
+  left: -36px;
+  top: -36px;
+}
+
+.vehica-marker__small-circle {
+  background-color: var(--primary);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  left: -14px;
+  top: -14px;
+}
+
+.vehica-map .gm-style .gm-style-iw-c {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.vehica-map--marker-small {
+  .vehica-marker__small-circle {
+    top: 5px;
+  }
+}

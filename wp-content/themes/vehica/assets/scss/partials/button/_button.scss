@@ -1,0 +1,244 @@
+.vehica-button,
+.elementor-button {
+  overflow: hidden;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  border: 0 solid transparent;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 16px 25px 16px 25px;
+  vertical-align: top;
+  border-radius: 10px;
+  background-color: var(--primary);
+  transition: all 0.2s ease-in-out;
+  @media (min-width: $min-hover-width) {
+    &:active,
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
+  }
+  @include transition-mix();
+  align-items: center;
+  transform: translateZ(0);
+  text-decoration: none;
+  &:before {
+    content: '' !important;
+    @include position-absolute($top: 0, $left: 0);
+    @include transition-mix($property: transform);
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .1);
+    transform: scale(0, 1);
+    transform-origin: right top;
+    z-index: -1;
+  }
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      &:before {
+        transform: scale(1, 1);
+        transform-origin: left top;
+      }
+    }
+  }
+  i {
+    margin-right: 7px;
+  }
+  .vehica-button__disabled-text {
+    display: none;
+  }
+}
+
+/* e.g. Single Car - "download report" button */
+.vehica-button-primary-light {
+  .elementor-button {
+    &:before {
+      display: none !important;
+    }
+    background: var(--primary-light);
+    color: var(--primary);
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        background: var(--primary);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.vehica-button--outline {
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  padding: 14px 23px 14px 23px;
+  &:before,
+  &:after {
+    display: none;
+  }
+  &:hover {
+    color: #fff !important;
+    background: var(--primary) !important;
+  }
+}
+
+.vehica-ghost-button a {
+  border-color: var(--primary) !important;
+}
+
+@media (min-width: $min-hover-width) {
+  .vehica-ghost-button a:hover {
+    background: var(--primary) !important;
+  }
+}
+
+.vehica-button-ghost {
+  .elementor-button {
+    background: transparent;
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        background: var(--primary);
+        color: #fff;
+      }
+    }
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.vehica-button-app {
+  min-width: 207px;
+  .elementor-button {
+    min-width: 186px;
+    text-align: left;
+    @media (min-width: 900px) and (max-width: 1199px) {
+      min-width: 258px;
+    }
+    span, i {
+      display: inline-block;
+      float: left;
+    }
+    i {
+      color: var(--primary);
+      margin-right: 8px;
+      @media (min-width: 900px) and (max-width: 1199px) {
+        margin-right: 20px;
+      }
+    }
+    .fa-apple {
+      font-size: 23px;
+      line-height: 23px;
+      @media (min-width: 900px) and (max-width: 1199px) {
+        font-size: 31px;
+        line-height: 26px;
+      }
+    }
+    .fa-google-play {
+      font-size: 18px;
+      line-height: 18px;
+      @media (min-width: 900px) and (max-width: 1199px) {
+        font-size: 25px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+.elementor-button.elementor-size-xs {
+  font-size: 17px;
+  padding: 13px 35px;
+  border-radius: 10px;
+}
+
+.vehica-button--menu-submit {
+  background: transparent;
+  color: #fff;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 13px 25px 13px 20px;
+  line-height: 22px;
+  margin-left: 30px;
+  font-size: 16px;
+  &:before {
+    display: none;
+  }
+  &:hover {
+    background: var(--primary);
+  }
+  i {
+    font-size: 14px;
+  }
+}
+
+.vehica-button--with-progress-animation {
+  min-width: 120px;
+  transition: color 0s ease;
+  &.vehica-button--with-progress-animation--active {
+    color: rgba(0, 0, 0, 0) !important;
+    position: relative;
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: none;
+    }
+    svg {
+      transform: scale(0.3);
+      position: absolute;
+      left: 0;
+      top: 11px;
+      margin: 0 auto;
+      right: 0;
+    }
+  }
+  &.vehica-button--icon {
+    transition: all 0.3s ease;
+  }
+}
+
+.vehica-button__text-disabled {
+  display: none;
+}
+
+.vehica-button--with-progress-animation--gallery-in-progress {
+  opacity: 0.5 !important;
+  cursor: initial !important;
+  .vehica-button__text-disabled {
+    display: block;
+  }
+  .vehica-button__text-initial {
+    display: none;
+  }
+  &:after {
+    display: none;
+  }
+  &:before {
+    display: none;
+  }
+}
+
+.vehica-button--small {
+  font-size: 14px !important;
+  padding: 12px 17px !important;
+  line-height: 1 !important;
+}
+
+.vehica-button-no-animate-bg {
+  .vehica-button,
+  .elementor-button {
+    &:hover {
+      opacity: 0.9;
+    }
+    &:after {
+      display: none !important;
+    }
+    &:before {
+      display: none !important;
+    }
+  }
+}

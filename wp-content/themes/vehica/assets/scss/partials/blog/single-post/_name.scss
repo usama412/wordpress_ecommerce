@@ -1,0 +1,13 @@
+.vehica-post-field__name {
+  font-size: 41px;
+  line-height: 51px;
+  font-weight: 900;
+  color: #222732;
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 38px;
+  @media (min-width: 900px) {
+    font-size: 41px;
+    line-height: 51px;
+  }
+}

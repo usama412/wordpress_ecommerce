@@ -1,0 +1,18 @@
+.vehica-post-field__category__list {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #95989d;
+  a {
+    color: #95989d;
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+  i {
+    color: var(--primary);
+    margin-right: 4px;
+  }
+}

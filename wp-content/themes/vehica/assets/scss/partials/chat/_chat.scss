@@ -1,0 +1,425 @@
+.vehica-chat {
+  display: flex;
+  max-width: 1468px;
+  padding: 0 30px;
+  margin: 50px auto auto;
+  position: relative;
+
+  .vehica-chat__loader {
+    left: 0;
+    text-align: center;
+    right: 0;
+    height: 38px;
+    margin-bottom: 30px;
+    svg {
+      width: 50px;
+      height: 34px;
+      fill: var(--primary);
+    }
+  }
+
+  .vehica-chat__users {
+    display: flex;
+    width: 454px;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+
+  .vehica-chat__user {
+    display: flex;
+    cursor: pointer;
+    padding: 30px 0;
+    @media (min-width: 1024px) {
+      padding: 22px;
+    }
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+
+    &--active {
+      @media (min-width: 1024px) {
+        background: #f2f5fb;
+      }
+    }
+    &--not-seen {
+      background-color: var(--primary-light) !important;
+    }
+
+    &:hover {
+      background: #f2f5fb;
+    }
+  }
+
+  .vehica-chat__user-details {
+    margin-left: 22px;
+  }
+
+  .vehica-chat__user-name {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900;
+    @include text-truncate;
+  }
+
+  .vehica-chat__intro {
+    font-size: 16px;
+  }
+
+  .vehica-chat__intro-date {
+    font-size: 10px;
+    font-style: italic;
+    margin-left: 5px;
+  }
+
+  .vehica-chat__conversation {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .vehica-chat__messages {
+    background: #f2f5fb;
+    border-radius: 10px;
+  }
+
+  .vehica-chat__message-wrapper {
+    display: flex;
+    flex-direction: column;
+    &--me {
+      justify-content: flex-end;
+
+      .vehica-chat__text {
+        background: rgba(0, 112, 250, 0.1);
+      }
+    }
+  }
+
+  .vehica-chat__text {
+    padding: 10px 15px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    word-break: break-word;
+    a {
+      text-decoration: underline !important;
+    }
+  }
+
+  .vehica-chat__editor {
+    background: #FFFFFF;
+    height: 138px;
+    width: 100%;
+    resize: vertical;
+    @include vehica-field;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07) !important;
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    line-height: 27px !important;
+    padding: 20px !important;
+    margin: 0 0 15px 0;
+    float: left;
+  }
+
+  .vehica-chat__editor-label {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1E232C;
+  }
+
+  .vehica-chat__button {
+    margin-top: 7px;
+    text-align: right;
+  }
+}
+
+.vehica-chat__message {
+  display: flex;
+  position: relative;
+  @media (min-width: 1024px) {
+    width: calc(50% + 60px);
+  }
+}
+
+.vehica-chat__message-wrapper--me {
+  .vehica-chat__message {
+    margin-left: auto;
+  }
+}
+
+.vehica-chat__message-wrapper--other {
+  .vehica-chat__message {
+    margin-right: auto;
+  }
+}
+
+.vehica-chat__time {
+  text-align: center;
+  color: #6F6F6F;
+  font-size: 11px;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.vehica-chat__user:first-child {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.vehica-chat__user:last-of-type {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  border-bottom: 0px solid !important;
+}
+
+.vehica-chat__avatar-big {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.vehica-chat__avatar-big__placeholder {
+  border-radius: 50%;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(assets/img/user-placeholder.png);
+  background-size: cover;
+  z-index: 0;
+}
+
+.vehica-chat__avatar-small__placeholder {
+  border-radius: 50%;
+  display: block;
+  content: '';
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background: url(assets/img/user-placeholder.png);
+  background-size: cover;
+  z-index: 0;
+}
+
+.vehica-chat__avatar-small {
+  margin-right: 5px;
+  height: 28px;
+  width: 28px;
+  img {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.vehica-chat__message-wrapper--me {
+  .vehica-chat__text {
+    margin-left: auto;
+  }
+  .vehica-chat__avatar-small {
+    display: none;
+  }
+}
+
+.vehica-chat__load-more {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.vehica-chat__listing-info {
+  padding: 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.vehica-chat__listing-info__arrow {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.vehica-chat__listing-info__arrow__inner {
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  background: #f2f5fb;
+  color: var(--primary);
+  margin-right: 24px;
+  border-radius: 50%;
+  line-height: 38px;
+}
+
+.vehica-chat__listing-info__user-actions__inner {
+  display: flex;
+}
+
+.vehica-chat__listing-info__user-action {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  @media (max-width: 1023px) {
+    line-height: 20px;
+    margin-top: 9px;
+  }
+  i {
+    margin-right: 3px;
+  }
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+.vehica-chat__listing-info__heading {
+  font-size: 16px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-bottom: 0;
+  @include text-truncate;
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+}
+
+.vehica-chat__top {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  select {
+    @include vehica-field;
+  }
+}
+
+.vehica-chat__top__options {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vehica-chat__messages-top {
+  min-height: 200px;
+  padding: 20px 30px 0;
+  height: 50vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    position: relative;
+    background-color: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    position: absolute;
+    background-color: #DBDBDB;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #DBDBDB;
+    border-radius: 4px !important;
+  }
+}
+
+.vehica-chat__messages-bottom {
+  margin-top: 30px;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(226, 230, 238, 0.5);
+  @media (min-width: 1024px) {
+    form {
+      width: 100%;
+      flex-direction: row;
+      .vehica-chat__editor {
+        height: 159px;
+      }
+      .vehica-chat__button {
+        margin-left: 10px;
+        margin-top: auto;
+        i {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.vehica-chat__tab--users {
+  .vehica-chat {
+    padding: 0 15px !important;
+    @media (min-width: 900px) {
+      padding: 0 30px !important;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .vehica-chat__tab--users {
+    .vehica-chat__conversation {
+      display: none;
+    }
+    .vehica-chat .vehica-chat__users {
+      width: 100% !important;
+      margin-right: 0 !important;
+    }
+    .vehica-chat {
+      margin-top: 0 !important;
+    }
+  }
+  .vehica-chat__tab--messages {
+    .vehica-chat__users {
+      display: none;
+    }
+    .vehica-chat .vehica-chat__conversation {
+      display: flex;
+      background: #fff;
+      padding: 30px 15px;
+      flex-direction: column;
+      flex: 1;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: 9999999999999;
+      overflow-y: scroll;
+    }
+    .vehica-chat__messages-top {
+      min-height: 300px;
+      max-height: none !important;
+      margin-top: 0;
+      padding: 15px;
+      min-height: 300px;
+      max-height: 60vh;
+    }
+    .vehica-chat__messages-bottom {
+      padding: 15px;
+    }
+  }
+}
+
+.vehica-chat__title-chats {
+  color: #222732;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  @media (max-width: 1023px) {
+    margin-top: 40px;
+  }
+}

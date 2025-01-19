@@ -1,0 +1,189 @@
+.vehica-checkout {
+  margin-top: 50px;
+  .vehica-car-form {
+    padding-top: 0 !important;
+  }
+  #payment {
+    background: transparent;
+  }
+  .payment_methods {
+    padding: 0 !important;
+    border-bottom: 0 !important;
+    @include clearfix;
+  }
+  label {
+    font-size: 16px;
+    line-height: 20px !important;
+    font-weight: 600;
+    color: #222732;
+    margin-bottom: 12px;
+  }
+  .shop_table {
+    font-size: 16px !important;
+    color: #222732 !important;
+    border: none !important;
+    margin: 0 0 40px 0;
+    border-collapse: collapse !important;
+    td, th {
+      border: none;
+      line-height: 40px !important;
+      padding-left: 0 !important;
+    }
+    tbody,
+    tfoot {
+      td, th {
+        border-top: 1px solid #cecece !important;
+      }
+    }
+    .cart-subtotal {
+      display: none !important;
+    }
+  }
+  .woocommerce-privacy-policy-text {
+    display: none;
+  }
+}
+
+.woocommerce .vehica-checkout button.button {
+  @extend .vehica-button;
+  background: var(--primary) !important;
+}
+
+.vehica-checkout__fields {
+  .form-row {
+    display: inline-block;
+    width: 100% !important;
+    padding: 0 6px !important;
+    margin-bottom: 27px !important;
+    @media (min-width: 600px) {
+      width: 50% !important;
+      min-height: 85px !important;
+    }
+    @media (min-width: 900px) {
+      width: 33.33% !important;
+    }
+    float: left !important;
+    clear: none !important;
+    &:after,
+    &:before {
+      content: none !important;
+      display: none !important;
+    }
+  }
+  #billing_address_2_field {
+    display: none !important;
+  }
+}
+
+.vehica-checkout__biling-info {
+  @include clearfix;
+  input[type=text],
+  input[type=email],
+  input[type=number] {
+    @include vehica-field;
+  }
+  .select2-selection--single {
+    @include vehica-field;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .select2-selection__rendered {
+    padding-left: 0 !important;
+  }
+  .select2-selection__arrow {
+    display: none !important;
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      content: '\f107';
+      color: #fff;
+      margin-left: 15px;
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.vehica-checkout__biling-info__inner {
+  padding-bottom: 18px !important;
+}
+
+.vehica-checkout fieldset,
+.vehica-checkout__fields {
+  @include clearfix;
+  @media (min-width: 600px) {
+    margin: 0 -6px !important;
+  }
+}
+
+.woocommerce-checkout-payment {
+  .wc_payment_method {
+    line-height: 5 !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid #cecece;
+    &:last-of-type {
+      border-bottom: 0;
+    }
+    input {
+      margin-right: 10px !important;
+      cursor: pointer;
+      top: 1px !important;
+      position: relative;
+    }
+    & > label {
+      cursor: pointer;
+      font-size: 18px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .wc-saved-payment-methods,
+  .wc-credit-card-form {
+    @include clearfix;
+  }
+  .wc_payment_methods {
+    .form-row {
+      margin: 0 0 15px 0 !important;
+    }
+  }
+
+  .payment_box {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 1.64 !important;
+    background-color: transparent !important;
+    color: #6f6f6f !important;
+    &::before {
+      display: none !important;
+    }
+    p {
+      max-width: 600px;
+      color: #6f6f6f !important;
+      margin: 0 0 30px 0 !important;
+      display: block;
+      a {
+        color: var(--primary);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.vehica-checkout__title-coupon {
+  font-size: 16px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.vehica-checkout__title-charge {
+  font-size: 23px;
+  line-height: 29px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.vehica-checkout__header-title {
+  font-size: 16px;
+  font-weight: 800;
+}

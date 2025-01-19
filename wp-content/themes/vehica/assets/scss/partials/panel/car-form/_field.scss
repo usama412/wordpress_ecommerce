@@ -1,0 +1,25 @@
+.vehica-car-form__field-wrapper {
+  position: relative;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+.vehica-car-form__field {
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  border: 1px solid #e7edf3;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222732;
+  height: 53px;
+  padding: 17px;
+  width: 100%;
+  position: relative;
+}

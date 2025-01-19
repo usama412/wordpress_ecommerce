@@ -1,0 +1,65 @@
+.vehica-tabs-top-v1 {
+  @media(min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+    .vehica-tabs-top-v1__left {
+      width: 50%;
+    }
+    .vehica-tabs-top-v1__right {
+      position: relative;
+      width: 50%;
+      margin-left: 22px;
+    }
+  }
+}
+
+.vehica-tabs-top-v1__right {
+  margin-top: 18px;
+  margin-bottom: 32px;
+  position: relative;
+  @media (min-width: 899px) {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.vehica-tabs-top-v1__heading-big {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-size: 38px;
+  line-height: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: 900px) {
+    font-size: 60px;
+    line-height: 76px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: 1200px) {
+    font-size: 50px;
+    line-height: 63px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.vehica-tabs-top-v1__heading-small {
+  font-size: 22px;
+  line-height: 1.64;
+  margin: 0;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 6px;
+  @media (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}

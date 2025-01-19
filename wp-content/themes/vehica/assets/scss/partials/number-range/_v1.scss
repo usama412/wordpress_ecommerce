@@ -1,0 +1,42 @@
+.vehica-number-range {
+  @include clearfix;
+}
+
+.vehica-number-range__1of2 {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  input[type=text] {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 13px 13px 13px 27px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.vehica-number-range__1of2--left {
+  input {
+    @include vehica-field;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+.vehica-number-range__1of2--right {
+  input {
+    @include vehica-field;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+}
+
+.vehica-number-field--active {
+  .vs__clear {
+    display: block !important;
+  }
+  .v-select:not(.vs-open) .vs__dropdown-toggle {
+    border-color: var(--primary);
+  }
+}

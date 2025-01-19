@@ -1,0 +1,52 @@
+.vehica-car-form__multi-taxonomy {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vehica-car-form__multi-taxonomy__term {
+  border-radius: 10px;
+  border: solid 1px #e7edf3;
+  background-color: #fff;
+  color: #222732;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  padding: 15px 20px;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+.vehica-car-form__multi-taxonomy__term--active {
+  background: var(--primary-light);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.vehica-car-form__multi-taxonomy__load-more {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  @media (max-width: 600px) {
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+}

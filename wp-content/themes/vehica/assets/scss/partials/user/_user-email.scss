@@ -1,0 +1,23 @@
+.vehica-user-email {
+  display: block;
+  @include clearfix;
+  position: relative;
+  color: #222732;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 26px;
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: var(--primary);
+    }
+  }
+  i {
+    color: var(--primary);
+    margin-right: 10px;
+    line-height: 1;
+    top: 4px;
+    float: left;
+    position: absolute;
+    left: 0;
+  }
+}

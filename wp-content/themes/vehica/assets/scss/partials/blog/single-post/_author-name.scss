@@ -1,0 +1,18 @@
+.vehica-post-author-name {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #95989d;
+  i {
+    color: var(--primary);
+    margin-right: 4px;
+  }
+  a {
+    color: #95989d;
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}

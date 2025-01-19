@@ -1,0 +1,65 @@
+.vehica-social-profiles__v1 {
+  margin-left: -9px;
+  margin-right: -9px;
+  @media (min-width: $min-hover-width) {
+    a:hover {
+      background: #0f141e;;
+    }
+  }
+}
+
+.vehica-social-profiles__v2 {
+  display: inline-block;
+
+  a {
+    background: #eff0f1;
+    color: #222732;
+
+    path {
+      fill: #222732;
+    }
+
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        background: #dfdfdf;
+        color: #000;
+
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+}
+
+.vehica-social-profiles__v2__title {
+  width: auto;
+  margin-right: 21px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #99a1b2;
+}
+
+.vehica-social-profiles__v2__inner {
+  display: flex;
+  align-items: center;
+}
+
+.vehica-social-profiles-mobile-block {
+  @media (max-width: 899px) {
+    .vehica-social-profiles__v2__inner {
+      display: block;
+    }
+    .vehica-social-profiles__v2__title {
+      text-align: center;
+      width: 100%;
+    }
+    .vehica-social-profiles__v2__title {
+      margin-bottom: 20px;
+    }
+    .vehica-social-icon a {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,251 @@
+.vehica-loan-calculator {
+  border-radius: 20px;
+  background-color: #f2f5fb;
+  padding: 50px 0px 70px 0px;
+  input {
+    @include vehica-field;
+    padding-left: 69px;
+  }
+  @media (max-width: 600px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  input {
+    font-weight: bold;
+  }
+}
+
+.vehica-loan-calculator__title {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  line-height: 63px;
+  font-weight: 900;
+  margin: 0 auto 40px auto;
+  padding: 0 15px;
+  @media (max-width: 600px) {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+}
+
+.vehica-loan-calculator__subtitle {
+  max-width: 730px;
+  margin: 0 auto 66px auto;
+  text-align: Center;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (max-width: 899px) {
+    max-width: 520px;
+    margin: 0 auto 30px auto;
+  }
+}
+
+.vehica-loan-calculator__end-text {
+  max-width: 730px;
+  margin: 30px auto 0 auto;
+  text-align: Center;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0 15px;
+  @media (max-width: 899px) {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.vehica-loan-calculator__fields {
+  width: 100%;
+  max-width: 586px;
+  margin: 0 auto;
+}
+
+.vehica-loan-calculator__error {
+  @include clearfix;
+  text-align: center;
+  margin: 0px auto 25px auto;
+}
+
+.vehica-loan-calculator__error__inner {
+  display: inline-block;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 14px;
+  line-height: 16px;
+  padding: 15px 50px;
+  border-radius: 10px;
+}
+
+.vehica-loan-calculator__fields__inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -7px;
+  padding: 0 15px;
+}
+
+.vehica-loan-calculator__field-wrapper {
+  padding: 0 7px;
+  margin-bottom: 16px;
+  width: 100%;
+  @media (min-width: 900px) {
+    width: 50%;
+  }
+  h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: 700;
+    text-align: left;
+  }
+}
+
+.vehica-loan-calculator__field-wrapper--is-error {
+  h4 {
+    color: #F44336;
+  }
+  input {
+    border-color: #F44336;
+    background-color: #FFEBEE;
+  }
+  i {
+    color: #F44336;
+  }
+  .vehica-loan-calculator__field:before {
+    background: #F44336;
+  }
+}
+
+.vehica-loan-calculator__field {
+  position: relative;
+  .vehica-loan-calculator__sign {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+    top: 0;
+    left: 0;
+    width: 50px;
+    text-align: center;
+    height: 53px;
+    line-height: 53px;
+  }
+
+  &:before {
+    content: '';
+    height: 53px;
+    width: 1px;
+    background: #e7e9ee;
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+}
+
+.vehica-loan-calculator__separator {
+  height: 1px;
+  width: 100%;
+  margin: 40px 0 64px 0;
+  background: #e7e9ee;
+  @media (max-width: 600px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.vehica-loan-calculator__results--wrapper {
+  padding: 0 15px;
+  @media (max-width: 899px) {
+    margin: 0 auto;
+    max-width: 586px;
+  }
+}
+
+.vehica-loan-calculator__results {
+  max-width: 782px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-radius: 20px;
+  border: solid 1px var(--primary);
+  background-color: #fff;
+  @media (min-width: 900px) {
+    display: flex;
+  }
+}
+
+.vehica-loan-calculator__results__col {
+  @media (min-width: 900px) {
+    width: 33.33%;
+    padding: 0 35px;
+  }
+  position: relative;
+  h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #222732;
+    margin-bottom: 8px;
+    margin-top: 30px;
+    text-align: center;
+    @media (max-width: 800px) {
+      margin-top: 60px;
+    }
+  }
+  &:first-child h3 {
+    margin-top: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 36px;
+    text-align: center;
+  }
+}
+
+.vehica-loan-calculator__results__col:nth-child(1),
+.vehica-loan-calculator__results__col:nth-child(2) {
+  @media (max-width: 799px) {
+    &:before {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 75px;
+      position: absolute;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      bottom: -30px;
+      background: #eaecf2;
+    }
+  }
+  @media (min-width: 800px) {
+    &:after {
+      display: block;
+      content: '';
+      height: 70%;
+      width: 1px;
+      position: absolute;
+      right: 0;
+      top: 15%;
+      background: #eaecf2;
+    }
+  }
+}
+
+.vehica-loan-calculator__button {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  @media (max-width: 600px) {
+    padding-left: 5px;
+    padding-right: 5px;
+    .vehica-button {
+      width: 100%;
+    }
+  }
+}

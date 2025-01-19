@@ -1,0 +1,45 @@
+.rtl {
+  .vehica-number-range__1of2 input[type=text] {
+    padding-left: 13px;
+    padding-right: 27px;
+  }
+  .vehica-results__fields__clear-load-more i {
+    margin-right: 0;
+    margin-left: 4px;
+  }
+  .vehica-search-v1__tab {
+
+    margin-right: 0 !important;
+    margin-left: 25px !important;
+  }
+  .vehica-search-v1__tab-button {
+    overflow: initial;
+  }
+  .vehica-search-v1__tab *:after {
+    content: "\200E‎";
+  }
+  .vehica-inventory-v1__view {
+    margin-right: 0;
+    margin-left: 41px;
+  }
+  .vehica-inventory-v1__sort__heading {
+    padding-right: 0;
+    padding-left: 25px;
+  }
+  .vehica-search-v1__tab-button {
+    margin-left: 25px !important;
+    margin-left: 0 !important;
+  }
+  .vehica-inventory-v1 {
+    .vehica-inventory-v1__keyword__icon {
+      left: 19px;
+      right: unset !important;
+    }
+    .vehica-inventory-v1__bar .vehica-inventory-v1__bar__right .vehica-inventory-v1__keyword input {
+      padding-right: 27px !important;
+    }
+    .vehica-search-v1__tab {
+      float: right !important;
+    }
+  }
+}

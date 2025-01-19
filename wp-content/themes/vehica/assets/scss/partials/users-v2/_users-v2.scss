@@ -1,0 +1,202 @@
+$columns_4: 1200px;
+$columns_2: 700px;
+
+.vehica-users-v2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media (min-width: $columns_2) {
+    margin: 0 -11px;
+    max-width: none;
+  }
+  @media (max-width: 1199px) {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .vehica-user-card__icons {
+    margin-top: -64px;
+    left: initial;
+  }
+}
+
+.vehica-users-v2-background-content-grey {
+  .vehica-user-card-v2__content {
+    background: #fff;
+    border: 1px solid #f2f5fb;
+  }
+}
+
+.vehica-user-card-v2 {
+  width: 100%;
+  margin-bottom: 22px;
+  transition: all 0.2s ease;
+  position: relative;
+  @media (min-width: 1024px) {
+    margin-bottom: 32px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 64px;
+  }
+  @media (min-width: $columns_2) {
+    width: 50%;
+    padding: 0 11px;
+    @media (min-width: $min-hover-width) {
+      &:hover {
+        margin-top: -10px;
+      }
+    }
+  }
+  @media (min-width: $columns_4) {
+    width: 25%;
+  }
+}
+
+.vehica-user-card-v2--text-editor {
+  margin-bottom: 0;
+  @media (max-width: 899px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.vehica-user-card-v2__text-editor {
+  font-size: 17px;
+  line-height: 31px;
+  max-width: 420px;
+  margin-bottom: 50px;
+  padding-right: 50px;
+  @media (max-width: 899px) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-right: 0;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    @media (min-width: 900px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.vehica-user-card-v2__image {
+  display: block;
+  position: relative;
+  background: #fafafa;
+  padding-top: 85.672%;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: filter 400ms, -webkit-filter 400ms;
+  }
+}
+
+.vehica-user-card-v2__content {
+  background: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 35px;
+  position: relative;
+}
+
+.vehica-user-card-v2__name {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #1b2634;
+}
+
+.vehica-user-card-v2__job-title {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: var(--primary);
+}
+
+.vehica-user-card-v2__phone {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1b2634;
+
+  i {
+    color: var(--primary);
+    position: relative;
+    margin-right: 9px;
+    top: 2px;
+  }
+
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+.vehica-user-card-v2__email {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1b2634;
+  margin-top: 6px;
+
+  i {
+    color: var(--primary);
+    position: relative;
+    margin-right: 9px;
+    top: 2px;
+  }
+
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+.vehica-user-card-v2__social-icons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.vehica-user-card-v2__social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  path {
+    fill: #1b2634;
+  }
+
+  a:hover {
+    color: var(--primary);
+
+    i {
+      color: var(--primary);
+    }
+
+    path {
+      fill: var(--primary);
+    }
+  }
+}

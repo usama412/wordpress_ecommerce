@@ -1,0 +1,30 @@
+.rtl {
+  .vehica-users-section__right {
+    .vehica-swiper-slide {
+      margin-right: 0 !important;
+    }
+    @media (min-width: 1025px) {
+      right: 476px;
+      left: initial;
+    }
+    @media (min-width: 1520px) {
+      padding-left: 100px;
+      padding-right: 0;
+    }
+    @media (min-width: 1800px) {
+      padding-left: 0;
+    }
+    .vehica-swiper-slide {
+      width: 100%;
+      @media (min-width: 630px) and (max-width: 1023px) {
+        width: calc(100% / 2 - 11px);
+      }
+      @media (min-width: 1024px) and (max-width: 1024px) {
+        width: calc(100% / 3 - 15px);
+      }
+      @media (min-width: 1025px) {
+        width: calc(100% / 4 - 17px);
+      }
+    }
+  }
+}

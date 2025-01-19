@@ -1,0 +1,13 @@
+.vs__clear {
+  display: none !important;
+}
+
+.vehica-active-taxonomy {
+  .vs__dropdown-toggle {
+    border-color: var(--primary) !important;
+    font-weight: bold;
+  }
+  .vs__clear {
+    display: block !important;
+  }
+}

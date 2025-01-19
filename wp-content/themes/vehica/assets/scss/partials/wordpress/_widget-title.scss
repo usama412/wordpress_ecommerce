@@ -1,0 +1,11 @@
+.vehica-widget-title {
+  margin-bottom: 0;
+  @include clearfix;
+}
+
+.vehica-widget-title__text {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 25px;
+}

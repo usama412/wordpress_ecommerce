@@ -1,0 +1,428 @@
+.vehica-featured-v1 {
+  height: auto !important;
+  @include clearfix;
+
+  .vehica-featured-v1__vehicles {
+    @media (max-width: 899px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media (min-width: 600px) {
+      display: flex;
+      align-items: stretch;
+    }
+    @media (min-width: 1025px) {
+      .vehica-featured-v1__big-card {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .vehica-car-card__compare {
+          background: #222732;
+
+          .vehica-checkbox input + label {
+            color: #fff !important;
+          }
+        }
+
+        .vehica-car-card__info-multiple-lines {
+          .vehica-car-card__info {
+            margin-top: -10px;
+          }
+
+          .vehica-car-card__info__single {
+            margin-top: 10px;
+          }
+        }
+
+        .vehica-car-card__bottom {
+          align-items: flex-end;
+
+          .vehica-car-card__price {
+            width: auto;
+            margin-left: auto;
+            white-space: nowrap;
+            text-align: right;
+            line-height: 35px;
+          }
+        }
+
+        .vehica-car-card__image__icon:after {
+          font-size: 70px;
+        }
+
+        .vehica-car-card {
+          border-radius: 20px;
+          position: relative;
+          flex: 1;
+          width: 100%;
+        }
+
+        .vehica-car-card__image-bg {
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .vehica-car-card__image {
+          position: initial;
+
+          img {
+            min-width: 100%;
+          }
+        }
+
+        .vehica-car-card__image__favorite {
+          margin-left: 15px !important;
+          margin-bottom: 6px !important;
+          height: 40px;
+          width: 40px;
+
+          i {
+            font-size: 20px;
+            line-height: 40px;
+          }
+        }
+
+        .vehica-car-card__image-info {
+          font-size: 20px;
+          position: absolute;
+          padding: 20px 40px;
+        }
+
+        .vehica-car-card__inner {
+          position: initial;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .vehica-car-card__content {
+          background: #222732;
+          padding: 0 35px 30px 35px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          width: 100%;
+        }
+
+        .vehica-car-card__name {
+          font-size: 22px;
+          line-height: 28px;
+          margin-bottom: 20px;
+          margin-top: 30px;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        .vehica-car-card__info {
+          max-height: 35px;
+        }
+
+        .vehica-car-card__info__single {
+          font-size: 17px;
+          margin-right: 20px;
+
+          &:first-child {
+            line-height: 34px;
+          }
+        }
+
+        .vehica-car-card__price {
+          margin-bottom: 0;
+          font-size: 28px;
+        }
+
+        .vehica-car-card__separator {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .vehica-featured-v1__grid {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    @include clearfix;
+    @media (min-width: 1025px) {
+      max-width: 50%;
+      width: 100%;
+    }
+
+    .vehica-car-card__info {
+      max-height: 28px;
+      overflow: hidden;
+    }
+  }
+}
+
+.vehica-featured-v1__footer {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 15px;
+  @media (min-width: 600px) {
+    margin: 30px 0 0 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media (min-width: 900px) {
+    padding: 0;
+  }
+  @media (min-width: 1025px) {
+    margin: 50px 0 0 0;
+  }
+}
+
+.vehica-featured-v1__social {
+  text-align: center;
+  margin-top: 40px;
+  @media (min-width: 600px) {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.vehica-featured-v1__social__label {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 19px;
+  color: #99a1b2;
+  @media (min-width: 600px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+.vehica-featured-v1__social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vehica-featured-v1__social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+  color: #222732;
+  background: #eff0f1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  svg {
+    width: 16px;
+    height: 16px;
+
+    path {
+      fill: #222732;
+    }
+  }
+
+  @media (min-width: $min-hover-width) {
+    &:hover {
+      background: #ebebeb;;
+      color: #000;
+
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+}
+
+.vehica-featured-v1__button {
+  display: flex;
+
+  .vehica-button {
+    width: 100%;
+    @media (min-width: 600px) {
+      width: initial;
+    }
+  }
+}
+
+.vehica-featured-v1__vehicle--1,
+.vehica-featured-v1__vehicle--2,
+.vehica-featured-v1__vehicle--3,
+.vehica-featured-v1__vehicle--4,
+.vehica-featured-v1__vehicle--5 {
+  padding: 0 5px;
+}
+
+.vehica-featured-v1__vehicle--1,
+.vehica-featured-v1__vehicle--2,
+.vehica-featured-v1__vehicle--3 {
+  margin-bottom: 28px;
+}
+
+.vehica-featured-v1__vehicles {
+  margin: 0 -11px;
+}
+
+.vehica-featured-v1__big-card {
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.vehica-featured-v1__vehicle {
+  width: 100%;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-bottom: 18px;
+  @media (min-width: 967px) {
+    margin-bottom: 28px;
+  }
+}
+
+.vehica-featured-v1__vehicle--4,
+.vehica-featured-v1__vehicle--5 {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .vehica-featured-v1__vehicle--1,
+  .vehica-featured-v1__vehicle--2,
+  .vehica-featured-v1__vehicle--3,
+  .vehica-featured-v1__vehicle--4 {
+    display: block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 901px) {
+  .vehica-featured-v1__vehicle--1,
+  .vehica-featured-v1__vehicle--2,
+  .vehica-featured-v1__vehicle--3 {
+    width: 33.333%;
+  }
+  .vehica-featured-v1__vehicle--4 {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .vehica-featured-v1__vehicle--1,
+  .vehica-featured-v1__vehicle--2,
+  .vehica-featured-v1__vehicle--3,
+  .vehica-featured-v1__vehicle--4,
+  .vehica-featured-v1__vehicle--5 {
+    display: block;
+    width: 50%;
+  }
+  .vehica-featured-v1__vehicle--1 {
+    display: none;
+  }
+  .vehica-featured-v1__vehicle--4,
+  .vehica-featured-v1__vehicle--5 {
+    margin-bottom: 0;
+  }
+  .vehica-featured-v1__big-card {
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+}
+
+.vehica-featured-v1__tab-ghost {
+  width: 1px;
+  height: 20px;
+  background: transparent;
+  margin: 0 0 0 7px;
+  padding: 0 1px;
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.vehica-featured-v1__vehicles--count-1,
+.vehica-featured-v1__vehicles--count-2,
+.vehica-featured-v1__vehicles--count-3,
+.vehica-featured-v1__vehicles--count-4 {
+  @media (min-width: 1025px) {
+    .vehica-featured-v1__grid {
+      max-width: 100% !important;
+    }
+    .vehica-featured-v1__big-card {
+      display: none !important;
+    }
+    .vehica-featured-v1__vehicle--1 {
+      display: block !important;
+    }
+  }
+}
+
+.vehica-featured-v1__vehicles--count-1 {
+  @media (min-width: 601px) {
+    .vehica-featured-v1__vehicle {
+      width: 50% !important;
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+.vehica-featured-v1__vehicles--count-2 {
+  .vehica-featured-v1__vehicle {
+    width: 100% !important;
+  }
+
+  @media (min-width: 601px) {
+    .vehica-featured-v1__vehicle {
+      width: 50% !important;
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+.vehica-featured-v1__vehicles--count-3 {
+  .vehica-featured-v1__vehicle {
+    width: 100%;
+  }
+
+  @media (min-width: 601px) {
+    .vehica-featured-v1__vehicle--1,
+    .vehica-featured-v1__vehicle--2 {
+      width: 50%;
+    }
+    .vehica-featured-v1__vehicle--3 {
+      display: none;
+    }
+  }
+  @media (min-width: 901px) {
+    .vehica-featured-v1__vehicle {
+      width: 33.33% !important;
+      margin-bottom: 0px !important;
+    }
+    .vehica-featured-v1__vehicle--3 {
+      display: block;
+    }
+  }
+}
+
+.vehica-featured-v1__vehicles--count-4 {
+  @media (min-width: 1023px) {
+    .vehica-featured-v1__vehicle {
+      width: 33.33% !important;
+      margin-bottom: 0px !important;
+    }
+    .vehica-featured-v1__vehicle--4 {
+      display: none;
+    }
+  }
+  @media (min-width: 1201px) {
+    .vehica-featured-v1__vehicle {
+      width: 25% !important;
+    }
+    .vehica-featured-v1__vehicle--4 {
+      display: block;
+    }
+  }
+}

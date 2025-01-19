@@ -1,0 +1,22 @@
+.vehica-user-name {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #222732;
+  a {
+    color:inherit;
+  }
+}
+
+.vehica-user-name-profile{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  color: #222732;
+  @media (max-width: 899px) {
+    text-align: center;
+  }
+  a {
+    color:inherit;
+  }
+}

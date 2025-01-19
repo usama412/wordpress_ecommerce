@@ -1,0 +1,40 @@
+.vehica-attachments {
+  display: flex;
+  flex-direction: column;
+}
+
+.vehica-attachment {
+  display: inline-flex;
+  align-items: center;
+  &:hover {
+    .vehica-attachment__icon {
+      filter: brightness(1.03);
+    }
+    .vehica-attachment__name {
+      color: var(--primary);
+    }
+  }
+}
+
+.vehica-attachment__icon {
+  min-width: 50px;
+  min-height: 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: -2px;
+}
+
+.vehica-attachment__name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #222732;
+}
+
+.vehica-attachment-single-wrapper {
+  @include clearfix;
+  margin-bottom: 15px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

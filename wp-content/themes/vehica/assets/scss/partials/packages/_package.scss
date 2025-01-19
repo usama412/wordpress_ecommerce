@@ -1,0 +1,251 @@
+.vehica-package {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 20px 50px 0 rgba(143, 143, 143, 0.16);
+  display: flex;
+  width: 100%;
+  margin-bottom: 21px;
+  position: relative;
+  align-items: center;
+  border: 1px solid #fff;
+  transition: all 0.2s ease;
+  &:hover {
+    border-color: var(--primary);
+    cursor: pointer;
+    .vehica-package__radio__inner {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.vehica-select-package--has-error {
+  .vehica-car-form__section {
+    border: 1px solid red !important;
+  }
+}
+
+.vehica-package-new__label {
+  background: #070707;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 2px 15px;
+  font-weight: 800;
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  color: #fff;
+  @media (min-width: 767px) {
+    left: 25px;
+  }
+}
+
+.vehica-package--active {
+  border: 1px solid var(--primary);
+  .vehica-package__radio {
+    border: 1px solid var(--primary);
+  }
+  .vehica-package__radio__inner {
+    opacity: 1;
+  }
+}
+
+.vehica-package--free {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid #cecece;
+  &.vehica-package--active {
+    border: 1px solid #222732;
+    .vehica-package__radio {
+      border-color: #222732;
+    }
+  }
+  .vehica-package__radio__inner {
+    background: #222732;
+  }
+  &:hover {
+    border-color: #222732;
+  }
+  @media (min-width: 768px) {
+    .vehica-package__left,
+    .vehica-package__right {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .vehica-package__left {
+      border-right-color: #e5e5e5;
+    }
+  }
+  .vehica-package__price {
+    color: #070707;
+    font-size: 20px;
+    @media (min-width: 768px) {
+      line-height: 50px;
+    }
+  }
+}
+
+.vehica-package__left {
+  padding: 30px 0 0 30px;
+  position: relative;
+  @media (min-width: 768px) {
+    padding: 30px 40px;
+    width: 230px;
+    border-right: 1px solid #f2f5fb;
+  }
+}
+
+.vehica-package__right {
+  padding: 10px 30px 30px;
+  @media (min-width: 768px) {
+    padding: 30px 113px 30px 40px;
+    flex: 1;
+  }
+}
+
+.vehica-package__name {
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 1px;
+}
+
+.vehica-package__price {
+  font-size: 39px;
+  line-height: 49px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.vehica-package__desc {
+  font-size: 15px;
+  line-height: 1.73;
+}
+
+.vehica-package__desc__row {
+  @include clearfix;
+}
+
+.vehica-package__desc__row__label {
+  display: inline-block;
+  min-width: 70px;
+  float: left;
+}
+
+.vehica-package__desc__row__value {
+  display: inline-block;
+  float: left;
+  font-weight: 900;
+}
+
+.vehica-package__radio {
+  border-radius: 50%;
+  border: 1px solid #cecece;
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  margin: 30px 40px;
+  position: relative;
+  input {
+    display: none;
+  }
+  display: none;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.vehica-package__radio__inner {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: var(--primary);
+  width: 14px;
+  border-radius: 50%;
+  height: 14px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.vehica-package-buy-new {
+  background: #fff;
+  padding: 60px 20px 45px;
+  border-radius: 10px;
+  margin-top: -40px;
+  margin-bottom: 21px;
+  text-align: center;
+  border: 1px solid var(--primary);
+}
+
+.vehica-package-buy-new__or {
+  margin: 20px 0;
+  padding-top: 20px;
+  border-top: 1px solid #f2f5fb;
+}
+
+.vehica-package-buy-new__inner {
+  max-width: 500px;
+  margin: 0 auto;
+  h3 {
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  #vehica-card-errors {
+    margin-bottom: 10px;
+    color: red;
+  }
+}
+
+.vehica-package-buy-new__inner__info {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+#vehica-payment-form {
+  margin-bottom: 10px;
+}
+
+.vehica-stripe-button {
+  width: 100%;
+  border-radius: 4px;
+  min-height: 55px;
+  cursor: pointer;
+  background: #1a2533;
+  color: #fff;
+  border: 0 solid transparent;
+  transition: all 0s ease;
+  font-size: 18px;
+  font-weight: 500;
+  &:hover {
+    filter: brightness(0.90);
+  }
+}
+
+.vehica-package-buy-new__stripe {
+  .StripeElement {
+    background: #f2f5fb;
+    padding: 35px 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+}
+
+.vehica-package--owned {
+  .vehica-package__name {
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 800;
+    color: var(--primary);
+  }
+}
+
+.vehica-package__listings-left {
+  strong {
+    font-weight: bold;
+    color: var(--primary);
+  }
+}

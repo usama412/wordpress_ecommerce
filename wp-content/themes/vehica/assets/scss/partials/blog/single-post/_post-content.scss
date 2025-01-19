@@ -1,0 +1,261 @@
+.vehica-post-field__text {
+  color: #6f6f6f;
+  font-size: 16px;
+  line-height: 1.625;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #222732;
+    line-height: 1.24;
+  }
+  h1 {
+    font-size: 41px;
+    line-height: 51px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  h6 {
+    font-size: 20px;
+  }
+  & > a {
+    color: var(--primary);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  input[type=password] {
+    @include vehica-field();
+    max-width: 300px;
+    margin-right: 12px;
+  }
+  input[type=submit] {
+    @extend .vehica-button;
+  }
+  .wp-block-button {
+    a {
+      border-radius: 10px;
+      font-size: 17px;
+      line-height: 21px;
+      font-weight: 600;
+      padding: 16px 25px 16px 25px;
+      margin-bottom: 10px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &.is-style-squared {
+      a {
+        border-radius: 0 !important;
+      }
+    }
+    &:not(.is-style-outline) a {
+      background: var(--primary);
+    }
+    &.is-style-outline a {
+      border-color: var(--primary);
+      color: var(--primary);
+      &:hover {
+        background: var(--primary);
+        color: #fff;
+      }
+    }
+  }
+  .post-nav-links {
+    display: block;
+    float: left;
+    width: 100%;
+    color: #222732;
+    margin-top: 60px;
+    .post-page-numbers {
+      color: #222732;
+      margin-left: 10px;
+      &.current {
+        color: var(--primary);
+      }
+      &:first-child {
+        margin-left: 30px;
+      }
+      &:hover {
+        color: var(--primary);
+        text-decoration: none;
+      }
+    }
+
+  }
+  .wp-block-columns {
+    @media (min-width: 1200px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  .wp-block-quote {
+    max-width: 640px;
+  }
+  table {
+    color: #181d28;
+    font-weight: 500;
+    font-size: 16px;
+    @media (min-width: 767px) {
+      font-size: 20px;
+    }
+    tr:first-child {
+      font-weight: 600;
+    }
+    th, td {
+      padding: 10px 15px;
+      @media (min-width: 767px) {
+        padding: 15px 35px;
+      }
+    }
+  }
+  .wp-block-calendar {
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    border: 1px solid #e7edf3;
+    background-color: var(--white);
+    max-width: 400px;
+    margin-bottom: 30px;
+    .wp-calendar-table caption {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      font-size: 16px !important;
+    }
+    thead {
+      background: #f7f9fd;
+    }
+    .wp-calendar-table {
+      margin-bottom: 0;
+      th,
+      td {
+        font-size: 16px !important;
+        padding: 6px !important;
+      }
+    }
+    .wp-calendar-nav {
+      max-width: 400px !important;
+      padding-top: 6px;
+      text-align: left !important;
+      padding-left: 22px;
+      padding-bottom: 6px;
+      background: #f7f9fd;
+      a {
+        color: #222732;
+        text-decoration: none;
+      }
+    }
+  }
+  select {
+    @include vehica-field;
+    padding-right: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    background: url(assets/img/chevron-down.png) no-repeat right transparent;
+    background-size: 16px 16px;
+    -webkit-appearance: none;
+    background-position: right 20px bottom 15px;
+    max-width: 400px;
+  }
+  blockquote,
+  blockquote.wp-block-quote {
+    background: #f7f9fd;
+    padding: 50px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    color: #212d40;
+    margin-top: 51px;
+    margin-bottom: 30px;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    &:before {
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f10e";
+      font-size: 16px;
+      top: -22px;
+      left: 50px;
+      background: var(--primary);
+      border-radius: 50%;
+      height: 43px;
+      width: 43px;
+      line-height: 43px;
+      padding-left: 12px;
+      color: #fff;
+      text-align: left;
+    }
+  }
+  figure {
+    &.alignleft {
+      margin-right: 30px;
+    }
+    &.alignright {
+      margin-left: 30px;
+    }
+    &.aligncenter {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.vehica-ul-list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  li {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:before {
+      content: "\f111";
+      font-weight: 900;
+      font-family: 'Font Awesome 5 Free';
+      display: inline-block;
+      color: var(--primary);
+      padding-right: 15px;
+      font-size: 9px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.post-nav-links {
+  margin: 30px 0;
+  font-size: 21px;
+  font-weight: 900;
+  .post-page-numbers {
+    padding: 0 3px;
+    &.current {
+      color: var(--primary);
+    }
+    &:first-child {
+      margin-left: 10px;
+    }
+  }
+}

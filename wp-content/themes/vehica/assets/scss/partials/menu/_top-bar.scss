@@ -1,0 +1,44 @@
+.vehica-top-bar {
+  z-index: 10;
+  display: flex;
+  height: 65px;
+  padding: 10px 30px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+
+  .vehica-top-bar__element {
+    margin-right: 25px;
+  }
+
+  .vehica-top-bar__left {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 15px;
+    }
+  }
+
+  .vehica-top-bar__right {
+    display: flex;
+    align-items: center;
+
+    .vehica-top-bar__element {
+      margin-right: 0;
+      margin-left: 35px;
+
+      .vehica-button {
+        padding-top: 13px;
+        padding-bottom: 12px;
+      }
+
+      &.vehica-top-bar__element--panel {
+        span {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

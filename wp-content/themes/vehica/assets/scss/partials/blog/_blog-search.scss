@@ -1,0 +1,81 @@
+/* Blog */
+form.vehica-search-form {
+  width: 100%;
+  background: #f2f5fb;
+  padding: 22px;
+  position: relative;
+  border-radius: 10px;
+  input[type=submit] {
+    display: none;
+  }
+  input[type=search] {
+    font-size: 15px;
+    line-height: 19px;
+    width: 100%;
+    color: #2f3b48;
+    background: #fff;
+    padding: 17px 50px 17px 22px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    border: 1px solid #e7edf3;
+    &::placeholder {
+      color: #2f3b48;
+    }
+    &::-ms-clear {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+    &::-ms-reveal {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+  label {
+    position: relative;
+    display: block;
+
+  }
+}
+
+.wp-block-search,
+form.wp-block-search {
+  position: relative;
+  margin: 30px 0;
+  .wp-block-search__label {
+    font-weight: 700;
+    color: #ff4605;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .wp-block-search__input {
+    @include vehica-field;
+  }
+  .wp-block-search__button {
+    @extend .vehica-button;
+  }
+}
+
+.vehica-search-form__button-search {
+  position: absolute;
+  right: 0;
+  padding-right: 15px;
+  top: 0;
+  line-height: 53px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  i {
+    transition: all 0.2s;
+  }
+  &:hover i {
+    color: var(--primary);
+  }
+}

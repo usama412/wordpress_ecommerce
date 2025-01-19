@@ -1,0 +1,45 @@
+.vehica-car-form__embed-wrapper {
+  margin: 20px 0 0;
+}
+
+.vehica-car-form__field-wrapper--embed {
+  &:before {
+    position: absolute;
+    content: '\f03d';
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    left: 17px;
+    top: 14px;
+    z-index: 10000;
+    font-size: 16px;
+    color: var(--primary);
+  }
+
+  input {
+    padding-left: 44px;
+  }
+}
+
+.vehica-car-form__embed {
+  margin-top: 20px;
+  margin-bottom: -23px !important;
+  @media (min-width: 600px) {
+    margin-bottom: -27px !important;
+  }
+  a {
+    text-decoration: underline;
+    color: var(--primary);
+  }
+  iframe {
+    float: left;
+    min-height: 400px;
+    @media (min-width: 500px) {
+      min-height: 450px;
+    }
+    @media (min-width: 900px) {
+      min-height: 550px;
+    }
+  }
+
+  @include clearfix;
+}

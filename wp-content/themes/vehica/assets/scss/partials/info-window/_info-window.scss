@@ -1,0 +1,40 @@
+.vehica-info-window-wrapper {
+  display: none;
+}
+
+.vehica-info-window {
+  padding: 37px 23px;
+  .vehica-info-window__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    color: #222732;
+  }
+}
+
+.vehica-map {
+  .gm-style .gm-style-iw-d {
+    overflow: initial !important;
+    padding: 0 !important;
+  }
+  .gm-style-iw.gm-style-iw-c {
+    padding: 0 !important;
+    @media (min-width: 420px) {
+      min-width: 395px !important;
+    }
+
+    h2 {
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 900;
+      color: #111;
+    }
+    a {
+      color: var(--primary);
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

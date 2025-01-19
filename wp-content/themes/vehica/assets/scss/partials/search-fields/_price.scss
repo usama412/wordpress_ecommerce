@@ -1,0 +1,45 @@
+.vehica-active-price {
+  input[type=text] {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+    font-weight: bold;
+    &::placeholder {
+      color: var(--primary) !important;
+    }
+  }
+  .vehica-number-range__1of2--left {
+    input[type=text] {
+      border-right-color: transparent !important;
+    }
+  }
+}
+
+.vehica-search-classic-v1,
+.vehica-search-classic-v2,
+.vehica-search-classic-v3 {
+  .vehica-price-active {
+    .vs__dropdown-toggle {
+      border-color: var(--primary) !important;
+    }
+    input {
+      border-color: var(--primary) !important;
+      font-weight: bold !important;
+      color: var(--primary) !important;
+    }
+    .vs__clear {
+      display: block !important;
+    }
+  }
+}
+
+.vehica-price-active {
+  .v-select .vs__dropdown-toggle {
+    border: 1px solid var(--primary) !important;
+  }
+}
+
+.vehica-price-select-from-to-active {
+  .v-select:not(.vs-open) .vs__dropdown-toggle {
+    border-color: var(--primary);
+  }
+}

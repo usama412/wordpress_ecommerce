@@ -1,0 +1,26 @@
+.vehica-posts--v2 {
+  .vehica-blog-card {
+    margin-bottom: 30px;
+    .vehica-blog-card__title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .vehica-blog-card__excerpt {
+      margin-bottom: 20px;
+    }
+  }
+
+  .vehica-blog-card__image {
+    padding-top: 0;
+    height: 300px;
+  }
+  .vehica-blog-card-v2__button-wrapper {
+    @media (max-width: 659px) {
+      text-align: center;
+    }
+    .vehica-button {
+      max-height: 50px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.vehica-car-form__field-select-single {
+  .v-select {
+    .vs__selected {
+      color: #222732 !important;
+      .vehica-option {
+        color: #222732 !important;
+      }
+    }
+  }
+  .vs__actions .vs__clear {
+    fill: #222732 !important;
+  }
+  .vs--single.vs--open .vs__dropdown-toggle {
+    border-color: #e7edf3 !important;
+  }
+}
+
+.vehica-form-button--disabled {
+  font-weight: 600 !important;
+  background: #f4f4f4;
+  cursor: initial;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  &:after {
+    display: none;
+  }
+}
+
+.xvehica-car-form__field-select-single {
+  .vehica-option--create-option-not-selected {
+    background: #f4f4f4 !important;
+    &:hover {
+      background: yellow !important;
+    }
+  }
+}

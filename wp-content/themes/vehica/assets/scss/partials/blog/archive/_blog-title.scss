@@ -1,0 +1,23 @@
+.vehica-blog-title {
+  font-size: 41px;
+  line-height: 51px;
+  font-weight: 900;
+  color: #222732;
+  margin: 0;
+  text-align: center;
+  @media (max-width: 359px) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  @media (min-width: 360px) and (max-width: 899px) {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+.vehica-posts__related-title {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 900;
+  margin-bottom: 55px;
+}

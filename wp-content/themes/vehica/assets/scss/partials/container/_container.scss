@@ -1,0 +1,10 @@
+.vehica-container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: 768px) {
+    max-width: 1468px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

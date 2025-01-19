@@ -1,0 +1,122 @@
+.widget_calendar {
+  .calendar_wrap {
+    border-radius: 10px;
+    border: 1px solid #e7edf3;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    background-color: var(--white);
+    font-weight: 500;
+    * {
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+  thead tr {
+    background: #f7f9fd;
+  }
+  table {
+    position: relative;
+    margin-bottom: 0;
+    table-layout: fixed;
+    word-wrap: normal;
+    width: 100%;
+    border: 0;
+    caption {
+      margin-bottom: 3px;
+      padding-top: 10px;
+    }
+    th {
+      border: 0;
+      padding: 6px;
+    }
+    td {
+      border: 0;
+      padding: 6px;
+    }
+    thead {
+      th {
+        text-align: center;
+      }
+    }
+    tbody {
+      cursor: default;
+      td {
+        text-align: center;
+        position: relative;
+      }
+      a {
+        color: var(--primary);
+        font-weight: 900 !important;
+      }
+    }
+  }
+  #today {
+    border-radius: 10px;
+    background: var(--primary-light) !important;
+    border-radius: 10px !important;
+    color: var(--primary);
+    font-weight: 900;
+    a {
+      color: var(--primary);
+    }
+  }
+
+  .wp-calendar-nav {
+    padding: 7px;
+    background: #f7f9fd;
+    .wp-calendar-nav-prev {
+      padding-left: 10px;
+      padding-top: 3px;
+      display: inline-block;
+    }
+
+    .wp-calendar-nav-next {
+      float: right;
+      padding-right: 10px;
+    }
+    tbody tr {
+      text-align: center;
+    }
+
+    tfoot {
+      width: 100%;
+      td {
+        padding: 0 6px;
+      }
+    }
+
+    #prev {
+      text-align: left;
+    }
+
+    #next {
+      text-align: right;
+    }
+
+    #today {
+      border-radius: 2px;
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.wp-calendar-table {
+  th {
+    background: transparent !important;
+    color: #000 !important;
+  }
+  td, th {
+    background: transparent !important;
+    text-align: center;
+    border: none !important;
+  }
+  a {
+    text-decoration: none;
+  }
+  caption {
+    padding-top: 0;
+    padding-bottom: 6px;
+    background: transparent !important;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}

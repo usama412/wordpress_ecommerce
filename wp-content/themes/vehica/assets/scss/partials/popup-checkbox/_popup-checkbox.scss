@@ -1,0 +1,125 @@
+.vehica-popup-checkbox {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  animation: mcpopupcheckbox .3s ease-in-out;
+  z-index: 10000000002;
+  &:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.39;
+    background: #0f141e;
+    z-index: 10000000003;
+  }
+}
+
+@keyframes mcpopupcheckbox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.vehica-popup-checkbox__inner {
+  z-index: 10000000004;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 400px;
+}
+
+.vehica-popup-checkbox__position {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 657px;
+  @media (max-width: 1023px) {
+    border-radius: 0;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.vehica-popup-checkbox__top {
+  position: relative;
+  border-bottom: 1px solid #e8e8e8;
+  margin-top: 30px;
+  padding: 0 35px 35px;
+}
+
+.vehica-popup-checkbox__name {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 900;
+  padding: 0;
+}
+
+.vehica-popup-checkbox__middle {
+  margin: 25px 0;
+  padding-left: 35px;
+  padding-right: 10px;
+  max-height: 50vh;
+  margin-right: 35px;
+  overflow-y: auto;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    position: relative;
+    background-color: #f1f1f1;
+  }
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: #DBDBDB;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #DBDBDB;
+    border-radius: 10px !important;
+  }
+}
+
+.vehica-popup-checkbox__bottom {
+  position: relative;
+  border-top: 1px solid #e8e8e8;
+  padding: 35px;
+  text-align: right;
+}
+
+.vehica-popup-checkbox__close {
+  position: absolute;
+  top: -107px;
+  right: 14px;
+  font-size: 27px;
+  line-height: 38px;
+  cursor: pointer;
+  i {
+    color: var(--primary);
+  }
+}
+
+.vehica-popup-checkbox__clear {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 53px;
+  color: #222732;
+  position: absolute;
+  left: 35px;
+  bottom: 35px;
+  cursor: pointer;
+  &:hover {
+    color: var(--primary);
+  }
+}

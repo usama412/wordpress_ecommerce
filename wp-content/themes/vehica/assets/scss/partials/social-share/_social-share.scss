@@ -1,0 +1,63 @@
+/* Social Share */
+.vehica-social-share {
+  display: flex;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100%;
+}
+
+.vehica-social-share__icon {
+  position: relative;
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  overflow: hidden;
+  gap: 6px;
+  align-items: center;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  @media (min-width: $min-hover-width) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  i {
+    margin-right: 4px;
+  }
+}
+
+.vehica-social-share__icon--facebook {
+  background: #39579a;
+}
+
+.vehica-social-share__icon--twitter {
+  background: #01abf0;
+}

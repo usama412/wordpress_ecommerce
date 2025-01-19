@@ -1,0 +1,15 @@
+.widget_text {
+  select {
+    @include vehica-field;
+    margin: 10px 0;
+    padding-right: 50px;
+    background: url(assets/img/chevron-down.png) no-repeat right transparent;
+    background-size: 16px 16px;
+    -webkit-appearance: none;
+    background-position: right 20px bottom 15px;
+  }
+}
+
+div {
+  display: block;
+}

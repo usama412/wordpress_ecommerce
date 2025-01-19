@@ -1,0 +1,16 @@
+.vehica-car-form__label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #222732;
+  margin-bottom: 12px;
+}
+
+.vehica-car-form__label--required {
+  &:after {
+    content: '*';
+    color: var(--primary);
+  }
+}
+

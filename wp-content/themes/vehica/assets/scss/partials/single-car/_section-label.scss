@@ -1,0 +1,10 @@
+.vehica-section-label {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  color: #222732;
+  @media (min-width: 900px) {
+    margin-bottom: 30px;
+  }
+}

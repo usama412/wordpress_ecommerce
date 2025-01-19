@@ -1,0 +1,30 @@
+.vehica-inventory-v1__sort__select {
+  .vs__selected {
+    font-weight: normal !important;
+    color: #2f3b48 !important;
+    font-size: 15px !important;
+    line-height: 19px !important;
+  }
+  .vs__dropdown-option--highlight {
+    background: transparent;
+  }
+  .vs__dropdown-option:hover {
+    color: var(--primary) !important;
+    font-weight: bold;
+  }
+  /* Before loading field */
+  .vehica-form-button {
+    font-size: 15px !important;
+    line-height: 19px !important;
+    padding: 15px 45px 0 28px;
+  }
+  .vs--single.vs--open .vs__selected {
+    color: #2f3b48 !important;
+  }
+  .vs__clear {
+    display: none !important;
+  }
+  .vs__actions:after {
+    top: 14px;
+  }
+}

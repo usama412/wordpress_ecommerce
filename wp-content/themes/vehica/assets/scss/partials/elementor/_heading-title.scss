@@ -1,0 +1,24 @@
+.elementor-heading-title {
+  color: #222732;
+  font-weight: 900;
+  &.elementor-size-xxl {
+    font-size: 50px;
+    line-height: 63px;
+  }
+  &.elementor-size-xl {
+    font-size: 41px;
+    line-height: 53px;
+  }
+  &.elementor-size-large {
+    font-size: 37px;
+    line-height: 47px;
+  }
+  &.elementor-size-medium {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  &.elementor-size-small {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

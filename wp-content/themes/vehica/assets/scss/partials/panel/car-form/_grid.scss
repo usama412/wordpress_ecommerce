@@ -1,0 +1,58 @@
+.vehica-car-form__grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.vehica-car-form__grid-wrapper {
+  margin: 0 -6px;
+}
+
+.vehica-car-form__grid-element {
+  padding: 0 6px;
+  margin-bottom: 23px;
+  width: 100%;
+  @media (min-width: 600px) {
+    width: 50%;
+    margin-bottom: 27px;
+  }
+  @media (min-width: 1024px) {
+    width: 33.333%;
+  }
+}
+
+.vehica-car-form__grid-element--2of3 {
+  @media (min-width: 600px) {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+  @media (min-width: 1024px) {
+    width: 66.666%;
+  }
+}
+
+.vehica-car-form__field-select-single.vehica-car-form__field-select-single--active {
+  .vs__actions .vs__clear {
+    fill: var(--primary) !important;
+    position: absolute;
+    background: #fff;
+    padding: 8px 13px;
+    display: block !important;
+    z-index: 5;
+    top: 3px;
+    right: 5px;
+  }
+}
+
+.vehica-car-form__grid-element--row {
+  width: 100%;
+  @media (max-width: 1023px) {
+    .vehica-number-range-v2__1of2 {
+      width: 100%;
+    }
+    .vehica-number-range-v2__1of2--right {
+      margin: 27px 0 0;
+      padding-left: 0;
+    }
+  }
+}

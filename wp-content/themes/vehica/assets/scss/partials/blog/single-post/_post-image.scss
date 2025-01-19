@@ -1,0 +1,42 @@
+@media (max-width: 899px) {
+  .vehica-post-image {
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px !important;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .vehica-post-image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 0 !important;
+    height: 147px;
+    @media (min-width: 400px) {
+      height: 240px;
+    }
+    @media (min-width: 600px) {
+      height: 340px;
+    }
+    @media (min-width: 900px) {
+      height: 413px;
+    }
+    @media (min-width: 1200px) {
+      height: 445px;
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      transition: filter 400ms;
+    }
+  }
+}

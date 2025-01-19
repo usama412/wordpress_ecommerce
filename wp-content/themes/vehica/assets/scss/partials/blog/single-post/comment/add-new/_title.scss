@@ -1,0 +1,35 @@
+.vehica-comments {
+  .comment-reply-title {
+    width: 100%;
+    float: left;
+    text-align: left;
+    position: relative;
+    padding-right: 28px;
+    #cancel-comment-reply-link {
+      color: transparent;
+      &:hover:after {
+        color: var(--primary) !important;
+      }
+      &:after {
+        color: #222732;
+        content: '\f00d';
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        top: 0;
+        right: 12px;
+        transition: all 0.2s ease;
+      }
+    }
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 900;
+    color: #222732;
+    padding-left: 8px;
+    @include clearfix();
+  }
+}

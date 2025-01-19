@@ -1,0 +1,301 @@
+/*
+Theme Name: Vehica
+Theme URI: https://demo.vehica.com/
+Author: TangibleDesign
+Author URI: https://tangibledesign.net/
+Description: The Most Flexible Directory Theme
+Version: 1.0.90
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-menu, featured-images, sticky-post, translation-ready
+Text Domain: vehica
+
+Table of contents:
+1.  Start
+2.  WordPress Core
+3.  Scripts
+4.  General
+5.  Button
+6.  Menu
+7.  Pagination
+8.  Blog
+9.  Hero
+10. Carousel
+11. User
+12. Contact
+13. Elementor
+14. Single Car
+15. Search
+16. Panel
+17. Map
+18. Other
+
+*/
+/* 1. Start */
+@import "mixins/_clearfix";
+@import "mixins/_text-truncate";
+@import "mixins/_vehica-field";
+@import "mixins/_absolute";
+@import "mixins/_transition";
+@import "variables";
+@import "global";
+/* 2. WordPress Core */
+@import "partials/wordpress/wp-admin-bar";
+@import "partials/wordpress/core-style";
+@import "partials/wordpress/widget-base";
+@import "partials/wordpress/widget-calendar";
+@import "partials/wordpress/widget-comments";
+@import "partials/wordpress/widget-rss";
+@import "partials/wordpress/widget-title";
+@import "partials/wordpress/widget-tags";
+@import "partials/wordpress/widget-text";
+/* 3. Scripts */
+@import "partials/scripts/swiper";
+@import "partials/v-select/v-select";
+@import "partials/sweet-alert/sweet-alert";
+@import "partials/lazyload/lazyload";
+/* 4. General */
+@import "partials/container/container";
+@import "partials/grid/grid";
+@import "partials/breadcrumbs/breadcrumbs";
+/* 5. Button */
+@import "partials/button/button";
+@import "partials/button/button-icon";
+@import "partials/button/radio";
+@import "partials/button/checkbox";
+/* 6. Menu */
+@import "partials/menu/top-bar";
+@import "partials/menu/menu";
+@import "partials/menu/mobile-menu";
+@import "partials/menu/currency-switcher";
+@import "partials/menu/desktop-user-menu";
+@import "partials/menu/optional-sticky-mobile";
+/* 7. Pagination */
+@import "partials/pagination/pagination";
+@import "partials/pagination/pagination-mobile";
+/* 8. Blog */
+@import "partials/blog/archive/blog-title";
+@import "partials/blog/archive/card/card";
+@import "partials/blog/archive/card/card-v2";
+@import "partials/blog/archive/card/featured";
+@import "partials/blog/single-post/author-image";
+@import "partials/blog/single-post/author-name";
+@import "partials/blog/single-post/category";
+@import "partials/blog/single-post/date";
+@import "partials/blog/single-post/name";
+@import "partials/blog/single-post/number-of-comments";
+@import "partials/blog/single-post/post-content";
+@import "partials/blog/single-post/post-image";
+@import "partials/blog/single-post/tags";
+@import "partials/blog/single-post/comment/add-new/respond";
+@import "partials/blog/single-post/comment/add-new/title";
+@import "partials/blog/single-post/comment/add-new/note";
+@import "partials/blog/single-post/comment/add-new/fields";
+@import "partials/blog/single-post/comment/add-new/cookie-consent";
+@import "partials/blog/single-post/comment/add-new/submit";
+@import "partials/blog/single-post/comment/list/comments";
+@import "partials/blog/single-post/comment/list/single-comment";
+@import "partials/blog/blog-search";
+@import "partials/blog/recent-posts";
+/* 9. Hero */
+@import "partials/hero/v1";
+@import "partials/hero/v2";
+@import "partials/hero/v3";
+@import "partials/hero/v4";
+@import "partials/hero/v5";
+/* 10. Carousel */
+@import "partials/carousel/arrow";
+@import "partials/carousel/related-listings";
+@import "partials/carousel-term-img/carousel-term-img";
+/* 11. User */
+@import "partials/user/user-address";
+@import "partials/user/user-description";
+@import "partials/user/user-role";
+@import "partials/user/user-name";
+@import "partials/user/user-image";
+@import "partials/user/user-image-v2";
+@import "partials/user/user-email";
+@import "partials/user/user-email-v2";
+@import "partials/user/user-phone";
+@import "partials/user/user-vehicles";
+@import "partials/user-popup/user-popup";
+/* 12. Contact */
+@import "partials/contact-form/contact-form";
+@import "partials/contact-form/2-fields";
+@import "partials/contact-form/3-fields";
+@import "partials/contact-form/checkbox-policy";
+@import "partials/contact-form/contact-validation";
+/* 13. Elementor */
+@import "partials/elementor/elementor";
+@import "partials/elementor/icon-list";
+@import "partials/elementor/heading-title";
+@import "partials/elementor/button";
+@import "partials/elementor/categories";
+@import "partials/elementor/text-editor";
+@import "partials/elementor/tag-cloud";
+@import "partials/elementor/recent-posts";
+@import "partials/elementor/counter";
+@import "partials/elementor-custom-css/404";
+@import "partials/elementor-custom-css/featured-v1";
+@import "partials/elementor-custom-css/sidebar-gap-right";
+@import "partials/elementor-custom-css/category-icon";
+@import "partials/elementor-custom-css/our-team-bg";
+@import "partials/elementor-custom-css/our-ceo";
+@import "partials/elementor-custom-css/download-app-img";
+@import "partials/elementor-custom-css/user-page";
+@import "partials/elementor-custom-css/menu";
+@import "partials/elementor-custom-css/open-hours";
+/* 14. Single Car */
+@import "partials/single-car/attributes";
+@import "partials/single-car/attachments";
+@import "partials/single-car/description";
+@import "partials/single-car/list";
+@import "partials/single-car/name";
+@import "partials/single-car/offer-id";
+@import "partials/single-car/price";
+@import "partials/single-car/section-label";
+@import "partials/single-car/features";
+@import "partials/single-car/features-v2";
+@import "partials/single-car/features-pill";
+@import "partials/single-car/add-to-favorite";
+@import "partials/single-car/embed";
+@import "partials/single-car/location";
+@import "partials/single-car/gallery/v1";
+@import "partials/single-car/gallery/v2";
+@import "partials/single-car/gallery/v3";
+@import "partials/single-car/gallery/v4";
+@import "partials/single-car/send-pm";
+/* 15. Search */
+@import "partials/search-form/v1";
+@import "partials/search-form/v2";
+@import "partials/search-form/v3";
+@import "partials/number-range/v1";
+@import "partials/number-range/v2";
+@import "partials/search-fields/general";
+@import "partials/search-fields/number";
+@import "partials/search-fields/price";
+@import "partials/search-fields/sort-by";
+@import "partials/search-fields/taxonomy-multiple";
+@import "partials/search-fields/taxonomy-single";
+@import "partials/search-fields/text";
+@import "partials/search-fields/search-classic";
+@import "partials/search-fields/location";
+@import "partials/car-card/card";
+@import "partials/car-card/card-v1";
+@import "partials/car-card/card-v2";
+@import "partials/car-card/card-v4";
+@import "partials/car-card/card-v5";
+@import "partials/car-card/card-row";
+@import "partials/car-card/featured";
+@import "partials/car-card/label";
+@import "partials/inventory/inventory-v1";
+@import "partials/inventory/inventory-v1--map";
+@import "partials/vehicles-featured/grid-v1";
+@import "partials/vehicles-featured/carousel";
+/* 16. Panel */
+@import "partials/panel/login-register";
+@import "partials/panel/reset-password";
+@import "partials/panel/panel";
+@import "partials/panel/account";
+@import "partials/panel/account-field";
+@import "partials/panel/card";
+@import "partials/panel/list";
+@import "partials/panel/pagination";
+@import "partials/panel/submenu";
+@import "partials/panel/menu/desktop";
+@import "partials/panel/menu/mobile";
+@import "partials/panel/car-form/attachments";
+@import "partials/panel/car-form/car-form";
+@import "partials/panel/car-form/section";
+@import "partials/panel/car-form/grid";
+@import "partials/panel/car-form/heading";
+@import "partials/panel/car-form/field";
+@import "partials/panel/car-form/field-units";
+@import "partials/panel/car-form/label";
+@import "partials/panel/car-form/embed";
+@import "partials/panel/car-form/gallery";
+@import "partials/panel/car-form/tip";
+@import "partials/panel/car-form/price";
+@import "partials/panel/car-form/textarea";
+@import "partials/panel/car-form/taxonomy-multi";
+@import "partials/panel/car-form/taxonomy-single";
+@import "partials/panel/car-form/submit-button";
+@import "partials/panel/car-form/location";
+@import "partials/panel/car-form/date/general";
+@import "partials/panel/car-form/date/time";
+@import "partials/panel/car-form/date/calendar";
+/* 17. Map */
+@import "partials/map/map";
+@import "partials/map/marker";
+@import "partials/map/listing-info-window";
+/* 18. Other */
+@import "partials/marker-label/marker-label";
+@import "partials/info-window/info-window";
+@import "partials/slider/slider";
+@import "partials/services/services";
+@import "partials/testimonial-carousel/testimonial-carousel";
+@import "partials/features/features";
+@import "partials/heading/heading";
+@import "partials/currency-switcher/currency-switcher";
+@import "partials/template-content/template-content";
+@import "partials/popup-checkbox/popup-checkbox";
+@import "partials/simple-menu/simple-menu";
+@import "partials/logo/logo";
+@import "partials/users-v2/users-v2";
+@import "partials/comming-soon/comming-soon";
+@import "partials/social-icon/social-icon";
+@import "partials/social-login/social-login";
+@import "partials/social-share/social-share";
+@import "partials/social-profiles/social-profiles";
+@import "partials/email/email";
+@import "partials/phone/phone";
+@import "partials/user-section/users-section";
+@import "partials/tabs/tabs";
+@import "partials/tabs/tabs-top-v1";
+@import "partials/tabs/tabs-top-v2";
+@import "partials/short-info/short-info";
+@import "partials/accordion/accordion";
+@import "partials/address/address";
+@import "partials/close-animated/close";
+@import "partials/subscribe/subscribe-form";
+@import "partials/sticky-sidebar/sticky";
+@import "partials/count-down/count-down";
+@import "partials/loan-calculator/calculator";
+@import "partials/show-more/show-more";
+@import "partials/background-accent/accent-v1";
+@import "partials/mce/mce";
+@import "partials/phone-show-number/phone-show-number";
+@import "partials/field-validation/field-validation";
+@import "partials/packages/package";
+@import "partials/packages/switcher";
+@import "partials/loading/loading";
+@import "partials/woocommerce/error-info-message";
+@import "partials/woocommerce/woocommerce";
+@import "partials/woocommerce/checkout";
+@import "partials/woocommerce/thank-you";
+@import "partials/woocommerce/coupon";
+@import "partials/woocommerce/bank-wire";
+@import "partials/compare/compare";
+@import "partials/compare/compare-area";
+@import "partials/compare/compare-add";
+@import "partials/compare/compare-add-solo";
+@import "partials/rtl/menu";
+@import "partials/rtl/breadcrumbs";
+@import "partials/rtl/featured";
+@import "partials/rtl/tabs";
+@import "partials/rtl/featured-carousel";
+@import "partials/rtl/inventory-v1";
+@import "partials/rtl/search-classic-v2";
+@import "partials/rtl/car-card";
+@import "partials/rtl/card-row";
+@import "partials/rtl/user-carousel";
+@import "partials/rtl/fields/vehica-button";
+@import "partials/rtl/fields/checkbox";
+@import "partials/rtl/fields/popup-checkbox";
+@import "partials/rtl/fields/select";
+@import "partials/rtl/fields/select-dropdown";
+@import "partials/cookie-notice/cookie-notice";
+@import "partials/z-index";
+@import "partials/register-v2";
+@import "partials/chat/chat";
+@import "partials/whatsapp/whatsapp";

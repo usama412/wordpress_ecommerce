@@ -1,0 +1,330 @@
+.vehica-inventory-v1--map {
+  .vehica-inventory-v1__map-form {
+    @media (min-width: 899px) {
+      display: flex;
+    }
+  }
+
+  .vehica-inventory-v1__middle {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    @media (min-width: 1024px) {
+      padding-top: 25px !important;
+      padding-bottom: 25px !important;
+    }
+  }
+
+  .vehica-inventory-v1__form {
+    width: 100%;
+    @media (min-width: 1024px) {
+      display: block;
+      min-width: 640px;
+      max-width: 640px;
+    }
+
+    @media (min-width: 1200px) {
+      min-width: 800px;
+      max-width: 800px;
+    }
+
+    @media (min-width: 1400px) {
+      min-width: 880px;
+      max-width: 880px;
+    }
+  }
+
+  .vehica-inventory-v1__map {
+    position: relative;
+    width: 100%;
+  }
+
+  .vehica-inventory-v1__form__fields {
+    background: #f2f5fb;
+    border-bottom: 1px solid #e7e9ee;
+    padding: 25px 24px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: 1200px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media (min-width: 900px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    & > .vehica-results__field {
+      margin: 0;
+      width: 100%;
+      @media (min-width: 900px) {
+        width: 50%;
+      }
+    }
+  }
+
+  .vehica-inventory-v1__location-field-wrapper {
+    & > .vehica-results__field {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media (min-width: 900px) {
+    .vehica-inventory-v1__location-field-wrapper {
+      width: 50%;
+      max-width: 500px;
+      & > .vehica-results__field {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  @media(min-width: 1024px) and (max-width: 1199px) {
+    .vehica-inventory-v1__sort__heading {
+      display: none;
+    }
+  }
+  @media (min-width: 900px) {
+    .vehica-inventory-v1__view {
+      margin-right: 15px;
+    }
+  }
+  .vehica-inventory-v1__sort {
+    min-width: initial !important;
+  }
+  .vehica-pagination--inventory {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.vehica-inventory-v1__map-more-filters-area {
+  padding: 24px 24px 0;
+  background: #f2f5fb;
+}
+
+.vehica-inventory-v1__map-keyword {
+  width: 100%;
+  position: relative;
+  .vehica-inventory-v1__clear-keyword {
+    right: 1px;
+  }
+  input {
+    @include vehica-field;
+  }
+}
+
+.vehica-inventory-v1__bar--small {
+  background: #f2f5fb;
+  border-bottom: 1px solid #e7e9ee;
+  padding: 0;
+  @media (min-width: 900px) {
+    padding: 0 15px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 30px;
+  }
+  .vehica-search-v1__tab {
+    margin-right: 20px !important;
+    @media (min-width: 900px) {
+      margin-right: 30px !important;
+    }
+  }
+  .vehica-search-v1__tab:first-child {
+    margin-left: 15px;
+    @media (min-width: 900px) {
+      margin-left: 0;
+    }
+  }
+
+  .vehica-search-v1__tab-button {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+    font-size: 16px !important;
+    line-height: 25px !important;
+    margin-right: 0 !important;
+  }
+  .vehica-search-v1__tab:after {
+    display: none !important;
+  }
+}
+
+.vehica-inventory-v1__form__fields__buttons {
+  margin-left: auto;
+  display: flex;
+  padding-right: 6px;
+}
+
+.vehica-inventory-v1__button-option {
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  color: #2f3b48;
+  font-weight: 600;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  &:hover {
+    color: var(--primary);
+  }
+  .fa-exchange-alt {
+    margin-right: 4px;
+  }
+  @media (max-width: 899px) {
+    margin-top: 5px;
+    &.vehica-inventory-v1__button-option--compare {
+      margin-left: 0;
+    }
+    &.vehica-inventory-v1__button-option--more-filters {
+      margin-left: auto !important;
+    }
+  }
+}
+
+.vehica-inventory-v1__button-option--active {
+  color: var(--primary);
+}
+
+.vehica-inventory-v1--map {
+  .vehica-inventory-v1__results__card {
+    @media (min-width: 900px) {
+      width: 50% !important;
+    }
+  }
+}
+
+.vehica-inventory-v1--map__mobile-modes {
+  padding: 0 15px 15px;
+  .vehica-button {
+    width: 100%;
+  }
+  @media (min-width: 900px) {
+    display: none;
+  }
+}
+
+.vehica-inventory-v1__map {
+  .vehica-map__no-api-key {
+    position: initial !important;
+    &:after {
+      opacity: 0.1;
+      height: 4000px !important;
+    }
+  }
+  @media (max-width: 899px) {
+    display: none;
+    height: 100vh;
+  }
+  @media (min-width: 900px) {
+    .vehica-inventory-v1__map__inner {
+      display: block;
+      position: sticky;
+      top: 0;
+    }
+  }
+  @media (max-width: 899px) {
+    .vehica-inventory-v1__map__inner {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+  }
+}
+
+@media(max-width: 899px) {
+  .vehica-inventory-v1__form {
+    .vehica-inventory-v1__pagination,
+    .vehica-inventory-v1__2-cols {
+      display: none;
+    }
+  }
+  .vehica-inventory-v1__form--active {
+    .vehica-inventory-v1__pagination,
+    .vehica-inventory-v1__2-cols {
+      display: block;
+    }
+  }
+  .vehica-inventory-v1__map--active {
+    &.vehica-inventory-v1__map {
+      display: block;
+    }
+  }
+}
+
+.vehica-html-map-sticky {
+  @media (min-width: 900px) {
+    overflow: initial;
+  }
+}
+
+.vehica-inventory-v1__map--active {
+
+  @media (max-width: 899px) {
+    .vehica-inventory-v1__map__inner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999999999999999;
+      width: 100%;
+      height: 100vh;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+  }
+}
+
+.vehica-inventory-v1__map--no-api-key {
+  overflow-y: hidden !important;
+  .vehica-map__no-api-key {
+    background: #fff !important;
+  }
+}
+
+.vehica-inventory-v1__map-wrapper {
+  @media (max-width: 899px) {
+    height: 100vh !important;
+  }
+}
+
+.vehica-inventory-v1__map__switch-map-to-lists {
+  display: none;
+  @media (max-width: 899px) {
+    display: block;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+    bottom: 15px;
+    z-index: 100;
+    .vehica-button {
+      width: 100%;
+    }
+  }
+}
+
+.vehica-inventory-v1--map {
+  .vehica-results__fields {
+    .vehica-inventory-v1__map-keyword,
+    .vehica-results__field {
+      width: 100% !important;
+      @media (min-width: 600px) {
+        width: 50% !important;
+      }
+    }
+  }
+}
+
+body:not(.vehica-menu-sticky) .vehica-inventory-v1__map__inner {
+  @media (min-width: 900px) {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    .vehica-inventory-v1__map-wrapper {
+      height: 100vh !important;
+    }
+  }
+}
+
+.vehica-inventory-v1__map-more-filters-area .vehica-results__fields {
+  @media (max-width: 1023px) {
+    display: block !important;
+  }
+}

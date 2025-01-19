@@ -1,0 +1,92 @@
+.vehica-car-form__section {
+  border-radius: 20px;
+  background-color: #f2f5fb;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding: 30px 15px 30px 15px;
+  @media (min-width: 900px) {
+    margin-top: 30px;
+    padding: 45px 50px;
+  }
+  border: 1px solid #f2f5fb;
+}
+
+.vehica-car-form__section--edit-car,
+.vehica-car-form__section--create-car {
+  margin-top: 0;
+}
+
+.vehica-car-form__section-title {
+  color: #222732;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 20px;
+  @media (min-width: 900px) {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.vehica-car-form__section__info-box {
+  border-radius: 10px;
+  border: 1px solid #058aff;
+  background-color: #e9f5ff;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #058aff;
+  a {
+    text-decoration: underline;
+    color: #058aff;
+  }
+}
+
+.vehica-car-form__section__info-box__inner {
+  margin: 0 auto;
+  max-width: 500px;
+  @media (max-width: 420px) {
+    max-width: 200px;
+  }
+}
+
+.vehica-car-form__section--bottom {
+  @media (min-width: 900px) {
+    display: flex;
+    position: relative;
+  }
+}
+
+.vehica-car-form__save-submit {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  @include clearfix;
+  .vehica-button {
+    float: right;
+  }
+}
+
+.vehica-car-form__save-submit__admin-buttons {
+  float: left;
+  width: 50%;;
+  display: none;
+  .vehica-button--approve {
+    background: green;
+  }
+  .vehica-button--decline {
+    color: #fff;
+    background: #000;
+    margin-left: 10px;
+  }
+}
+
+.vehica-car-form__save-submit__save-changes {
+  width: 100%;
+  flex-grow: 1;
+  text-align: right;
+}

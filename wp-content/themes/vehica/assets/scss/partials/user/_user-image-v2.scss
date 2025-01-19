@@ -1,0 +1,21 @@
+.vehica-user-image-v2__align {
+  display: flex;
+}
+
+.vehica-user-image-v2 {
+  width: 62px;
+  height: 62px;
+  position: relative;
+  display: block;
+
+  img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
